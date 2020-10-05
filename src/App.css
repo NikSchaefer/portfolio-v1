@@ -40,7 +40,7 @@ header {
   position: relative;
 
   left:30%;
-  top:-50px;
+  top:-30px;
 
 
   text-decoration: none;
@@ -57,8 +57,14 @@ header {
 .nav-name {
     position: relative;
     left:-33%;
+    font-size: 30px;
+    text-decoration: none;
+    color:black;
 
 
+}
+.nav-name:hover {
+  
 }
 
 
