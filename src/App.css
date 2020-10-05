@@ -38,7 +38,6 @@ header {
 
 .nav-link {
   position: relative;
-  transition: all ease-in-out 0.3s;
 
   left:30%;
   top:-50px;
@@ -53,6 +52,7 @@ header {
 .nav-link:hover {
   color:black;
   border-bottom: solid;
+  border-color: lightblue;
 }
 .nav-name {
     position: relative;
