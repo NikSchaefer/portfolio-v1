@@ -1,38 +1,148 @@
+
+
+
+
+/*    Misc    */
+
+body {
+  background-color: rgb(255, 255, 255);
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+
+/*    /Misc    */
+
+
+
+
+
+/*    NavBar    */
+
+header {
+  position: relative;
+
+  padding-top: 10px;
+
+  background-color: rgb(255, 255, 255);
+
+  
+}
+.nav-link-div {
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link {
+  position: relative;
+  transition: all ease-in-out 0.3s;
+
+  left:30%;
+  top:-50px;
+
+
+  text-decoration: none;
+  color:rgb(65, 65, 65);
+  margin: 0 0 20px 20px;
+  font-size: 20px;
+  
+}
+.nav-link:hover {
+  color:black;
+  border-bottom: solid;
+}
+.nav-name {
+    position: relative;
+    left:-33%;
+
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/*    /NavBar    */
+
+
+
+
+/*    Home    */
+
+.home-div {
+  position: relative;
+
+  background-color: #fbfbfd;
+  height: fit-content;
+  padding-bottom: 200px;
+  
+  
 }
 
-.App-link {
-  color: #61dafb;
+.home-top-description-title {
+  background-color: white;
+  padding:30px 0px 100px 250px;
+  text-align: left;
+
+}
+.home-top-description {
+  width:70%;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-work-title {
+  text-align: left;
+  padding-top: 50px;
+  padding-left: 250px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+
 }
+
+
+/*       Card          */
+.card-img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width:300px;
+  display: inline-block;
+  margin:50px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 32px 72px 0 rgba(0,0,0,0.2);
+  transform:scale(1.05);
+
+}
+
+.container {
+  font-family: inherit;
+  padding: 2px 16px;
+}
+/*       /Card          */
+
+/*    /Home    */
+
+
+
+
+
+/*    Footer    */
+
+footer {
+  position: relative;
+  display: grid;
+
+
+  height: 300px;
+  background-color: #f6f8fc;
+}
+
+/*    /Footer    */
