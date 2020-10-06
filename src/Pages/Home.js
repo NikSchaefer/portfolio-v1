@@ -5,7 +5,6 @@ import k5red from './Images/k5red.png'
 
 const Home = () => {
 
-    
 
     return (
         <div className="home-div">
@@ -28,6 +27,10 @@ const Home = () => {
                     <h4><b>The Esport Company</b></h4>
                     <p>Web Developer Internship<br /></p>
                 </div>
+                    <p className="home-card-label-div-text-purple">
+                        Internship
+                    </p>
+
             </div>
 
 
@@ -37,6 +40,9 @@ const Home = () => {
                     <h4><b>K5 Gaming</b></h4>
                     <p>Full Stack Website Developer</p>
                 </div>
+                <p className="home-card-label-div-text-blue">
+                        Full Stack + Design
+                    </p>
             </div>
 
             <div class="card">
@@ -45,6 +51,9 @@ const Home = () => {
                     <h4><b>Nebula Esports</b></h4>
                     <p>Full Stack Website Developer</p>
                 </div>
+                <p className="home-card-label-div-text-orange">
+                Full Stack + Design
+                    </p>
             </div>
 
         </div>

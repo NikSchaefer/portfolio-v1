@@ -132,6 +132,36 @@ header {
 
 }
 
+
+.home-card-label-div-text-blue {
+  background-color: #b1e3ff;
+  font-weight: 600;
+  width:fit-content;
+  padding:2px 5px;
+  border-radius: 10%;
+  margin:auto;
+  margin-bottom: 20px;
+}
+.home-card-label-div-text-orange {
+  background-color: #fed674;
+  font-weight: 600;
+  width:fit-content;
+  padding:2px 5px;
+  border-radius: 10%;
+  margin:auto;
+  margin-bottom: 20px;
+}
+.home-card-label-div-text-purple {
+  background-color: #ccccfa;
+  font-weight: 600;
+  width:fit-content;
+  padding:2px 5px;
+  border-radius: 10%;
+  margin:auto;
+  margin-bottom: 20px;
+}
+
+
 .container {
   font-family: inherit;
   padding: 2px 16px;
@@ -177,6 +207,7 @@ footer {
 }
 .footer-quick-link:hover {
   color:rgb(4, 0, 255);
+
 }
 
 
