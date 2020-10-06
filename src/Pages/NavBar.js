@@ -1,17 +1,20 @@
 import React from 'react';
-import {NavLink, Link} from "react-router-dom";
-
+import {NavLink} from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 
 const NavBar = () => {
+
+    
+    
 
     return (
         <div>
             <header>
-                <Link to="/" className="nav-name">Nik Schaefer</Link>
+                <a href="http://localhost:3000/" className="nav-name">Nik Schaefer</a>
                 <div className="nav-links-div">
-                    <NavLink to="/" className="nav-link">Work</NavLink>
-                    <NavLink to="/about" className="nav-link">About</NavLink>
-                    <NavLink to="/resume" className="nav-link">Resume</NavLink>
+                    <NavLink to="/" className="nav-link" onClick={scroll.scrollToTop}>Work</NavLink>
+                    <NavLink to="/about" className="nav-link" onClick={scroll.scrollToTop}>About</NavLink>
+                    <NavLink to="/resume" className="nav-link" onClick={scroll.scrollToTop}>Resumé</NavLink>
 
                 </div>
 

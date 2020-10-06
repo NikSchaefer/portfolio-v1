@@ -11,7 +11,10 @@ body {
   text-align: center;
 }
 
-
+a[type=text-link] {
+  color:blue;
+  text-decoration: none;
+}
 
 
 
@@ -39,7 +42,7 @@ header {
 .nav-link {
   position: relative;
 
-  left:30%;
+  left:25%;
   top:-30px;
 
 
@@ -56,15 +59,16 @@ header {
 }
 .nav-name {
     position: relative;
-    left:-33%;
+    padding-left:15%;
+    left:-40%;
     font-size: 30px;
     text-decoration: none;
-    color:black;
+    color:rgb(3, 3, 3);
 
 
 }
 .nav-name:hover {
-  
+  color:black;
 }
 
 
@@ -87,7 +91,7 @@ header {
 
 .home-top-description-title {
   background-color: white;
-  padding:30px 0px 100px 250px;
+  padding:30px 0px 100px 10%;
   text-align: left;
 
 }
@@ -99,7 +103,7 @@ header {
 .home-work-title {
   text-align: left;
   padding-top: 50px;
-  padding-left: 250px;
+  padding-left: 10%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 26px;
 
@@ -144,11 +148,37 @@ header {
 
 footer {
   position: relative;
-  display: grid;
 
 
-  height: 300px;
+  height: fit-content;
   background-color: #f6f8fc;
 }
+.footer-div {
+  background-color: #f6f8fc;
+  display: inline-block;
+}
+
+.footer-block {
+  display: inline-block;
+  width:300px;
+  height: fit-content;
+
+  font-family: Arial, Helvetica, sans-serif;
+  margin:50px;
+
+}
+
+
+
+.footer-quick-link {
+  text-decoration: none;
+  color:black;
+  transition: all ease-in-out 0.3;
+}
+.footer-quick-link:hover {
+  color:rgb(4, 0, 255);
+}
+
+
 
 /*    /Footer    */
