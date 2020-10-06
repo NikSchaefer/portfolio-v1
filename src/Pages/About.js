@@ -72,7 +72,7 @@ const About = () => {
                     <br />
                     React Native <br />
                 </p>
-                Questions? Contact me at <a href="mailto:nikkschaefer@gmail.com" type="text-link">nikkschaefer@gmail.com</a>, <br />
+                Questions? Contact me at <a href="mailto:nikkschaefer@gmail.com" type="text-link">nikkschaefer@gmail.com</a><br />
 
 
 

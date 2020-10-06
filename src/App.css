@@ -117,6 +117,21 @@ header {
 .nav-name:hover {
   color:black;
 }
+@media screen and (max-width: 500px) {
+  .nav-name {
+    left:auto;
+    text-align: center;
+  }
+  .nav-link {
+    top:0px;
+    left:0%;
+  }
+
+
+
+
+  
+}
 
 
 /*    /NavBar    */
@@ -125,6 +140,8 @@ header {
 
 
 /*    Home    */
+
+
 
 .home-div {
   position: relative;
@@ -237,6 +254,19 @@ header {
 }
 /*       /Card          */
 
+
+
+
+@media screen and (max-width: 400px) { 
+  .home-top-description {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 3rem 1.5rem;
+    width:auto;
+    font-size: 20px;
+  }
+}
+
 /*    /Home    */
 
 
@@ -256,6 +286,12 @@ header {
   margin: auto;
 }
 
+@media screen and (max-width: 600px) { 
+  .about-skillset-description {
+    width:100%;
+    padding-bottom: 50px;
+  }
+}
 
 
 
