@@ -26,6 +26,8 @@ a[type=text-link] {
 
 /*    NavBar    */
 
+
+
 header {
   position: relative;
 
@@ -50,12 +52,12 @@ header {
   color:rgb(65, 65, 65);
   margin: 0 0 20px 20px;
   font-size: 20px;
-  
 }
 .nav-link:hover {
   color:black;
   border-bottom: solid;
   border-color: lightblue;
+
 }
 .nav-name {
     position: relative;
@@ -141,6 +143,7 @@ header {
   border-radius: 10%;
   margin:auto;
   margin-bottom: 20px;
+  display: inline-block;
 }
 .home-card-label-div-text-orange {
   background-color: #fed674;
@@ -150,6 +153,7 @@ header {
   border-radius: 10%;
   margin:auto;
   margin-bottom: 20px;
+  display: inline-block;
 }
 .home-card-label-div-text-purple {
   background-color: #ccccfa;
@@ -158,9 +162,28 @@ header {
   padding:2px 5px;
   border-radius: 10%;
   margin:auto;
+  margin-bottom: 20px;  
+  display: inline-block;
+}
+.home-card-label-div-text-red {
+  background-color: #fc5c84;
+  font-weight: 600;
+  width:fit-content;
+  padding:2px 5px;
+  border-radius: 10%;
+  margin:auto;
   margin-bottom: 20px;
 }
-
+.home-card-label-div-coming {
+  background-color: #5cfcd4;
+  font-weight: 600;
+  width:fit-content;
+  padding:2px 5px;
+  border-radius: 10%;
+  margin:auto;
+  margin-bottom: 20px;
+  display: inline-block;
+}
 
 .container {
   font-family: inherit;

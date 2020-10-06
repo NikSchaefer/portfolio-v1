@@ -2,6 +2,7 @@ import React from 'react';
 import TEC from './Images/TEC.png'
 import Nebula from './Images/nebula.png'
 import k5red from './Images/k5red.png'
+import RB from './Images/ROCKETBEAST_PFP1.png'
 
 const Home = () => {
 
@@ -38,7 +39,7 @@ const Home = () => {
                 <img src={k5red} alt="" className="card-img" />
                 <div class="container">
                     <h4><b>K5 Gaming</b></h4>
-                    <p>Full Stack Website Developer</p>
+                    <p>Official K5 Esports Website</p>
                 </div>
                 <p className="home-card-label-div-text-blue">
                         Full Stack + Design
@@ -46,15 +47,30 @@ const Home = () => {
             </div>
 
             <div class="card">
-                <img src={Nebula} alt="loading..." className="card-img" />
+                <img src={Nebula} alt="" className="card-img" />
                 <div class="container">
                     <h4><b>Nebula Esports</b></h4>
-                    <p>Full Stack Website Developer</p>
+                    <p>Official Nebula Esports Website</p>
                 </div>
                 <p className="home-card-label-div-text-orange">
                 Full Stack + Design
                     </p>
             </div>
+
+            <div class="card">
+                <img src={RB} alt="" className="card-img" />
+                <div class="container">
+                    <h4><b>RocketBeast</b></h4>
+                    <p>Official Rocket Beast Website</p>
+                </div>
+                <p className="home-card-label-div-text-red">
+                        Full Stack + Design
+                    </p>
+                    
+            </div>
+
+
+
 
         </div>
     )
