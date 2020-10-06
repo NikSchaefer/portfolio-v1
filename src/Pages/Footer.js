@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { animateScroll as scroll } from "react-scroll";
 
 
 const Footer = () => {
@@ -21,9 +22,9 @@ const Footer = () => {
                 </div>
                 <div className="footer-block">
                     <h3>Quick Links</h3>
-                    <NavLink to="/" className="footer-quick-link">Work<br /></NavLink>
-                    <NavLink to="/about" className="footer-quick-link">About<br /></NavLink>
-                    <NavLink to="/resume" className="footer-quick-link">Resumé<br /></NavLink>
+                    <NavLink to="/" className="footer-quick-link" onClick={scroll.scrollToTop}>Work<br /></NavLink>
+                    <NavLink to="/about" className="footer-quick-link" onClick={scroll.scrollToTop}>About<br /></NavLink>
+                    <NavLink to="/resume" className="footer-quick-link" onClick={scroll.scrollToTop}>Resumé<br /></NavLink>
                 </div>
                 <div className="footer-block">
                     <h3>Connect</h3>
