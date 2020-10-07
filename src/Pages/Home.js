@@ -58,7 +58,7 @@ const Home = () => {
             </div>
 
             <div class="card">
-                <img src={RB} alt="" className="card-img" />
+                <img src={RB} alt="" className="card-img-blur" />
                 <div class="container">
                     <h4><b>RocketBeast</b></h4>
                     <p>Official Rocket Beast Website</p>

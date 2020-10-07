@@ -179,6 +179,10 @@ header {
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
+.card-img-blur {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -274,7 +278,7 @@ header {
 .about-skillset-div {
   background-color: #fbfbfd;
   height: fit-content;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 
 .about-skillset-description {
