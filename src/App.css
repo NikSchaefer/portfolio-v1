@@ -129,9 +129,22 @@ header {
   text-align: left;
 
 }
+.home-top-description-link {
+  text-decoration: none;
+  color:blue;
+  font-weight: 500;
+}
+.home-top-description-link:hover {
+    text-decoration: underline;
+}
 .home-top-description {
-  width:70%;
+  width:50%;
   font-size: 20px;
+}
+@media screen and (max-width: 800px) { 
+  .home-top-description {
+    width:70%;
+  }
 }
 
 .home-work-title {

@@ -13,7 +13,13 @@ const Home = () => {
             <div className="home-top-description-title">
                 <h1>Hi there, I'm Nik.</h1>
                 <p className="home-top-description">
-                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit <br /><br />aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam."
+                    I'm a Full Stack Web Developer and UX/UI Designer
+                    focused on making an optimal user-experience across my sites.
+                    Currently I am at self-taught developer working at <a className="home-top-description-link" href='https://www.theesportcompany.com/'>The Esport Company</a>.
+                    <br /><br />
+                    Recently, I was a project lead at <a className="home-top-description-link" href='https://nebulaesports.vercel.app/'>Nebula Esports</a> and have previously
+                    designed products at <a className="home-top-description-link" href='https://k5gaming.vercel.app/'>K5 Gaming</a> and am currently
+                    designing for <a className="home-top-description-link" href=' '>RocketBeast</a>.
                 </p>
 
             </div>
