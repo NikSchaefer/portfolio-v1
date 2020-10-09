@@ -3,6 +3,9 @@ import TEC from './Images/TEC.png'
 import Nebula from './Images/nebula.png'
 import k5red from './Images/k5red.png'
 import RB from './Images/ROCKETBEAST_PFP1.png'
+import { NavLink } from 'react-router-dom';
+
+import { animateScroll as scroll } from "react-scroll";
 
 const Home = () => {
 
@@ -19,14 +22,17 @@ const Home = () => {
                     <br /><br />
                     Recently, I was a project lead at <a className="home-top-description-link" href='https://nebulaesports.vercel.app/'>Nebula Esports</a> and have previously
                     designed products at <a className="home-top-description-link" href='https://k5gaming.vercel.app/'>K5 Gaming</a> and am currently
-                    designing for <a className="home-top-description-link" href=' '>RocketBeast</a>.
+                    designing for <a className="home-top-description-link" href=' '>RocketBeast</a> and <a className="home-top-description-link" href='https://www.theesportcompany.com/'>The Esport Company</a>.
+                    <br /><br />
+                    Feel free to send me a message for possible collaborations, 
+                    new connections, or projects at  <a href="mailto:nikkschaefer@gmail.com" className="home-top-description-link">nikkschaefer@gmail.com</a>.
+                    I should get back to you within 24 hours.
                 </p>
 
             </div>
 
 
             <h1 className="home-work-title">Selected Work</h1>
-
 
             <div class="card" >
                 <img src={TEC} className="card-img" alt="" />
@@ -39,7 +45,6 @@ const Home = () => {
                     </p>
 
             </div>
-
 
             <div class="card">
                 <img src={k5red} alt="" className="card-img" />
@@ -74,10 +79,12 @@ const Home = () => {
                     </p>
                     
             </div>
-
-
-
-
+            <div className="home-div-about">
+            
+                <NavLink className='home-div-about-title' to='/about'>About</NavLink>
+                <NavLink to='/about' className="home-div-about-link" onClick={scroll.scrollToTop}>Learn more about me</NavLink>
+            </div>
+            
         </div>
     )
 }

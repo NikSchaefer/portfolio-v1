@@ -9,6 +9,7 @@ const Footer = () => {
         <div className="footer">
             <footer>
                 <div className="footer-div">
+               
                 <div className="footer-block">
                     <h3>
                         Get In Touch<br />
@@ -32,6 +33,7 @@ const Footer = () => {
                     <a href="https://github.com/NikSchaefer" className="footer-quick-link">Github<br /></a>
                     <a href=" " className="footer-quick-link">Discord<br /></a>
                 </div>
+               
 
                 </div>
             </footer>

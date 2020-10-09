@@ -28,6 +28,23 @@ a[type=text-link] {
   background: #ffb7b7; /* Gecko Browsers */
 }
 
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  background-color: rgb(185, 185, 185);
+  border-radius: 0px;
+  
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(119, 119, 119);
+
+  border-radius: 60px;
+
+}
+
 
 /*    /Misc    */
 
@@ -115,13 +132,12 @@ header {
 
 .home-div {
   position: relative;
-
   background-color: #fbfbfd;
   height: fit-content;
-  padding-bottom: 200px;
   
   
 }
+
 
 .home-top-description-title {
   background-color: white;
@@ -241,7 +257,34 @@ header {
 }
 /*       /Card          */
 
+.home-div-about {
+  padding:100px 0px 100px 0px;
+  display: block;
+  background-color: #fbfbfd;
+}
+.home-div-about-title {
+  display: inline-block;
+  width:35%;
+  text-align: center;
+  padding-left: 0%;
+  color:gray;
+  text-decoration: none;
+}
+.home-div-about-link {
+  display: inline-block;
+  width:50%;
+  color:black;
+  text-align: left;
+  text-decoration-color: black;
+  font-size: 25px;
+}
 
+@media screen and (max-width: 550px) { 
+  .home-div-about-link {
+    width:100%;
+    text-align: center;
+  }
+}
 
 
 @media screen and (max-width: 400px) { 
@@ -253,6 +296,7 @@ header {
     font-size: 20px;
   }
 }
+
 
 /*    /Home    */
 
@@ -326,7 +370,6 @@ footer {
   color:rgb(4, 0, 255);
 
 }
-
 
 
 /*    /Footer    */

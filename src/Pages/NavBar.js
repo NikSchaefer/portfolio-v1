@@ -15,11 +15,8 @@ const NavBar = () => {
                     <NavLink to="/" className="nav-link" exact activeStyle={{borderBottom: 'solid', borderColor: 'lightblue'}} onClick={scroll.scrollToTop}>Work</NavLink>
                     <NavLink to="/about" className="nav-link" exact activeStyle={{borderBottom: 'solid', borderColor: 'lightblue'}} onClick={scroll.scrollToTop}>About</NavLink>
                     <NavLink to="/resume" className="nav-link" exact activeStyle={{borderBottom: 'solid', borderColor: 'lightblue'}} onClick={scroll.scrollToTop}>Resumé</NavLink>
-
                 </div>
-
             </header>
-
         </div>
     )
 }
