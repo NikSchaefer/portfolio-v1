@@ -1,4 +1,30 @@
 
+/*    Variables    */
+.theme-light {
+  --color-primary: #ffffff;
+  --color-secondary: #fbfbfd;
+  --color-accent:#f6f8fc;
+  --font-color: #000000;
+  --card-color: white;
+  background-color: var(--color-secondary);
+
+}
+.theme-dark {
+  --color-primary: #212224;
+  --color-secondary: #333333;
+  --color-accent: #171717;
+  --font-color: #ffffff;
+  --card-color: rgb(87, 87, 87);
+  background-color: var(--color-secondary);
+
+}
+/*    /Variables     */
+
+
+
+
+
+
 
 /*    Animations    */
 
@@ -10,11 +36,11 @@
 
 
 body {
-  background-color: rgb(255, 255, 255);
-}
-.App {
+  background-color: var(--color-primary);
   text-align: center;
+
 }
+
 
 a[type=text-link] {
   color:blue;
@@ -63,7 +89,7 @@ header {
 
   padding-top: 10px;
 
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-primary);
 
   
 }
@@ -79,14 +105,15 @@ header {
 
 
   text-decoration: none;
-  color:rgb(65, 65, 65);
+  color: var(--font-color);
   margin: 0 0 20px 20px;
   font-size: 20px;
   border-color: lightblue;
 
 }
 .nav-link:hover {
-  color:black;
+  color: var(--font-color);
+  
   border-bottom: solid;
   border-color: lightblue;
 
@@ -97,13 +124,9 @@ header {
     left:-40%;
     font-size: 30px;
     text-decoration: none;
-    color:rgb(3, 3, 3);
-
-
+    color:var(--font-color);
 }
-.nav-name:hover {
-  color:black;
-}
+
 @media screen and (max-width: 500px) {
   .nav-name {
     left:auto;
@@ -132,7 +155,7 @@ header {
 
 .home-div {
   position: relative;
-  background-color: #fbfbfd;
+  background-color: var(--color-secondary);
   height: fit-content;
   
   
@@ -140,9 +163,11 @@ header {
 
 
 .home-top-description-title {
-  background-color: white;
+  background-color: var(--color-primary);
   padding:30px 0px 100px 10%;
   text-align: left;
+  color: var(--font-color);
+
 
 }
 .home-top-description-link {
@@ -156,6 +181,8 @@ header {
 .home-top-description {
   width:50%;
   font-size: 20px;
+  color: var(--font-color);
+
 }
 @media screen and (max-width: 800px) { 
   .home-top-description {
@@ -169,6 +196,7 @@ header {
   padding-left: 10%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 26px;
+  color:var(--font-color);
 
 }
 
@@ -192,6 +220,9 @@ header {
   font-size: 17px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 10px;
+  color: var(--font-color);
+  background-color: var(--card-color);
+
 }
 
 .card:hover {
@@ -203,6 +234,7 @@ header {
 
 .home-card-label-div-text-blue {
   background-color: #b1e3ff;
+  color:black;
   font-weight: 600;
   width:fit-content;
   padding:2px 5px;
@@ -213,6 +245,7 @@ header {
 }
 .home-card-label-div-text-orange {
   background-color: #fed674;
+  color:black;
   font-weight: 600;
   width:fit-content;
   padding:2px 5px;
@@ -223,6 +256,7 @@ header {
 }
 .home-card-label-div-text-purple {
   background-color: #ccccfa;
+  color:black;
   font-weight: 600;
   width:fit-content;
   padding:2px 5px;
@@ -233,6 +267,7 @@ header {
 }
 .home-card-label-div-text-red {
   background-color: #fc5c84;
+  color:black;
   font-weight: 600;
   width:fit-content;
   padding:2px 5px;
@@ -242,6 +277,7 @@ header {
 }
 .home-card-label-div-coming {
   background-color: #5cfcd4;
+  color:black;
   font-weight: 600;
   width:fit-content;
   padding:2px 5px;
@@ -260,7 +296,7 @@ header {
 .home-div-about {
   padding:100px 0px 100px 0px;
   display: block;
-  background-color: #fbfbfd;
+  background-color: var(--color-secondary);
 }
 .home-div-about-title {
   display: inline-block;
@@ -273,9 +309,9 @@ header {
 .home-div-about-link {
   display: inline-block;
   width:50%;
-  color:black;
+  color:var(--font-color);
   text-align: left;
-  text-decoration-color: black;
+  text-decoration-color: var(--font-color);
   font-size: 25px;
 }
 
@@ -303,9 +339,11 @@ header {
 
 /*   About     */
 .about-skillset-div {
-  background-color: #fbfbfd;
+  background-color: var(--color-secondary);
   height: fit-content;
   padding-bottom: 100px;
+  color:var(--font-color);
+
 }
 
 .about-skillset-description {
@@ -339,13 +377,11 @@ header {
 
 footer {
   position: relative;
-
-
+  color:var(--font-color);
   height: fit-content;
-  background-color: #f6f8fc;
+  background-color: var(--color-accent);
 }
 .footer-div {
-  background-color: #f6f8fc;
   display: inline-block;
 }
 
@@ -363,7 +399,7 @@ footer {
 
 .footer-quick-link {
   text-decoration: none;
-  color:black;
+  color:var(--font-color);
   transition: all ease-in-out 0.3;
 }
 .footer-quick-link:hover {

@@ -19,7 +19,7 @@ function App() {
     <BrowserRouter>
       
       
-    <div className="App">
+    <div className="theme-light">
 
       <NavBar />
       <Route exact path='/' component={Home} />
