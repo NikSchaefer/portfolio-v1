@@ -20,7 +20,8 @@ const Home = () => {
                     focused on making an optimal user-experience across my sites.
                     Currently I am at self-taught developer working at <a className="home-top-description-link" href='https://www.theesportcompany.com/'>The Esport Company</a>.
                     <br /><br />
-                    Recently, I was a project lead at <a className="home-top-description-link" href='https://nebulaesports.vercel.app/'>Nebula Esports</a> and have previously
+                    Recently, I was a project lead at <a className="home-top-description-link" href='https://nebulaesports.vercel.app/'>Nebula Esports</a>.
+                    I have previously
                     designed products at <a className="home-top-description-link" href='https://k5gaming.vercel.app/'>K5 Gaming</a> and am currently
                     designing for <a className="home-top-description-link" href=' '>RocketBeast</a> and <a className="home-top-description-link" href='https://www.theesportcompany.com/'>The Esport Company</a>.
                     <br /><br />
