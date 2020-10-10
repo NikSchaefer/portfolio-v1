@@ -3,10 +3,6 @@ import {NavLink} from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 
 const NavBar = () => {
-
-    
-    
-
     return (
         <div>
             <header>
