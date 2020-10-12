@@ -10,36 +10,36 @@ import { animateScroll as scroll } from "react-scroll";
 const Home = () => {
 
 
+
     return (
         <div className="home-div">
             
-            <div className="home-top-description-title">
-                <h1>Hi there, I'm Nik.</h1>
+            <div className="home-top-description-div">
+                <p className='home-top-description-title'>Hi there, I'm Nik.</p>
                 <p className="home-top-description">
-                    I'm a Full Stack Web Developer and UX/UI Designer
-                    focused on making an optimal user-experience across my sites.
-                    Currently I am at self-taught developer working at <a className="home-top-description-link" href='https://www.theesportcompany.com/'>The Esport Company</a>.
-                    <br /><br />
-                    Recently, I was a project lead at <a className="home-top-description-link" href='https://nebulaesports.vercel.app/'>Nebula Esports</a>.
-                    I have previously
-                    designed products at <a className="home-top-description-link" href='https://k5gaming.vercel.app/'>K5 Gaming</a> and am currently
-                    designing for <a className="home-top-description-link" href=' '>RocketBeast</a> and <a className="home-top-description-link" href='https://www.theesportcompany.com/'>The Esport Company</a>.
-                    <br /><br />
+                    I am a full stack developer and UI/UX designer located in Minnesota, US. 
+                    I like to contribute to open source projects and I am currently interning for <a className="home-top-description-link" href='https://www.theesportcompany.com/'>The Esport Company</a>.
+
+                     <br /><br />
                     Feel free to send me a message for possible collaborations, 
                     new connections, or projects at  <a href="mailto:nikkschaefer@gmail.com" className="home-top-description-link">nikkschaefer@gmail.com</a>.
                     I should get back to you within 24 hours.
                 </p>
+                <NavLink to='/about' style={{textAlign:'center', fontSize:17}} className="home-div-about-link" onClick={scroll.scrollToTop}>Learn more about me</NavLink>
+
 
             </div>
+            
 
+            <div className='card-div'>
 
-            <h1 className="home-work-title">Selected Work</h1>
+            <p className="home-work-title">Selected Work</p>
 
             <div class="card" >
                 <img src={TEC} className="card-img" alt="" />
                 <div class="container">
                     <h4><b>The Esport Company</b></h4>
-                    <p>Web Developer Internship<br /></p>
+                    <p>Revamping the current website to fit to a growing buisness<br /></p>
                 </div>
                     <p className="home-card-label-div-text-purple">
                         Internship
@@ -51,7 +51,7 @@ const Home = () => {
                 <img src={k5red} alt="" className="card-img" />
                 <div class="container">
                     <h4><b>K5 Gaming</b></h4>
-                    <p>Official K5 Esports Website</p>
+                    <p>Creating a new Website with React to fit a growing orginization</p>
                 </div>
                 <p className="home-card-label-div-text-blue">
                         Full Stack + Design
@@ -62,7 +62,7 @@ const Home = () => {
                 <img src={Nebula} alt="" className="card-img" />
                 <div class="container">
                     <h4><b>Nebula Esports</b></h4>
-                    <p>Official Nebula Esports Website</p>
+                    <p>Full stack + Desgin working as a Project Lead</p>
                 </div>
                 <p className="home-card-label-div-text-orange">
                 Full Stack + Design
@@ -73,12 +73,17 @@ const Home = () => {
                 <img src={RB} alt="" className="card-img-blur" />
                 <div class="container">
                     <h4><b>RocketBeast</b></h4>
-                    <p>Official Rocket Beast Website</p>
+                    <p>Coming Soon
+                    <br />
+                    <br />
+                    </p>
                 </div>
                 <p className="home-card-label-div-text-red">
                         Full Stack + Design
                     </p>
                     
+                    
+            </div>
             </div>
             <div className="home-div-about">
             

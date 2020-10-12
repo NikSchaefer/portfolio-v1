@@ -5,10 +5,21 @@ import { animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
 
+    
+
     return (
         <div className="footer">
             <footer>
                 <div className="footer-div">
+                <div className='about-together-div'>
+                <p className='about-together-text'>
+                    LETS W🚀RK <br />TOGETHER
+
+                </p>
+                <p style={{fontSize:'14px'}}>Collaberations, Connections, Projects <br /></p>
+                Contact me at <a href="mailto:nikkschaefer@gmail.com" type="text-link">nikkschaefer@gmail.com</a><br />
+
+                </div>
                
                 <div className="footer-block">
                     <h3>
@@ -18,14 +29,14 @@ const Footer = () => {
                     <br />
                         Reach me at <a href="mailto:nikkschaefer@gmail.com" type="text-link">nikkschaefer@gmail.com</a> <br />
                       <br />
-                        @ 2020 Design + Code by Nik Schaefer
+                      © 2020 Design + Code by Nik Schaefer
                     </p>
                 </div>
                 <div className="footer-block">
                     <h3>Quick Links</h3>
                     <NavLink to="/" className="footer-quick-link" onClick={scroll.scrollToTop}>Work<br /></NavLink>
                     <NavLink to="/about" className="footer-quick-link" onClick={scroll.scrollToTop}>About<br /></NavLink>
-                    <NavLink to="/resume" className="footer-quick-link" onClick={scroll.scrollToTop}>Resumé<br /></NavLink>
+                    <a href="https://drive.google.com/file/d/11bnEWOG--7ZIix_RyUJYb9c3cbEjP2X_/view?usp=sharing" className="footer-quick-link" onClick={scroll.scrollToTop}>Resumé<br /></a>
                 </div>
                 <div className="footer-block">
                     <h3>Connect</h3>

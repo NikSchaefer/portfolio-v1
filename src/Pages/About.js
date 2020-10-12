@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { animateScroll as scroll } from "react-scroll";
 
 
 
@@ -9,19 +10,26 @@ const About = () => {
     
     return (
     <div>
-
-         <div className="home-top-description-title">
-                <h1>Hi there, I'm Nik.</h1>
+         <div className="home-top-description-div">
+                <p className='home-top-description-title'>Hello Again.</p>
                 <p className="home-top-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa vitae tortor condimentum lacinia. Morbi quis commodo odio aenean sed adipiscing. Penatibus et magnis dis parturient montes nascetur ridiculus. Ipsum suspendisse ultrices gravida dictum. Egestas congue quisque egestas diam in arcu cursus euismod quis. Neque convallis<br /><br />  a cras semper auctor neque vitae tempus. Elit ut aliquam purus sit amet. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Sed tempus urna et pharetra. Eu lobortis elementum nibh tellus. Facilisis volutpat est velit egestas dui id ornare. Nisi lacus sed viverra tellus in hac habitasse platea. Elementum tempus egestas sed sed risus pretium. Sit amet massa vitae tortor. Dui sapien eget mi proin sed. Orci phasellus egestas tellus rutrum tellus pellentesque. Sed viverra tellus in hac.
 
+                    I'm a Full Stack Web Developer and UX/UI Designer
+                    focused on making an optimal user-experience across my sites.
+                    Currently I am at self-taught developer working at <a className="home-top-description-link" href='https://www.theesportcompany.com/'>The Esport Company</a>.
                     <br /><br />
-                    Sem viverra aliquet eget sit amet tellus cras adipiscing. Fames ac turpis egestas integer eget. Magna sit amet purus gravida quis blandit. Libero enim sed faucibus turpis in eu mi bibendum neque. Ut tellus elementum sagittis vitae et leo duis ut. Quam lacus suspendisse faucibus interdum posuere lorem ipsum. Amet luctus venenatis lectus magna fringilla urna. Mauris sit amet massa vitae tortor <br /> <br /> condimentum lacinia. Donec ultrices tincidunt arcu non sodales neque sodales ut. Ornare quam viverra orci sagittis eu volutpat. Non pulvinar neque laoreet suspendisse. Leo in vitae turpis massa sed elementum tempus egestas. Aenean vel elit scelerisque mauris pellentesque. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Nibh sed pulvinar proin gravida hendrerit.               
-                    </p>
-
+                    Recently, I was a project lead at <a className="home-top-description-link" href='https://nebulaesports.vercel.app/'>Nebula Esports</a>.
+                    I have previously
+                    designed products at <a className="home-top-description-link" href='https://k5gaming.vercel.app/'>K5 Gaming</a> and am currently
+                    designing for <a className="home-top-description-link" href=' '>RocketBeast</a> and <a className="home-top-description-link" href='https://www.theesportcompany.com/'>The Esport Company</a>.
+                    <br /><br />
+                    Feel free to send me a message for possible collaborations, 
+                    new connections, or projects at  <a href="mailto:nikkschaefer@gmail.com" className="home-top-description-link">nikkschaefer@gmail.com</a>.
+                    I should get back to you within 24 hours.
+                 </p>
             </div>
             <div className='about-skillset-div'>
-                <h1 className='home-work-title'>Skillset</h1>
+                <p className='home-work-title'>Skillset</p>
 
                 <p className="about-skillset-description">
                     <b>Main Craft</b><br /><br /><br />
@@ -31,7 +39,6 @@ const About = () => {
                     <br />
                     Management <br />
                     <br />
-                   
                 </p>
                 <p className="about-skillset-description">
                 <b>Soft Skills</b><br /><br /><br />
@@ -44,7 +51,6 @@ const About = () => {
                     Adaptability <br />
                     <br />
                     Self-regulation <br />
-                    
                 </p>
                 <p className="about-skillset-description">
                 <b>Code</b><br /><br /><br />
@@ -61,7 +67,7 @@ const About = () => {
                     JSX <br />
                 </p>
                 <p className="about-skillset-description">
-                <b>Frameworks</b><br /><br /><br />
+                <b>Development</b><br /><br /><br />
                     React <br />
                     <br />
                     Flask <br />
@@ -70,20 +76,16 @@ const About = () => {
                     <br />
                     Nodejs <br />
                     <br />
-                    React Native <br />
+                    VSCode/Git <br />
+                    <br />
                 </p>
-                Questions? Contact me at <a href="mailto:nikkschaefer@gmail.com" type="text-link">nikkschaefer@gmail.com</a><br />
-
-
-
             </div>
-
-
+            <div className="home-div-about">
+            
+            <a className='home-div-about-title' href='https://drive.google.com/file/d/11bnEWOG--7ZIix_RyUJYb9c3cbEjP2X_/view?usp=sharing'>Resumé</a>
+            <a href='https://drive.google.com/file/d/11bnEWOG--7ZIix_RyUJYb9c3cbEjP2X_/view?usp=sharing' className="home-div-about-link" onClick={scroll.scrollToTop}>Download Resumé</a>
+        </div>
     </div>
     )
-    
-
 }
-
-
 export default About;
