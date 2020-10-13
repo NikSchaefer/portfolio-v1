@@ -29,10 +29,9 @@ const Footer = () => {
                     <br />
                         Reach me at <a href="mailto:nikkschaefer@gmail.com" type="text-link">nikkschaefer@gmail.com</a> <br />
                       <br />
-                      © 2020 Design + Code by Nik Schaefer
+                      © 2020 Design + <a href='https://github.com/NikSchaefer/portfolio' className='home-div-about-link' style={{color:'white', fontSize:'15px', textAlign:"center", textDecorationColor:'white', width:'fit-content'}}>Code</a> by Nik Schaefer
                     </p>
-                    <a href='https://github.com/NikSchaefer/portfolio' className='home-div-about-link' style={{color:'white', fontSize:'15px', textAlign:"center", textDecoration:'none'}}>View source code</a>
-                </div>
+                      </div>
                 <div className="footer-block">
                     <h3>Quick Links</h3>
                     <NavLink to="/" className="footer-quick-link" onClick={scroll.scrollToTop}>Work<br /></NavLink>

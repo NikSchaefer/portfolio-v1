@@ -98,25 +98,27 @@ header {
   position: relative;
 
   left:25%;
-  top:-10px;
+  top:-20px;
 
 
   text-decoration: none;
   color: var(--font-color);
   margin: 0 0 20px 20px;
-  font-size: 15px;
-  border-color: lightblue;
+  font-size: 19px;
+  
 
 }
 .nav-link:hover {
- color: #2364e8;
+  
+ border-bottom: solid;
+ border-color: lightblue;
 
 }
 .nav-name {
     position: relative;
     padding-left:15%;
     left:-40%;
-    font-size: 20px;
+    font-size: 30px;
     text-decoration: none;
     color:var(--font-color);
 }
@@ -137,6 +139,11 @@ header {
   
 }
 @media screen and (max-width: 500px) {
+
+  .nav-name {
+    left:-20%;
+  }
+
   .nav-link {
    display:none;
    
@@ -244,6 +251,7 @@ header {
 }
 .card-img {
   width: 40%;
+  
   float:left;
   border-radius: 10px;
 }
@@ -259,11 +267,9 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width:800px;  
-  
-  display: inline-block;
-  vertical-align:top;
-  margin:50px 20% 50px 20%;
-
+  height:320px;
+  display: block;
+  margin:50px auto;
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 10px;
@@ -280,16 +286,32 @@ header {
   font-family: inherit;
   padding: 10px 16px;
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:850px){
+
+
+  
+
+
+
+
   .card {
-    width:90%;
-    margin:0px;
-    margin-top:50px;
-    margin-bottom: 50px;
+    width:55%;
+    display:inline-block;
+    height: fit-content;
+
+   
+  }
+  .card-img {
+    padding-bottom: 30px;
+    width: 100%;
+    display:inline-block;
   }
 }
-
-
+@media screen and (max-width:600px) {
+  .card {
+    width:80%;
+  }
+}
 .home-card-label-div-text-blue {
   color:black;
   font-weight: 600;
@@ -300,9 +322,7 @@ header {
   margin-bottom: 20px;
   display: inline-block;
 }
-
 /*       /Card          */
-
 .home-div-about {
   padding:150px 0px 150px 0px;
   display: block;
@@ -324,7 +344,6 @@ header {
   text-decoration-color: var(--font-color);
   font-size: 25px;
 }
-
 
 
 @media screen and (max-width: 550px) { 
