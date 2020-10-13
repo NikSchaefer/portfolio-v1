@@ -14,14 +14,16 @@ const About = () => {
                 <p className='home-top-description-title'>Hello Again.</p>
                 <p className="home-top-description">
 
-                    I'm a Full Stack Web Developer and UX/UI Designer
-                    focused on making an optimal user-experience across my sites.
-                    Currently I am at self-taught developer working at <a className="home-top-description-link" href='https://www.theesportcompany.com/'>The Esport Company</a>.
+                    I'm a self-taught front-end developer and a high school student
+                    based in Minnesota, US
                     <br /><br />
+                    I have taken on roles of design, research and development.
                     Recently, I was a project lead at <a className="home-top-description-link" href='https://nebulaesports.vercel.app/'>Nebula Esports</a>.
                     I have previously
                     designed products at <a className="home-top-description-link" href='https://k5gaming.vercel.app/'>K5 Gaming</a> and am currently
-                    designing for <a className="home-top-description-link" href=' '>RocketBeast</a> and <a className="home-top-description-link" href='https://www.theesportcompany.com/'>The Esport Company</a>.
+                    interning for <a className="home-top-description-link" href='https://www.theesportcompany.com/'>The Esport Company</a>.
+                    <br /><br />
+                    In my free time I like to contribute to open source projects, build my own projects, and further my education.
                     <br /><br />
                     Feel free to send me a message for possible collaborations, 
                     new connections, or projects at  <a href="mailto:nikkschaefer@gmail.com" className="home-top-description-link">nikkschaefer@gmail.com</a>.
@@ -37,7 +39,7 @@ const About = () => {
                     <br />
                     Interaction Design <br />
                     <br />
-                    Management <br />
+                    Front-end Development <br />
                     <br />
                 </p>
                 <p className="about-skillset-description">
