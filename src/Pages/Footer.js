@@ -18,7 +18,7 @@ const Footer = () => {
                 </p>
                 <p style={{fontSize:'14px'}}>Collaberations, Connections, Projects <br /></p>
                 Contact me at <a href="mailto:nikkschaefer@gmail.com" type="text-link">nikkschaefer@gmail.com</a><br />
-
+                
                 </div>
                
                 <div className="footer-block">
@@ -31,6 +31,7 @@ const Footer = () => {
                       <br />
                       © 2020 Design + Code by Nik Schaefer
                     </p>
+                    <a href='https://github.com/NikSchaefer/portfolio' className='home-div-about-link' style={{color:'white', fontSize:'15px', textAlign:"center", textDecoration:'none'}}>View source code</a>
                 </div>
                 <div className="footer-block">
                     <h3>Quick Links</h3>

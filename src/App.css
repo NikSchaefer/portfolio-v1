@@ -2,11 +2,11 @@
 /*    Variables #d7d6d1   */
 .theme-light {
   --color-primary: #292929;
-  --color-secondary: #cccac5;
-  --color-accent:#d8d6d1;
+  --color-secondary: #fbfbfd;
+  --color-accent:#ffffff;
   --font-color: #000000;
   --font-color-o: #ffffff;
-  --card-color: rgb(245, 245, 245);
+  --card-color: rgb(255, 255, 255);
   background-color: var(--color-secondary);
 
 }
@@ -20,10 +20,6 @@
 
 }
 /*    /Variables     */
-
-
-
-
 
 
 
@@ -44,7 +40,7 @@ body {
 
 
 a[type=text-link] {
-  color:blue;
+  color:#2364e8;
   text-decoration: none;
 }
 a[type=text-link]:hover {
@@ -95,6 +91,7 @@ header {
 }
 .nav-link-div {
   position: relative;
+  display:block;
 }
 
 .nav-link {
@@ -112,7 +109,7 @@ header {
 
 }
 .nav-link:hover {
- text-decoration: underline;
+ color: #2364e8;
 
 }
 .nav-name {
@@ -123,21 +120,56 @@ header {
     text-decoration: none;
     color:var(--font-color);
 }
-
-@media screen and (max-width: 500px) {
-  .nav-name {
-    left:auto;
-    text-align: center;
-  }
-  .nav-link {
-    top:0px;
-    left:0%;
-  }
-
-
-
-
+.nav-menu {
+  display:none;
+}
+#nav-menu-div {
+  display:none;
+}
+.nav-link-menu {
+  color:var(--font-color);
+  text-decoration: none;
+  width:100%;
+  margin: 10%;
+}
+.nav-link-menu:hover {
+  background-color: white;
   
+}
+@media screen and (max-width: 500px) {
+  .nav-link {
+   display:none;
+   
+  }
+  .nav-menu {
+    display:inline-block;
+    width:40px;
+    margin-left:60%;
+  }
+  .nav-menu:hover + #nav-menu-div {
+    display:block;
+    position: relative;
+    height: fit-content;
+    width:80%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: auto;
+    text-align: left;
+    padding: 5% 0% 5% 0%;
+    z-index: 1;
+  }
+  #nav-menu-div:hover {
+    display:block;
+    position: relative;
+    height: fit-content;
+    width:80%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: auto;
+    text-align: left;
+    padding: 5% 0% 5% 0%;
+    z-index: 1;
+  }
 }
 
 
@@ -169,10 +201,11 @@ header {
 }
 .home-top-description-title {
   font-size: 35px;
+  margin-bottom:0px;
 }
 .home-top-description-link {
   text-decoration: none;
-  color:blue;
+  color:#2364e8;
   font-weight: 500;
 }
 .home-top-description-link:hover {
@@ -328,6 +361,8 @@ header {
   text-decoration-color: var(--font-color);
   font-size: 25px;
 }
+
+
 
 @media screen and (max-width: 550px) { 
   .home-div-about-link {

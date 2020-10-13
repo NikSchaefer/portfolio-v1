@@ -1,8 +1,13 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
+import Menu from './Images/Menu.svg'
 
 const NavBar = () => {
+
+    
+    
+
     return (
         <div>
             <header>
@@ -12,6 +17,15 @@ const NavBar = () => {
                     <NavLink to="/about" className="nav-link" exact activeStyle={{textDecoration:'underline'}} onClick={scroll.scrollToTop}>About</NavLink>
                     <a href="https://drive.google.com/file/d/11bnEWOG--7ZIix_RyUJYb9c3cbEjP2X_/view?usp=sharing" className="nav-link" exact activeStyle={{borderBottom: 'solid', borderColor: 'lightblue'}} onClick={scroll.scrollToTop}>Resumé</a>
                 </div>
+              
+                    <img src={Menu} alt="" className='nav-menu' />
+                        <div id="nav-menu-div">
+                            <NavLink to="/" className="nav-link-menu" onClick={scroll.scrollToTop}>Work</NavLink> 
+                            <br /><br />
+                            <NavLink to="/about" className="nav-link-menu" onClick={scroll.scrollToTop}>About</NavLink> 
+                            <br /><br />
+                            <a href="https://drive.google.com/file/d/11bnEWOG--7ZIix_RyUJYb9c3cbEjP2X_/view?usp=sharing" className="nav-link-menu" exact activeStyle={{borderBottom: 'solid', borderColor: 'lightblue'}} onClick={scroll.scrollToTop}>Resumé</a>
+                    </div>
             </header>
         </div>
     )

@@ -17,8 +17,9 @@ const Home = () => {
             <div className="home-top-description-div">
                 <p className='home-top-description-title'>Hi there, I'm Nik.</p>
                 <p className="home-top-description">
-                    I am a full stack developer and UI/UX designer located in Minnesota, US. 
-                    I like to contribute to open source projects and I am currently interning for <a className="home-top-description-link" href='https://www.theesportcompany.com/'>The Esport Company</a>.
+                    I am a self-taught front-end developer and a student located in Minnesota, US. 
+                    I am currently interning for <a className="home-top-description-link" href='https://www.theesportcompany.com/'>The Esport Company</a> and working 
+                    for <a className="home-top-description-link" href='https://nebulaesports.vercel.app/'>Nebula Esports</a>. 
 
                      <br /><br />
                     Feel free to send me a message for possible collaborations, 
@@ -62,7 +63,7 @@ const Home = () => {
                 <img src={Nebula} alt="" className="card-img" />
                 <div class="container">
                     <h4><b>Nebula Esports</b></h4>
-                    <p>Full stack + Desgin working as a Project Lead</p>
+                    <p>Full stack + Design working as a Project Lead</p>
                 </div>
                 <p className="home-card-label-div-text-orange">
                 Full Stack + Design
