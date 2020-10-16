@@ -193,11 +193,7 @@ header {
   position: relative;
   background-color: var(--color-secondary);
   height: fit-content;
-  
-  
 }
-
-
 .home-top-description-div {
   background-color: var(--color-accent);
   padding:30px 0px 100px 10%;
@@ -275,24 +271,20 @@ header {
   border-radius: 10px;
   color: var(--font-color);
   background-color: var(--card-color);
-
+  cursor: pointer;
 }
 
 .card:hover {
   box-shadow: 0 32px 72px 0 rgba(0,0,0,0.2);
   transform:scale(1.05);
+  cursor: pointer;
 }
 .container {
   font-family: inherit;
   padding: 10px 16px;
+  
 }
 @media screen and (max-width:850px){
-
-
-  
-
-
-
 
   .card {
     width:55%;
@@ -315,7 +307,6 @@ header {
 .home-card-label-div-text-blue {
   color:black;
   font-weight: 600;
-  width:fit-content;
   padding:2px 5px;
   border-radius: 10%;
   margin:auto;
@@ -411,10 +402,53 @@ header {
   }
 
 }
-/*   /About     */
+/*  /About     */
 
 
+/*   Work    */
+.work-div {
+  height: fit-content;
+  border-top: solid;
+  border-color: rgb(216, 216, 216);
+  border-width: 1px;
+}
+.work-img-div {
+  background: linear-gradient(90deg, rgba(111,0,173,1) 0%, rgba(72,0,173,1) 49%, rgba(119,0,170,1) 100%);
+  height: 600px;
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+}
+.work-img {
+  position: relative;
+  height: 50%;
+  border-radius: 5% 5% 0 0;
+}
+.work-role {
+  display:flex
+}
+.work-role-content {
+  margin:5% auto;
 
+}
+.work-role-title {
+  font-size: 25px;
+  font-weight: 500;
+}
+.work-colored {
+  color:black;
+  font-weight: 600;
+  padding:2px 5px;
+  border-radius: 10%;
+  margin:auto;
+  margin-bottom: 20px;
+  display: inline-block;
+  background-color:#b1e3ff;
+  margin-left:10%;
+  font-size: 25px;
+}
+
+/*  /Work    */
 
 
 

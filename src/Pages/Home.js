@@ -18,22 +18,17 @@ const Home = () => {
                 <p className="home-top-description">
                     I am a self-taught front-end developer and a student located in Minnesota, US. 
                     I am currently interning for <a className="home-top-description-link" href='https://www.theesportcompany.com/'>The Esport Company</a>.
-
                      <br /><br />
                     Feel free to send me a message for possible collaborations, 
                     new connections, or projects at  <a href="mailto:nikkschaefer@gmail.com" className="home-top-description-link">nikkschaefer@gmail.com</a>.
                     I should get back to you within 24 hours.
                 </p>
                 <NavLink to='/about' style={{textAlign:'center', fontSize:17}} className="home-div-about-link" onClick={scroll.scrollToTop}>Learn more about me</NavLink>
-
-
             </div>
-            
-
             <div className='card-div'>
-
             <p className="home-work-title">Selected Work</p>
 
+            <NavLink to='/theesportcompany' style={{ textDecoration:'none'}} onClick={scroll.scrollToTop}>
             <div class="card" >
                 <img src={TEC} className="card-img" alt="" />
                 <div class="container">
@@ -44,10 +39,9 @@ const Home = () => {
                         Internship
                     </p>
                 </div>
-                    
-
             </div>
-
+            </NavLink>
+            <NavLink to='/nebula' style={{  textDecoration:'none'}} onClick={scroll.scrollToTop}>
             <div class="card">
                 <img src={Nebula} alt="" className="card-img" />
                 <div class="container">
@@ -58,9 +52,9 @@ const Home = () => {
                         Development + Design
                     </p>
                 </div>
-                
             </div>
-            
+            </NavLink>
+            <NavLink to='/k5gaming' style={{  textDecoration:'none'}} onClick={scroll.scrollToTop}>
             <div class="card">
                 <img src={k5red} alt="" className="card-img" />
                 <div class="container">
@@ -73,7 +67,7 @@ const Home = () => {
                 </div>
                 
             </div>
-
+            </NavLink>
            
 
            
