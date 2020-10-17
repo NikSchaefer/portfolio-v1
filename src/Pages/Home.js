@@ -3,16 +3,10 @@ import TEC from './Images/TEC.png'
 import Nebula from './Images/nebula.png'
 import k5red from './Images/k5red.png'
 import { NavLink } from 'react-router-dom';
-
 import { animateScroll as scroll } from "react-scroll";
-
 const Home = () => {
-
-
-
     return (
         <div className="home-div">
-            
             <div className="home-top-description-div">
                 <p className='home-top-description-title'>Hi there, I'm Nik.</p>
                 <p className="home-top-description">
@@ -27,7 +21,6 @@ const Home = () => {
             </div>
             <div className='card-div'>
             <p className="home-work-title">Selected Work</p>
-
             <NavLink to='/theesportcompany' style={{ textDecoration:'none'}} onClick={scroll.scrollToTop}>
             <div class="card" >
                 <img src={TEC} className="card-img" alt="" />
@@ -65,21 +58,14 @@ const Home = () => {
                     Development + Design
                     </p>
                 </div>
-                
             </div>
             </NavLink>
-           
-
-           
             </div>
             <div className="home-div-about">
-            
                 <NavLink className='home-div-about-title' to='/about'>About</NavLink>
                 <NavLink to='/about' className="home-div-about-link" onClick={scroll.scrollToTop}>Learn more about me</NavLink>
             </div>
-            
         </div>
     )
 }
-
 export default Home;

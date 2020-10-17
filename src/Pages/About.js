@@ -1,19 +1,11 @@
 import React from 'react';
-
 import { animateScroll as scroll } from "react-scroll";
-
-
-
-
 const About = () => {
-
-    
     return (
     <div>
          <div className="home-top-description-div">
                 <p className='home-top-description-title'>Hello Again.</p>
                 <p className="home-top-description">
-
                     I'm a self-taught front-end developer and a high school student
                     based in Minnesota, US
                     <br /><br />
@@ -32,7 +24,6 @@ const About = () => {
             </div>
             <div className='about-skillset-div'>
                 <p className='home-work-title'>Skillset</p>
-
                 <p className="about-skillset-description">
                     <b>Main Craft</b><br /><br /><br />
                     Product Design <br />
@@ -83,7 +74,6 @@ const About = () => {
                 </p>
             </div>
             <div className="home-div-about">
-            
             <a className='home-div-about-title' href='https://drive.google.com/file/d/11bnEWOG--7ZIix_RyUJYb9c3cbEjP2X_/view?usp=sharing'>Resumé</a>
             <a href='https://drive.google.com/file/d/11bnEWOG--7ZIix_RyUJYb9c3cbEjP2X_/view?usp=sharing' className="home-div-about-link" onClick={scroll.scrollToTop}>Download Resumé</a>
         </div>
