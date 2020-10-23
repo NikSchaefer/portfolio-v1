@@ -6,7 +6,7 @@ const About = () => {
             <div className="home-top-description-div">
                 <p className='home-top-description-title'>Hello Again.</p>
                 <p className="home-top-description">
-                    I'm a self-taught front-end developer and a high school student
+                    I'm a self-taught full-stack developer and a high school student
                     based in Minnesota, US
                     <br /><br />
                     I have taken on roles of design, research and development.
@@ -39,8 +39,6 @@ const About = () => {
                     <br />
                     Self-awareness <br />
                     <br />
-                    Listening <br />
-                    <br />
                     Adaptability <br />
                     <br />
                     Self-regulation <br />
@@ -63,7 +61,7 @@ const About = () => {
                     <b>Development</b><br /><br /><br />
                     React <br />
                     <br />
-                    Flask <br />
+                    Firebase <br />
                     <br />
                     Unity <br />
                     <br />

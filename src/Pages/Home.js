@@ -4,17 +4,23 @@ import Nebula from './Images/nebula.png'
 import k5red from './Images/k5red.png'
 import { NavLink } from 'react-router-dom';
 import { animateScroll as scroll } from "react-scroll";
+import copy from './Images/Copy.svg'
+
+
+
+
+
 const Home = () => {
     return (
         <div className="home-div">
             <div className="home-top-description-div">
                 <p className='home-top-description-title'>Hi there, I'm Nik.</p>
                 <p className="home-top-description">
-                    I am a self-taught front-end developer and a student located in Minnesota, US. 
+                    I am a self-taught full-stack developer and a student located in Minnesota, US. 
                     I am currently interning for <a className="home-top-description-link" href='https://www.theesportcompany.com/'>The Esport Company</a>.
                      <br /><br />
                     Feel free to send me a message for possible collaborations, 
-                    new connections, or projects at  <a href="mailto:nikkschaefer@gmail.com" className="home-top-description-link">nikkschaefer@gmail.com</a>.
+                    new connections, or projects at  <a href="mailto:nikkschaefer@gmail.com" className="home-top-description-link">nikkschaefer@gmail.com<img className='copy' src={copy} /></a>.
                     I should get back to you within 24 hours.
                 </p>
                 <NavLink to='/about' style={{textAlign:'center', fontSize:17}} className="home-div-about-link" onClick={scroll.scrollToTop}>Learn more about me</NavLink>

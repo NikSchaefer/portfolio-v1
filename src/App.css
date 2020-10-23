@@ -16,6 +16,9 @@
 }
 /*    /Variables     */
 /*    Misc    */
+.copy {
+  width:30px;
+}
 body {
   text-align: center;
 }
