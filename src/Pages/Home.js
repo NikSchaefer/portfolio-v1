@@ -27,7 +27,7 @@ const Home = () => {
             </div>
             <div className='card-div'>
             <p className="home-work-title">Selected Work</p>
-            <NavLink to='/theesportcompany' style={{ textDecoration:'none'}} onClick={scroll.scrollToTop}>
+                <NavLink to='/theesportcompany' style={{ textDecoration: 'none', cursor: 'default'}} onClick={scroll.scrollToTop}>
             <div class="card" >
                 <img src={TEC} className="card-img" alt="" />
                 <div class="container">
@@ -40,7 +40,7 @@ const Home = () => {
                 </div>
             </div>
             </NavLink>
-            <NavLink to='/nebula' style={{  textDecoration:'none'}} onClick={scroll.scrollToTop}>
+                <NavLink to='/nebula' style={{ textDecoration: 'none', cursor: 'default'}} onClick={scroll.scrollToTop}>
             <div class="card">
                 <img src={Nebula} alt="" className="card-img" />
                 <div class="container">
@@ -53,7 +53,7 @@ const Home = () => {
                 </div>
             </div>
             </NavLink>
-            <NavLink to='/k5gaming' style={{  textDecoration:'none'}} onClick={scroll.scrollToTop}>
+            <NavLink to='/k5gaming' style={{  textDecoration:'none', cursor:'default'}} onClick={scroll.scrollToTop}>
             <div class="card">
                 <img src={k5red} alt="" className="card-img" />
                 <div class="container">

@@ -211,7 +211,6 @@ header {
   border-radius: 10px;
   color: var(--font-color);
   background-color: var(--card-color);
-  cursor: pointer;
 }
 .card:hover {
   box-shadow: 0 32px 72px 0 rgba(0,0,0,0.2);
