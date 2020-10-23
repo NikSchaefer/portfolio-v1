@@ -6,7 +6,6 @@
   --font-color: #000000;
   --font-color-o: #ffffff;
   --card-color: rgb(255, 255, 255);
-  background-color: var(--color-secondary);
 }
 .theme-dark {
   --color-primary: #212224;
@@ -14,12 +13,10 @@
   --color-accent: #171717;
   --font-color: #ffffff;
   --card-color: rgb(87, 87, 87);
-  background-color: var(--color-secondary);
 }
 /*    /Variables     */
 /*    Misc    */
 body {
-  background-color: var(--color-primary);
   text-align: center;
 }
 a[type=text-link] {

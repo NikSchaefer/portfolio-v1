@@ -2,8 +2,8 @@ import React from 'react';
 import { animateScroll as scroll } from "react-scroll";
 const About = () => {
     return (
-    <div>
-         <div className="home-top-description-div">
+        <div>
+            <div className="home-top-description-div">
                 <p className='home-top-description-title'>Hello Again.</p>
                 <p className="home-top-description">
                     I'm a self-taught front-end developer and a high school student
@@ -17,7 +17,7 @@ const About = () => {
                     <br /><br />
                     In my free time I like to contribute to open source projects, build my own projects, and further my education.
                     <br /><br />
-                    Feel free to send me a message for possible collaborations, 
+                    Feel free to send me a message for possible collaborations,
                     new connections, or projects at  <a href="mailto:nikkschaefer@gmail.com" className="home-top-description-link">nikkschaefer@gmail.com</a>.
                     I should get back to you within 24 hours.
                  </p>
@@ -34,7 +34,7 @@ const About = () => {
                     <br />
                 </p>
                 <p className="about-skillset-description">
-                <b>Soft Skills</b><br /><br /><br />
+                    <b>Soft Skills</b><br /><br /><br />
                     Communication <br />
                     <br />
                     Self-awareness <br />
@@ -46,7 +46,7 @@ const About = () => {
                     Self-regulation <br />
                 </p>
                 <p className="about-skillset-description">
-                <b>Code</b><br /><br /><br />
+                    <b>Code</b><br /><br /><br />
                     CSS <br />
                     <br />
                     HTML <br />
@@ -60,7 +60,7 @@ const About = () => {
                     JSX <br />
                 </p>
                 <p className="about-skillset-description">
-                <b>Development</b><br /><br /><br />
+                    <b>Development</b><br /><br /><br />
                     React <br />
                     <br />
                     Flask <br />
@@ -74,10 +74,10 @@ const About = () => {
                 </p>
             </div>
             <div className="home-div-about">
-            <a className='home-div-about-title' href='https://drive.google.com/file/d/11bnEWOG--7ZIix_RyUJYb9c3cbEjP2X_/view?usp=sharing'>Resumé</a>
-            <a href='https://drive.google.com/file/d/11bnEWOG--7ZIix_RyUJYb9c3cbEjP2X_/view?usp=sharing' className="home-div-about-link" onClick={scroll.scrollToTop}>Download Resumé</a>
+                <a className='home-div-about-title' href='https://drive.google.com/file/d/11bnEWOG--7ZIix_RyUJYb9c3cbEjP2X_/view?usp=sharing'>Resumé</a>
+                <a href='https://drive.google.com/file/d/11bnEWOG--7ZIix_RyUJYb9c3cbEjP2X_/view?usp=sharing' className="home-div-about-link" onClick={scroll.scrollToTop}>Download Resumé</a>
+            </div>
         </div>
-    </div>
     )
 }
 export default About;
