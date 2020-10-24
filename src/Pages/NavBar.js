@@ -5,7 +5,21 @@ import Menu from './Images/Menu.svg'
 
 const NavBar = () => {
 
+    let b = true;
+    function destroy() {
 
+        let a = document.getElementById('nav-menu-div');
+        if (b) {
+            a.style.display = 'none';
+            b = false;
+        }
+        if (a.style.display === 'none') {
+            a.style.display = 'flex'
+        } else {
+            a.style.display = 'none';
+        }
+        scroll.scrollToTop();
+    }
 
 
     return (
@@ -21,15 +35,14 @@ const NavBar = () => {
                     <a href="https://drive.google.com/file/d/11bnEWOG--7ZIix_RyUJYb9c3cbEjP2X_/view?usp=sharing" className="nav-link" exact activeStyle={{ borderBottom: 'solid', borderColor: 'lightblue' }} onClick={scroll.scrollToTop}>Resumé</a>
                 </div>
 
-                <img src={Menu} alt="" className='nav-menu' />
-                <div id="nav-menu-div">
-                    <NavLink to="/" className="nav-link-menu" onClick={scroll.scrollToTop}>Work</NavLink>
-                    <br /><br />
-                    <NavLink to="/about" className="nav-link-menu" onClick={scroll.scrollToTop}>About</NavLink>
-                    <br /><br />
-                    <a href="https://drive.google.com/file/d/11bnEWOG--7ZIix_RyUJYb9c3cbEjP2X_/view?usp=sharing" className="nav-link-menu" exact activeStyle={{ borderBottom: 'solid', borderColor: 'lightblue' }} onClick={scroll.scrollToTop}>Resumé</a>
-                </div>
+                <img src={Menu} alt="" onClick={destroy} className='nav-menu' />
+                
             </header>
+            <div id="nav-menu-div">
+                <NavLink to="/" className="nav-link-menu" onClick={destroy}>Work</NavLink>
+                <NavLink to="/about" className="nav-link-menu" onClick={destroy}>About</NavLink>
+                <a href="https://drive.google.com/file/d/11bnEWOG--7ZIix_RyUJYb9c3cbEjP2X_/view?usp=sharing" className="nav-link-menu" exact activeStyle={{ borderBottom: 'solid', borderColor: 'lightblue' }} onClick={scroll.scrollToTop}>Resumé</a>
+            </div>
         </div>
     )
 }

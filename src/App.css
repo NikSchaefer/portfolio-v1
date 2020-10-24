@@ -51,6 +51,7 @@ body::-webkit-scrollbar-thumb {
 header {
   position: relative;
   padding-top: 100px;
+  padding-bottom: 50px;
   width:80%;
   margin:auto;
   color:var(--font-color);
@@ -66,7 +67,8 @@ header {
 .nav-link {
   text-decoration: none;
   color: var(--font-color);
-  margin: auto auto 20px 20px;
+  margin: auto 20px;
+  vertical-align: baseline;
   font-size: 19px;
 }
 .nav-link:hover {
@@ -75,10 +77,10 @@ header {
  border-color: lightblue;
 }
 .nav-name {
-    position: relative;
-    font-size: 30px;
-    text-decoration: none;
-    color:var(--font-color);
+  position: relative;
+  font-size: 30px;
+  text-decoration: none;
+  color:var(--font-color);
 }
 .nav-menu {
   display:none;
@@ -89,50 +91,32 @@ header {
 .nav-link-menu {
   color:var(--font-color);
   text-decoration: none;
-  width:100%;
-  margin: 10%;
+  
+  margin: 20px auto;
 }
 .nav-link-menu:hover {
   background-color: white;
-  
 }
-@media screen and (max-width: 500px) {
-
-  .nav-name {
-    left:-20%;
+#nav-menu-div {
+    position: relative;
+    width:80%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: auto;
+    text-align: left;
+    z-index: 1;
   }
+@media screen and (max-width: 600px) {
+
+  
   .nav-link {
    display:none;
   }
   .nav-menu {
-    display:inline-block;
+    display:flex;
     width:40px;
-    margin-left:60%;
   }
-  .nav-menu:hover + #nav-menu-div {
-    display:block;
-    position: relative;
-    height: fit-content;
-    width:80%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin: auto;
-    text-align: left;
-    padding: 5% 0% 5% 0%;
-    z-index: 1;
-  }
-  #nav-menu-div:hover {
-    display:block;
-    position: relative;
-    height: fit-content;
-    width:80%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin: auto;
-    text-align: left;
-    padding: 5% 0% 5% 0%;
-    z-index: 1;
-  }
+  
 }
 /*    /NavBar    */
 /*    Home    */
@@ -201,7 +185,7 @@ header {
   font-size: 16px;
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
   transition: 0.3s;
   width:800px;  
   height:320px;
@@ -214,8 +198,8 @@ header {
   background-color: var(--card-color);
 }
 .card:hover {
-  box-shadow: 0 32px 72px 0 rgba(0,0,0,0.2);
-  transform:scale(1.05);
+  box-shadow: 0 32px 72px 0 rgba(0,0,0,0.3);
+  transform:scale(1.02);
   cursor: pointer;
 }
 .container {

@@ -33,6 +33,12 @@ const K5 = () => {
                     <p>VSCode</p>
                     <p>Github</p>
                 </div>
+                <div className='work-role-content'>
+                    <p className='work-role-title'>Code</p>
+                    <p>Javascript</p>
+                    <p>CSS</p>
+                    <p>HTML</p>
+                </div>
             </div>
             <p className='work-colored' style={{ backgroundColor: '#b1e3ff', float: "left", marginLeft: '10%' }}>Intro</p>
             <div className="home-top-description-div" style={{ backgroundColor: '#fbfbfd' }}>
