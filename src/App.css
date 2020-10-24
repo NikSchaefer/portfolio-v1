@@ -50,21 +50,23 @@ body::-webkit-scrollbar-thumb {
 /*    NavBar    */
 header {
   position: relative;
-  padding-top: 10px;
+  padding-top: 100px;
+  width:80%;
+  margin:auto;
   color:var(--font-color);
   background-color: var(--color-accent);
-}
+  display:flex;
+  justify-content: space-between}
 .nav-link-div {
-  position: relative;
-  display:block;
+  display:flex;
+  justify-self: right;
+  margin:auto;
+
 }
 .nav-link {
-  position: relative;
-  left:25%;
-  top:-20px;
   text-decoration: none;
   color: var(--font-color);
-  margin: 0 0 20px 20px;
+  margin: auto auto 20px 20px;
   font-size: 19px;
 }
 .nav-link:hover {
@@ -74,8 +76,6 @@ header {
 }
 .nav-name {
     position: relative;
-    padding-left:15%;
-    left:-40%;
     font-size: 30px;
     text-decoration: none;
     color:var(--font-color);
@@ -175,6 +175,7 @@ header {
 .home-work-title {
   text-align: left;
   padding-top: 50px;
+  margin:auto;
   padding-left: 10%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 26px;
