@@ -27,7 +27,7 @@ const Home = () => {
             </div>
             <div className='card-div'>
             <p className="home-work-title">Selected Work</p>
-                <NavLink to='/theesportcompany' style={{ textDecoration: 'none', cursor: 'default'}} onClick={scroll.scrollToTop}>
+                <NavLink to='/theesportcompany' style={{ textDecoration: 'none', cursor: 'default' }} onClick={scroll.scrollToTop}>
             <div class="card" >
                 <img src={TEC} className="card-img" alt="" />
                 <div class="container">

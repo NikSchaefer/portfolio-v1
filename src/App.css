@@ -172,7 +172,6 @@ header {
 }
 .card-img {
   width: 40%;
-  
   float:left;
   border-radius: 10px;
 }
@@ -226,8 +225,8 @@ header {
 .home-card-label-div-text-blue {
   color:black;
   font-weight: 600;
-  padding:2px 5px;
-  border-radius: 10%;
+  padding:2px 10px;
+  border-radius: 10px;
   margin:auto;
   margin-bottom: 20px;
   display: inline-block;
@@ -253,6 +252,9 @@ header {
   text-align: left;
   text-decoration-color: var(--font-color);
   font-size: 25px;
+}
+.home-div-about-link:hover {
+  text-decoration: none;
 }
 @media screen and (max-width: 550px) { 
   .home-div-about-link {
