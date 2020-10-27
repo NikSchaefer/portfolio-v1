@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 My Developer Portfolio, Check it out!
 
 ## Link
