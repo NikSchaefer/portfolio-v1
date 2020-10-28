@@ -36,7 +36,7 @@ const NavBar = () => {
                 </div>
 
                 <img src={Menu} alt="" onClick={destroy} className='nav-menu' />
-                
+
             </header>
             <div id="nav-menu-div">
                 <NavLink to="/" className="nav-link-menu" onClick={destroy}>Work</NavLink>
