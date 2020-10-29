@@ -2,9 +2,11 @@ import React from 'react';
 import TEC from './Images/TEC.png'
 import Nebula from './Images/nebula.png'
 import k5red from './Images/k5red.png'
+import spiral from './Images/Spiral.png'
 import { NavLink } from 'react-router-dom';
 import { animateScroll as scroll } from "react-scroll";
 import copy from './Images/Copy.svg'
+import placeholder from './Images/placeholder.png'
 const Home = () => {
     return (
         <div className="home-div">
@@ -21,7 +23,7 @@ const Home = () => {
                 <NavLink to='/about' style={{ textAlign: 'center', fontSize: 17 }} className="home-div-about-link" onClick={scroll.scrollToTop}>Learn more about me</NavLink>
             </div>
             <div className='card-div'>
-                <p className="home-work-title">Selected Work</p>
+                <p className="home-work-title">Selected Work + Projects</p>
                 <NavLink to='/theesportcompany' style={{ textDecoration: 'none', cursor: 'default' }} onClick={scroll.scrollToTop}>
                     <div class="card" >
                         <img src={TEC} className="card-img" alt="" />
@@ -29,9 +31,7 @@ const Home = () => {
                             <p className='gray'>WEB DESIGN / UX / DEVELOPMENT</p>
                             <h4 style={{ fontSize: '30px' }}><b>The Esport Company</b></h4>
                             <p>Revamping the current website to fit to a growing buisness<br /></p>
-                            <p className="home-card-label-div-text-blue" style={{ backgroundColor: '#ccccfa' }}>
-                                Internship
-                    </p>
+                            <p className="home-card-label-div-text-blue" style={{ backgroundColor: '#ccccfa' }}>Internship</p>
                         </div>
                     </div>
                 </NavLink>
@@ -57,6 +57,32 @@ const Home = () => {
                             <p>Creating a new Website with React to fit a growing orginization</p>
                             <p className="home-card-label-div-text-blue" style={{ backgroundColor: '#b1e3ff' }}>
                                 Development + Design
+                    </p>
+                        </div>
+                    </div>
+                </NavLink>
+                <NavLink to='/spiral' style={{ textDecoration: 'none', cursor: 'default' }} onClick={scroll.scrollToTop}>
+                    <div class="card">
+                        <img src={spiral} alt="" className="card-img" />
+                        <div class="container">
+                            <p className='gray'>DESIGN / RESEARCH / DEVELOPMENT</p>
+                            <h4><b>Spiral Esports</b></h4>
+                            <p>Creating professional a site for Spiral Esports with React</p>
+                            <p className="home-card-label-div-text-blue" style={{ backgroundColor: '#b1e3ff' }}>
+                                Development + Design
+                    </p>
+                        </div>
+                    </div>
+                </NavLink>
+                <NavLink to='/umbrella' style={{ textDecoration: 'none', cursor: 'default' }} onClick={scroll.scrollToTop}>
+                    <div class="card">
+                        <img src={placeholder} alt="" className="card-img" />
+                        <div class="container">
+                            <p className='gray'>DESIGN / RESEARCH / DEVELOPMENT</p>
+                            <h4><b>Umbrella</b></h4>
+                            <p>Creating a Mobile App and Website</p>
+                            <p className="home-card-label-div-text-blue" style={{ backgroundColor: '#b1e3ff' }}>
+                                Mobile + Website
                     </p>
                         </div>
                     </div>
