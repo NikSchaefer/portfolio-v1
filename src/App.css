@@ -52,16 +52,16 @@ a[type=text-link]:hover {
 }
 
 body::-webkit-scrollbar {
-  width: 1em;
+  width: 0.7em;
 }
 
 body::-webkit-scrollbar-track {
-  background-color: rgb(185, 185, 185);
+  background-color: #292929;
   border-radius: 0px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(119, 119, 119);
+  background-color: orange;
   border-radius: 60px;
 }
 
@@ -248,6 +248,24 @@ li {
 
 /*   Skills     */
 
+@keyframes squishTurn {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1.2, 1);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  75% {
+    transform: scale(0.1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
 .skills-div {
   display: flex;
   flex-direction: row;
@@ -260,12 +278,24 @@ li {
 .skill-content {
   margin: 10%;
   font-family: Calibre, sans-serif;
+  transition: all ease-in-out 0.3s;
+}
+
+.skill-content:hover {
+  animation: squishTurn 0.7s;
+  cursor: pointer;
 }
 
 .skill-alt {
   margin: 10%;
   font-family: Calibre, sans-serif;
-  color: orange
+  color: orange;
+  transition: all ease-in-out 0.3s;
+}
+
+.skill-alt:hover {
+  animation: squishTurn 0.7s;
+  cursor: pointer;
 }
 
 /*  /Skills     */
