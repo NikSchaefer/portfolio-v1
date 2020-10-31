@@ -1,0 +1,24 @@
+import React from 'react'
+import { toExp } from '../NavBar'
+const Intro = () => {
+    return (
+        <div>
+            <div className="intro-div">
+                <div className='intro-content'>
+
+                <p className='intro-text'>
+                    <p className="intro-tiny-text">👋 there!</p>
+                    
+
+                    I am <span style={{color:'orange'}}>Nik Schaefer.</span><br />
+                    I love creating beautiful and<br />
+                    fun stuff for the web.<br />
+                    </p>
+                    <p className='intro-button' onClick={toExp} id='intro-button-full'>Learn More</p>
+                    <a href="mailto:nikkschaefer@gmail.com" className='intro-button'>Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    )
+}
+export default Intro;

@@ -1,25 +1,29 @@
 import React from 'react';
 import './App.css';
-import Home from './Pages/Home'
 import NavBar from './Pages/NavBar'
 import Footer from './Pages/Footer'
-import About from './Pages/About'
-import TEC from './Pages/Work/TEC'
-import Nebula from './Pages/Work/Nebula'
-import K5 from './Pages/Work/K5'
-import {BrowserRouter,Route,} from "react-router-dom";
+import About from './Pages/Sections/About'
+
+import Intro from './Pages/Sections/Intro'
+import Experience from './Pages/Sections/Experience'
+import Skills from './Pages/Sections/Skills'
+import Projects from './Pages/Sections/Projects'
+
+
+import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
-    <div className="theme-light">
-      <NavBar />
-      <Route exact path='/' component={Home} />
-      <Route exact path='/about' component={About} />
-      <Route exact path='/theesportcompany' component={TEC} />
-      <Route exact path='/nebula' component={Nebula} />
-      <Route exact path='/k5gaming' component={K5} />
-      <Footer />
-    </div>
+      <div className="theme-light">
+        <NavBar />
+        <Intro />
+        <Experience />
+        <Skills />
+        <Projects />
+        <About />
+
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }
