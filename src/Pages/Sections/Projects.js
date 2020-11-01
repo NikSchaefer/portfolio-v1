@@ -21,6 +21,7 @@ const Projects = () => {
                 image={umbrella}
                 github='https://github.com/NikSchaefer/umbrella_website'
                 link='https://theumbrella.vercel.app/'
+                skills={['React', 'HTML', 'CSS','React Native', "Javascript"]}  
             />
 
             <Project
@@ -29,6 +30,7 @@ const Projects = () => {
                 image={portfolio}
                 github='https://github.com/NikSchaefer/portfolio'
                 link="https://nikschaefer.vercel.app/"
+                skills={['React', 'HTML', 'CSS', "Javascript"]} 
             />
 
             <Project
@@ -37,6 +39,7 @@ const Projects = () => {
                 image={Box}
                 github='https://github.com/NikSchaefer/box-shadow-maker'
                 link='https://box-shadow.vercel.app/'
+                skills={['React', 'HTML', 'CSS', "Javascript"]} 
             />
 
             <p>Looking for <p className='project-bottom-link' onClick={toExp}>Experience</p>?</p>
