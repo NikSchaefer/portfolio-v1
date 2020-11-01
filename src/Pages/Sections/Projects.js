@@ -1,6 +1,7 @@
 import React from 'react'
 import umbrella from '../Images/Umbrella.JPG'
 import portfolio from '../Images/Portfolio.JPG'
+import Box from '../Images/Box.PNG'
 
 import github from '../Images/github.svg'
 import GoTo from '../Images/GoTo.svg'
@@ -51,6 +52,27 @@ const Projects = () => {
                     </div>
                 </div>
                 <img src={portfolio} alt='' className='project-img' />
+
+            </div>
+
+            <div className='project-div'>
+                <div className='project-info'>
+                    <p className='project-title'>@Box Shadow Creator</p>
+                    <p className='project-text'>
+                        A Simple Website to Quickly and Easily Develop CSS Box Shadows
+                    </p>
+                    <div className='project-tag-div'>
+                        <p className='project-tag'>#React</p>
+                        <p className='project-tag'>#HTML</p>
+                        <p className='project-tag'>#CSS</p>
+                        <p className='project-tag'>#Javascript</p>
+                    </div>
+                    <div className='project-link-div'>
+                        <a href="https://github.com/NikSchaefer/box-shadow-maker" className='project-link'><img alt='' className='project-link-img' src={github} /></a>
+                        <a href="https://box-shadow.vercel.app/" className='project-link'><img alt='' className='project-link-img' src={GoTo} /></a>
+                    </div>
+                </div>
+                <img src={Box} alt='' className='project-img' />
 
             </div>
 
