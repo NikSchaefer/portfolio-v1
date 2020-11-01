@@ -170,6 +170,8 @@ header {
 
 /*       exp          */
 
+
+
 .exp-container {
   display: flex;
   flex-direction: row;
@@ -199,13 +201,12 @@ header {
   margin: 5% auto;
   padding: 15px 10px;
   width: 80%;
+  border-radius: 5px;
+  transition: all ease-in-out 0.3s!important;
 }
 
 .exp-option:hover {
-  color: white;
   cursor: pointer;
-  background-color: rgb(255, 194, 0);
-  border-radius: 5px;
 }
 
 .exp-content-div {
@@ -215,6 +216,7 @@ header {
   background-color: transparent;
   border: solid 2px orange;
   border-radius: 10px;
+  display:none;
 }
 
 .exp-content-title {
@@ -242,6 +244,17 @@ ul {
 
 li {
   margin: auto;
+}
+
+.exp-skill {
+  display: inline-block;
+  margin: 0 5%;
+  color: orange;
+}
+
+.exp-skill:hover {
+  color: white;
+  cursor: default;
 }
 
 /*    /Home    */
