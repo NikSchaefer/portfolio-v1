@@ -98,6 +98,7 @@ header {
   color: var(--font-color-o);
   margin: auto;
   font-size: 19px;
+  transition: all ease-in-out 0.2s;
 }
 
 .nav-link:hover {
@@ -171,13 +172,12 @@ header {
 /*       exp          */
 
 .exp-link {
-  display:inline-block;
+  display: inline-block;
   vertical-align: middle;
 }
 
 .exp-container {
   display: flex;
-  flex-direction: row;
   width: 800px;
   background-color: var(--color-primary);
   height: 400px;
@@ -186,10 +186,8 @@ header {
 }
 
 .exp-options-div {
-  float: left;
   width: 30%;
   height: 100%;
-  background-color: transparent;
   display: flex;
   flex-direction: column;
 }
@@ -205,21 +203,21 @@ header {
   padding: 15px 10px;
   width: 80%;
   border-radius: 5px;
-  transition: all ease-in-out 0.3s!important;
+  transition: all ease-in-out 0.2s!important;
 }
 
 .exp-option:hover {
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 .exp-content-div {
   width: 50%;
   height: 80%;
   margin: auto;
-  background-color: transparent;
   border: solid 2px orange;
   border-radius: 10px;
-  display:none;
+  display: none;
 }
 
 .exp-content-title {
@@ -258,6 +256,7 @@ li {
 .exp-skill:hover {
   color: white;
   cursor: default;
+  animation: squishTurn 0.7s infinite;
 }
 
 /*    /Home    */
@@ -298,7 +297,7 @@ li {
 }
 
 .skill-content:hover {
-  animation: squishTurn 0.7s;
+  animation: squishTurn 0.7s infinite;
   cursor: pointer;
 }
 
@@ -310,7 +309,7 @@ li {
 }
 
 .skill-alt:hover {
-  animation: squishTurn 0.7s;
+  animation: squishTurn 0.7s infinite;
   cursor: pointer;
 }
 
@@ -396,7 +395,6 @@ li {
 }
 
 .project-tag {
-  width: fit-content;
   padding: 4px 6px;
   color: orange;
   transition: all ease-in-out 0.3s;
@@ -406,6 +404,7 @@ li {
 .project-tag:hover {
   color: white;
   cursor: default;
+  animation: squishTurn 0.7s infinite;
 }
 
 .project-bottom-link {
