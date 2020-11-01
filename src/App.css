@@ -85,6 +85,19 @@ header {
   padding: 30px 0;
 }
 
+.nav-logo {
+  width: 40px;
+  transition: all ease-in-out 0.3s;
+}
+
+.nav-logo-link {
+  margin: auto;
+}
+
+.nav-logo:hover {
+  transform: scale(1.1);
+}
+
 .nav-links-div {
   display: flex;
   flex-wrap: nowrap;

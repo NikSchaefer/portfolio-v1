@@ -1,6 +1,8 @@
 import React from 'react';
+import github from './Images/Github2.svg'
+import mail from './Images/email.svg'
 
-function scroll(offset, id) { 
+function scroll(offset, id) {
     const yOffset = offset;
     const element = document.getElementById(id);
     const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
@@ -30,6 +32,7 @@ const NavBar = () => {
     return (
         <div>
             <header>
+                <a className='nav-logo-link' href='https://github.com/NikSchaefer'><img src={github} alt='' className='nav-logo' /></a>
                 <div className="nav-links-div">
                     <p className='nav-link' onClick={toTop}>Intro</p>
                     <hr />
@@ -42,7 +45,7 @@ const NavBar = () => {
 
                     <p className='nav-link' onClick={toAbout}>About</p>
                 </div>
-
+                <a href='mailto:nikkschaefer@gmail.com' className='nav-logo-link'><img src={mail} alt='' className='nav-logo' /></a>
             </header>
         </div>
     )
