@@ -1,133 +1,83 @@
 import React from 'react'
-import GoTo from '../Images/GoTo.svg'
+
+import Content from '../Components/Exp'
+import Options from '../Components/ExpOptions'
+
 const Experience = () => {
-    function handle(id) {
-        const all = document.getElementsByClassName('exp-option');
-        for (var i = 0; i < all.length; i++) {
-            all[i].style.backgroundColor = 'transparent'
-        }
-        const change = document.getElementById(id + '-selector');
-        change.style.backgroundColor = 'rgb(255, 194, 0)';
-
-        const allContent = document.getElementsByClassName('exp-content-div')
-        for (var j = 0; j < allContent.length; j++) {
-            allContent[j].style.display = 'none'
-        }
-        const changeContent = document.getElementById(id)
-        changeContent.style.display = 'block'
-    }
-    window.onload = function () {
-        const selector = document.getElementsByClassName('exp-option')
-        selector[0].style.backgroundColor = 'rgb(255, 194, 0)'
-
-        const content = document.getElementsByClassName('exp-content-div')
-        content[0].style.display = 'block'
-    }
+    
+    
     return (
         <div id='experience'>
             <p className="section-title">Experience <hr style={{ marginLeft: '5px', width: '60%', color: 'black', verticalAlign: 'middle' }} /></p>
+            <div className='exp-container'>
+                <Content
+                    theID='Spiral'
+                    title='Spiral Esports'
+                    typeOfWork='Development'
+                    begin='Sep 2020'
+                    end='Nov 2020'
+                    description1='lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+                    description2='lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+                    skills={['React', 'HTML', 'CSS', 'Javascript', 'Vercel']}
+                    link=''
+                    linkVisibility='hidden'
+                />
+                <Content
+                    theID='Sparks'
+                    title='Sparks Volleyball Club'
+                    typeOfWork='Development'
+                    begin='October 2020'
+                    end='Present'
+                    description1='lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+                    description2='lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+                    skills={['React', 'HTML', 'CSS', 'Javascript', 'Vercel']}
+                    link=''
+                    linkVisibility='hidden'
+                />
+                <Content
+                    theID='TEC'
+                    title='The Esport Company'
+                    typeOfWork='Internship'
+                    begin='Sep 2020'
+                    end='Present'
+                    description1='lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+                    description2='lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+                    skills={['Wordpress', 'Elementor', 'CSS']}
+                    link='https://www.theesportcompany.com/'
+                />
+                <Content
+                    theID='K5'
+                    title='K5 Gaming'
+                    typeOfWork='Development'
+                    begin='Sep 2020'
+                    end='Nov 2020'
+                    description1='lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+                    description2='lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+                    skills={['React', 'HTML', 'CSS', 'Javascript', 'Vercel']}
+                    link='https://k5gaming.vercel.app/'
+                />
+                <Content
+                    theID='Nebula'
+                    title='Nebula Esports'
+                    typeOfWork='Development'
+                    begin='Sep 2020'
+                    end='Nov 2020'
+                    description1='lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+                    description2='lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+                    skills={['React', 'HTML', 'CSS', 'Javascript', 'Vercel']}
+                    link='https://nebulaesports.vercel.app/'
+                />
 
-            <div className='exp-container' id=''>
                 <div className='exp-options-div'>
                     <div className='exp-options-list'>
-                        <p className='exp-option' id='Spiral-selector' onClick={() => handle('Spiral')}>Spiral Esports</p>
-                        <p className='exp-option' id='Sparks-selector' onClick={() => handle('Sparks')}>Sparks VB Club</p>
-                        <p className='exp-option' id='TEC-selector' onClick={() => handle('TEC')}>The Esport Company</p>
-                        <p className='exp-option' id='K5-selector' onClick={() => handle('K5')}>K5 Gaming</p>
-                        <p className='exp-option' id='Nebula-selector' onClick={() => handle('Nebula')}>Nebula Esports</p>
-                    </div>
-                </div>
-
-                <div className='exp-content-div' id='Spiral'>
-                    <div className='exp-content'>
-                        <p className='exp-content-title'>@Spiral Esports <a href=" " style={{ visibility: 'hidden' }} className='exp-link'><img alt='' className='project-link-img' src={GoTo} /></a></p>
-
-                        <p className='exp-content-sub-title'>Development | Sep 2020 - Nov 2020</p>
-                        <ul>
-                            <li>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
-                            <br />
-                            <li>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
-                            <br />
-                            <p className='exp-skill'>#React</p>
-                            <p className='exp-skill'>#HTML</p>
-                            <p className='exp-skill'>#CSS</p>
-                            <p className='exp-skill'>#Javascript</p>
-                            <p className='exp-skill'>#Vercel</p>
-                        </ul>
-                    </div>
-                </div>
-
-                <div className='exp-content-div' id='Sparks'>
-                    <div className='exp-content'>
-                        <p className='exp-content-title'>@Sparks Volleyball Club <a href=" " style={{ visibility: 'hidden' }} className='exp-link'><img alt='' className='project-link-img' src={GoTo} /></a></p>
-                        <p className='exp-content-sub-title'>Development | Sep 2020 - Present</p>
-                        <ul>
-                            <li>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
-                            <br />
-                            <li>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
-                            <br />
-                            <p className='exp-skill'>#React</p>
-                            <p className='exp-skill'>#HTML</p>
-                            <p className='exp-skill'>#CSS</p>
-                            <p className='exp-skill'>#Javascript</p>
-                            <p className='exp-skill'>#Vercel</p>
-                        </ul>
-                    </div>
-                </div>
-
-                <div className='exp-content-div' id='TEC'>
-                    <div className='exp-content'>
-                        <p className='exp-content-title'>@The Esport Company <a href="https://www.theesportcompany.com/" className='exp-link'><img alt='' className='project-link-img' src={GoTo} /></a></p>
-                        <p className='exp-content-sub-title'>Internship | Sep 2020 - Present</p>
-                        <ul>
-                            <li>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
-                            <br />
-                            <li>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
-                            <br />
-                            <p className='exp-skill'>#Wordpress</p>
-                            <p className='exp-skill'>#Elementor</p>
-                            <p className='exp-skill'>#CSS</p>
-                        </ul>
-                    </div>
-                </div>
-
-                <div className='exp-content-div' id='K5'>
-                    <div className='exp-content'>
-                        <p className='exp-content-title'>@K5 Gaming <a href="https://k5gaming.vercel.app/" className='exp-link'><img alt='' className='project-link-img' src={GoTo} /></a></p>
-                        <p className='exp-content-sub-title'>Development | Sep 2020 - Nov 2020</p>
-                        <ul>
-                            <li>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
-                            <br />
-                            <li>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
-                            <br />
-                            <p className='exp-skill'>#React</p>
-                            <p className='exp-skill'>#HTML</p>
-                            <p className='exp-skill'>#CSS</p>
-                            <p className='exp-skill'>#Javascript</p>
-                            <p className='exp-skill'>#Vercel</p>
-                        </ul>
-                    </div>
-                </div>
-
-                <div className='exp-content-div' id='Nebula'>
-                    <div className='exp-content'>
-                        <p className='exp-content-title'>@Nebula Esports <a href="https://nebulaesports.vercel.app/" className='exp-link'><img alt='' className='project-link-img' src={GoTo} /></a></p>
-                        <p className='exp-content-sub-title'>Internship | Sep 2020 - Nov 2020</p>
-                        <ul>
-                            <li>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
-                            <br />
-                            <li>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
-                            <br />
-                            <p className='exp-skill'>#React</p>
-                            <p className='exp-skill'>#HTML</p>
-                            <p className='exp-skill'>#CSS</p>
-                            <p className='exp-skill'>#Javascript</p>
-                            <p className='exp-skill'>#Vercel</p>
-                        </ul>
-                    </div>
+                        <Options theID='Spiral' title="Spiral Esports" />
+                        <Options theID='Sparks' title="Sparks VB Club" />
+                        <Options theID='TEC' title="The Esport Company" />
+                        <Options theID='K5' title="K5 Gaming" />
+                        <Options theID='Nebula' title="Nebula Esports" />
+                    </div> 
                 </div>
             </div>
-
         </div>
     )
 }
