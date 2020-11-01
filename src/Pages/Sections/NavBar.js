@@ -1,6 +1,6 @@
 import React from 'react';
-import github from './Images/Github2.svg'
-import mail from './Images/email.svg'
+import github from '../Images/Github2.svg'
+import mail from '../Images/email.svg'
 
 function scroll(offset, id) {
     const yOffset = offset;

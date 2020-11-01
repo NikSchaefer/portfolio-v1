@@ -386,6 +386,10 @@ li {
   border-radius: 10px;
 }
 
+.project-img:hover {
+  animation: squirm 0.5s;
+}
+
 .project-title {
   font-size: 30px;
   color: orange;

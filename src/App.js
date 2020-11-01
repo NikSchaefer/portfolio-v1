@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import NavBar from './Pages/NavBar'
-import Footer from './Pages/Footer'
+import NavBar from './Pages/Sections/NavBar'
+import Footer from './Pages/Sections/Footer'
 import About from './Pages/Sections/About'
 
 import Intro from './Pages/Sections/Intro'

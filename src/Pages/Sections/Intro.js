@@ -1,5 +1,5 @@
 import React from 'react'
-import { toExp } from '../NavBar'
+import { toExp } from './NavBar'
 const Intro = () => {
     return (
         <div>
