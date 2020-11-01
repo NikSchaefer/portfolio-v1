@@ -170,7 +170,10 @@ header {
 
 /*       exp          */
 
-
+.exp-link {
+  display:inline-block;
+  vertical-align: middle;
+}
 
 .exp-container {
   display: flex;

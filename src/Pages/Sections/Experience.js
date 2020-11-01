@@ -1,4 +1,5 @@
 import React from 'react'
+import GoTo from '../Images/GoTo.svg'
 const Experience = () => {
     function handle(id) {
         const all = document.getElementsByClassName('exp-option');
@@ -39,7 +40,8 @@ const Experience = () => {
 
                 <div className='exp-content-div' id='Spiral'>
                     <div className='exp-content'>
-                        <p className='exp-content-title'>@Spiral Esports</p>
+                        <p className='exp-content-title'>@Spiral Esports <a href=" " style={{ visibility: 'hidden' }} className='exp-link'><img alt='' className='project-link-img' src={GoTo} /></a></p>
+
                         <p className='exp-content-sub-title'>Development | Sep 2020 - Nov 2020</p>
                         <ul>
                             <li>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
@@ -57,7 +59,7 @@ const Experience = () => {
 
                 <div className='exp-content-div' id='Sparks'>
                     <div className='exp-content'>
-                        <p className='exp-content-title'>@Sparks Volleyball Club</p>
+                        <p className='exp-content-title'>@Sparks Volleyball Club <a href=" " style={{ visibility: 'hidden' }} className='exp-link'><img alt='' className='project-link-img' src={GoTo} /></a></p>
                         <p className='exp-content-sub-title'>Development | Sep 2020 - Present</p>
                         <ul>
                             <li>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
@@ -75,7 +77,7 @@ const Experience = () => {
 
                 <div className='exp-content-div' id='TEC'>
                     <div className='exp-content'>
-                        <p className='exp-content-title'>@The Esport Company</p>
+                        <p className='exp-content-title'>@The Esport Company <a href="https://www.theesportcompany.com/" className='exp-link'><img alt='' className='project-link-img' src={GoTo} /></a></p>
                         <p className='exp-content-sub-title'>Internship | Sep 2020 - Present</p>
                         <ul>
                             <li>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
@@ -91,7 +93,7 @@ const Experience = () => {
 
                 <div className='exp-content-div' id='K5'>
                     <div className='exp-content'>
-                        <p className='exp-content-title'>@K5 Gaming</p>
+                        <p className='exp-content-title'>@K5 Gaming <a href="https://k5gaming.vercel.app/" className='exp-link'><img alt='' className='project-link-img' src={GoTo} /></a></p>
                         <p className='exp-content-sub-title'>Development | Sep 2020 - Nov 2020</p>
                         <ul>
                             <li>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
@@ -109,7 +111,7 @@ const Experience = () => {
 
                 <div className='exp-content-div' id='Nebula'>
                     <div className='exp-content'>
-                        <p className='exp-content-title'>@Nebula Esports</p>
+                        <p className='exp-content-title'>@Nebula Esports <a href="https://nebulaesports.vercel.app/" className='exp-link'><img alt='' className='project-link-img' src={GoTo} /></a></p>
                         <p className='exp-content-sub-title'>Internship | Sep 2020 - Nov 2020</p>
                         <ul>
                             <li>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
