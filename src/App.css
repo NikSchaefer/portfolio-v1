@@ -346,6 +346,18 @@ li {
 
 /*    Projects    */
 
+@keyframes squirm {
+  0% {
+    transform: scale(1, 1)
+  }
+  50% {
+    transform: scale(1.07, 1)
+  }
+  100% {
+    transform: scale(1, 1)
+  }
+}
+
 .project-div {
   display: flex;
   flex-direction: row;
@@ -371,6 +383,10 @@ li {
   background-color: var(--color-primary);
   margin: 0 5%;
   border-radius: 10px;
+}
+
+.project-info:hover {
+  animation: squirm 0.5s;
 }
 
 .project-link-div {
