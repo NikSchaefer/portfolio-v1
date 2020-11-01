@@ -11,8 +11,8 @@ const Intro = () => {
                     
 
                     I am <span style={{color:'orange'}}>Nik Schaefer.</span><br />
-                    I love creating beautiful and<br />
-                    fun stuff for the web.<br />
+                    I'm a student with a passion for <br />
+                    Programming and learning<br />
                     </p>
                     <p className='intro-button' onClick={toExp} id='intro-button-full'>Learn More</p>
                     <a href="mailto:nikkschaefer@gmail.com" className='intro-button'>Get In Touch</a>
