@@ -26,7 +26,7 @@ const Experience = () => {
                     theID='Sparks'
                     title='Sparks Volleyball Club'
                     typeOfWork='Development'
-                    begin='October 2020'
+                    begin='Oct 2020'
                     end='Present'
                     description1='lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
                     description2='lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'

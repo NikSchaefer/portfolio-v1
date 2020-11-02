@@ -119,6 +119,12 @@ header {
   cursor: pointer;
 }
 
+@media screen and (max-width:1000px) {
+  .nav-links-div {
+    display: none;
+  }
+}
+
 /*    /NavBar    */
 
 /*    Intro    */
@@ -168,6 +174,33 @@ header {
 
 .intro-tiny-text {
   font-size: 20px;
+}
+
+@media screen and (max-width:1100px) {
+  .intro-div {
+    font-size: 30px;
+  }
+  .intro-text {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .intro-div {
+    font-size: 20px;
+  }
+  .intro-text {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .intro-div {
+    font-size: 16px;
+  }
+  .intro-text {
+    font-size: 25px;
+  }
 }
 
 /*   End Of Intro     */
@@ -273,6 +306,24 @@ li {
   animation: squishTurn 0.7s infinite;
 }
 
+@media screen and (max-width:870px) {
+  .exp-container {
+    flex-direction: column-reverse;
+    height: fit-content;
+    width: 300px;
+    padding: 10px;
+  }
+  .exp-options-div {
+    width: 100%;
+  }
+  .exp-options-list {
+    width: fit-content
+  }
+  .exp-content-div {
+    width: 100%;
+  }
+}
+
 /*    /Home    */
 
 /*   Skills     */
@@ -327,6 +378,12 @@ li {
   cursor: pointer;
 }
 
+@media screen and (max-width:800px) {
+  .skills-div {
+    width: 90%;
+  }
+}
+
 /*  /Skills     */
 
 /*   About    */
@@ -376,7 +433,6 @@ li {
   display: flex;
   flex-direction: row;
   width: 800px;
-  margin: auto;
   color: white;
   border-radius: 10px;
   margin: 100px auto;
@@ -452,6 +508,17 @@ li {
   cursor: pointer;
 }
 
+@media screen and (max-width:960px) {
+  .project-div {
+    flex-direction: column;
+    width: 330px;
+  }
+  .project-img {
+    margin-top: 50px;
+    width: 330px;
+  }
+}
+
 /*    Footer    */
 
 footer {
@@ -483,6 +550,12 @@ footer {
 
 .footer-code-link:hover {
   text-decoration: none;
+}
+
+@media screen and (max-width:500px) {
+  .footer-main-text {
+    font-size: 45px;
+  }
 }
 
 /*    /Footer    */
