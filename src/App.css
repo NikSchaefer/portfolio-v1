@@ -145,26 +145,31 @@ header {
   color: orange;
   padding: 10px;
   border: solid 1px orange;
-  transition: all ease-in-out 0.3s;
   display: inline-block;
   text-decoration: none;
+  background: linear-gradient(to left, transparent 50%, orange 50%) right;
+  background-size: 200%;
+  transition: .5s ease-out;
 }
 
 .intro-button:hover {
   background-color: orange;
   color: white;
   cursor: pointer;
+  background-position: left;
 }
 
 #intro-button-full {
-  background-color: orange;
   color: white;
   margin-right: 20%;
+  background: linear-gradient(to left, orange 50%, transparent 50%) right;
+  background-size: 200%;
+  transition: .5s ease-out;
 }
 
 #intro-button-full:hover {
-  background-color: transparent;
   color: orange;
+  background-position: left;
 }
 
 .intro-text {

@@ -15,7 +15,7 @@ const Intro = () => {
                     Programming and learning<br />
                     </p>
                     <p className='intro-button' onClick={toExp} id='intro-button-full'>Learn More</p>
-                    <a href="mailto:nikkschaefer@gmail.com" className='intro-button'>Get In Touch</a>
+                    <a href="mailto:nikkschaefer@gmail.com" className='intro-button' id='intro-button-transparent'>Get In Touch</a>
                 </div>
             </div>
         </div>
