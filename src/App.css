@@ -258,7 +258,6 @@ header {
   transition: all ease-in-out 0.2s!important;
   background: linear-gradient(to left, transparent 50%, rgb(255, 194, 0) 50%) right;
   background-size: 200%;
-  transition: .5s ease-out;
 }
 
 .exp-option:hover {
