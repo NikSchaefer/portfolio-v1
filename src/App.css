@@ -124,6 +124,21 @@ header {
     display: none;
   }
 }
+.toTop-div {
+  position: fixed;
+  right:10px;
+  bottom:10px;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  transition: all ease-in-out 0.3s;
+}
+.toTop-img {
+  width:50px;
+}
+.toTop-div:hover {
+  cursor: pointer;
+  background-color: rgb(56, 56, 56);
+}
 
 /*    /NavBar    */
 

@@ -2,6 +2,8 @@ import React from 'react';
 import github from '../Images/Github2.svg'
 import mail from '../Images/email.svg'
 
+import upArrow from '../Images/upArrow.svg'
+
 function scroll(offset, id) {
     const yOffset = offset;
     const element = document.getElementById(id);
@@ -50,6 +52,10 @@ const NavBar = () => {
                 </div>
                 <a href='mailto:nikkschaefer@gmail.com' className='nav-logo-link'><img src={mail} alt='' className='nav-logo' /></a>
             </header>
+
+            <div className='toTop-div' onClick={toTop}>
+                <img src={upArrow} alt='' className='toTop-img' />
+            </div>
         </div>
     )
 }
