@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
         <div>
-            <footer>
+            <footer id='footer'>
                     <p className='footer-main-text'>
                         LETS W🚀RK <br />TOGETHER
                         </p>

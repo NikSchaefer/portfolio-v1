@@ -262,7 +262,6 @@ header {
 
 .exp-option:hover {
   cursor: pointer;
-  transform: scale(1.05);
   background-position: left;
 }
 

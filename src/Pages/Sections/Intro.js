@@ -1,5 +1,5 @@
 import React from 'react'
-import { toExp } from './NavBar'
+import { toExp, toBottom } from './NavBar'
 const Intro = () => {
     return (
         <div>
@@ -15,7 +15,7 @@ const Intro = () => {
                     Programming and learning<br />
                     </p>
                     <p className='intro-button' onClick={toExp} id='intro-button-full'>Learn More</p>
-                    <a href="mailto:nikkschaefer@gmail.com" className='intro-button' id='intro-button-transparent'>Get In Touch</a>
+                    <p onClick={toBottom} className='intro-button' id='intro-button-transparent'>Get In Touch</p>
                 </div>
             </div>
         </div>

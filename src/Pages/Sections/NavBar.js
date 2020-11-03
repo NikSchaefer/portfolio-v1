@@ -25,6 +25,9 @@ export function toExp() {
 export function toProjects() {
     scroll(-200, 'projects')
 }
+export function toBottom() { 
+    scroll(0, 'footer')
+}
 
 const NavBar = () => {
 
