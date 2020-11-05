@@ -31,6 +31,15 @@ export function toBottom() {
     scroll(0, 'footer')
 }
 
+let percent = 0;
+
+window.onscroll = function () {
+    const line = document.getElementById('loadline')
+    const limit = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);  
+    percent = Math.round((window.scrollY) / (limit - window.innerHeight) * 100)
+    line.style.background = `linear-gradient(90deg, orange ${percent}%, rgba(255,255,255,1) ${percent}%, rgba(255,255,255,1) 100%)`
+}
+
 const NavBar = () => {
 
 
@@ -47,17 +56,16 @@ const NavBar = () => {
                     <hr />
                     <p className='nav-link' onClick={toProjects}>Projects</p>
                     <hr />
-
                     <p className='nav-link' onClick={toAbout}>About</p>
                 </div>
                 <a href='mailto:nikkschaefer@gmail.com' className='nav-logo-link'><img src={mail} alt='' className='nav-logo' /></a>
+                <div style={{flexBasis:'100%'}} />
+                <div id='loadline' />
             </header>
-
             <div className='toTop-div' onClick={toTop}>
                 <img src={upArrow} alt='' className='toTop-img' />
             </div>
         </div>
     )
 }
-
 export default NavBar;

@@ -83,6 +83,7 @@ header {
   width: 100%;
   top: 0;
   padding: 30px 0;
+  flex-wrap: wrap;
 }
 
 .nav-logo {
@@ -138,6 +139,15 @@ header {
 .toTop-div:hover {
   cursor: pointer;
   background-color: rgb(56, 56, 56);
+}
+
+#loadline {
+  width:60%;
+  margin:auto;
+  height: 5px;
+  background-color: ivory;
+  z-index: 100;
+  border-radius: 10px;
 }
 
 /*    /NavBar    */

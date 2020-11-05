@@ -20,7 +20,6 @@ window.onload = function () { // set original active state
     selector[0].style.backgroundColor = 'rgb(255, 194, 0)'
 
     const content = document.getElementsByClassName('exp-content-div')
-    console.log(content)
     content[0].style.display = 'block'
 }
 
