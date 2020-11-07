@@ -3,7 +3,7 @@
 .theme-light {
   --color-primary: #292929;
   --color-secondary: #fbfbfd;
-  --color-accent: #ffffff;
+  --color-accent: orange;
   --font-color: #000000;
   --font-color-o: #ffffff;
   --card-color: rgb(255, 255, 255);
@@ -40,13 +40,13 @@ a[type=text-link]:hover {
 }
 
 ::selection {
-  background: orange;
+  background: var(--color-accent);
   /* WebKit/Blink Browsers */
   color: white;
 }
 
 ::-moz-selection {
-  background: orange;
+  background: var(--color-accent);
   /* Gecko Browsers */
   color: white;
 }
@@ -116,7 +116,7 @@ header {
 }
 
 .nav-link:hover {
-  color: orange;
+  color: var(--color-accent);
   cursor: pointer;
 }
 
@@ -167,18 +167,18 @@ header {
   background-color: transparent;
   width: fit-content;
   font-size: 20px;
-  color: orange;
+  color: var(--color-accent);
   padding: 10px;
-  border: solid 1px orange;
+  border: solid 1px var(--color-accent);
   display: inline-block;
   text-decoration: none;
-  background: linear-gradient(to left, transparent 50%, orange 50%) right;
+  background: linear-gradient(to left, transparent 50%, var(--color-accent) 50%) right;
   background-size: 200%;
   transition: .5s ease-out;
 }
 
 .intro-button:hover {
-  background-color: orange;
+  background-color: var(--color-accent);
   color: white;
   cursor: pointer;
   background-position: left;
@@ -187,13 +187,13 @@ header {
 #intro-button-full {
   color: white;
   margin-right: 20%;
-  background: linear-gradient(to left, orange 50%, transparent 50%) right;
+  background: linear-gradient(to left, var(--color-accent) 50%, transparent 50%) right;
   background-size: 200%;
   transition: .5s ease-out;
 }
 
 #intro-button-full:hover {
-  color: orange;
+  color: var(--color-accent);
   background-position: left;
 }
 
@@ -294,7 +294,7 @@ header {
   width: 50%;
   height: 80%;
   margin: auto;
-  border: solid 2px orange;
+  border: solid 2px var(--color-accent);
   border-radius: 10px;
   display: none;
 }
@@ -329,7 +329,7 @@ li {
 .exp-skill {
   display: inline-block;
   margin: 0 5%;
-  color: orange;
+  color: var(--color-accent);
 }
 
 .exp-skill:hover {
@@ -401,7 +401,7 @@ li {
 .skill-alt {
   margin: 10%;
   font-family: Calibre, sans-serif;
-  color: orange;
+  color: var(--color-accent);
   transition: all ease-in-out 0.3s;
 }
 
@@ -465,7 +465,7 @@ li {
   display: flex;
   flex-direction: row;
   width: 800px;
-  color: white;
+  color: var(--font-color-o);
   border-radius: 10px;
   margin: 100px auto;
 }
@@ -481,7 +481,7 @@ li {
 
 .project-title {
   font-size: 30px;
-  color: orange;
+  color: var(--color-accent);
 }
 
 .project-info {
@@ -508,7 +508,7 @@ li {
 }
 
 .project-link-img:hover {
-  background-color: orange;
+  background-color: var(--color-accent);
 }
 
 .project-tag-div {
@@ -518,7 +518,7 @@ li {
 
 .project-tag {
   padding: 4px 6px;
-  color: orange;
+  color: var(--color-accent);
   transition: all ease-in-out 0.3s;
   margin: auto;
 }
@@ -531,7 +531,7 @@ li {
 
 .project-bottom-link {
   display: inline-block;
-  color: orange;
+  color: var(--color-accent);
   text-decoration: underline;
 }
 
@@ -554,7 +554,7 @@ li {
 /*    Footer    */
 
 footer {
-  color: white;
+  color: var(--font-color-o);
   background-color: #292929;
   padding: 40px 0;
 }
@@ -566,7 +566,7 @@ footer {
 
 .footer-quick-link {
   text-decoration: none;
-  color: white;
+  color: var(--font-color-o);
   transition: all ease-in-out 0.3;
 }
 
@@ -575,8 +575,8 @@ footer {
 }
 
 .footer-code-link {
-  color: white;
-  text-decoration-color: white;
+  color: var(--font-color-o);
+  text-decoration-color: var(--font-color-o);
   text-decoration: underline;
 }
 
