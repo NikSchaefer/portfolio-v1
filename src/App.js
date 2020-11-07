@@ -9,11 +9,8 @@ import Experience from './Pages/Sections/Experience'
 import Skills from './Pages/Sections/Skills'
 import Projects from './Pages/Sections/Projects'
 
-
-import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
-    <BrowserRouter>
       <div className="theme-light">
         <NavBar />
         <Intro />
@@ -21,10 +18,8 @@ function App() {
         <Skills />
         <Projects />
         <About />
-
         <Footer />
       </div>
-    </BrowserRouter>
   );
 }
 export default App;
