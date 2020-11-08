@@ -156,6 +156,47 @@ header {
     width:90%;
   }
 }
+@keyframes bounce {
+  0% {
+    bottom:8vh;
+  }
+  50% {
+    bottom:9vh;
+  }
+  100% {
+    bottom:8vh;
+  }
+}
+@keyframes scrollDownAnimation {
+  from {
+    
+  }
+  to {
+    bottom: 110vh;
+  }
+}
+.scroll-down-div {
+  position: fixed;
+  bottom:8vh;
+  left:0;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all ease-in-out 0.3s;
+  align-items: center;
+  animation: bounce 3s infinite;
+}
+.scroll-down-div:hover {
+  bottom:9vh;
+  animation: scrollDownAnimation 2s forwards;
+}
+.scroll-down-img {
+  width:60px;
+}
+.scroll-down-text {
+  color:var(--color-accent)
+}
 /*    /NavBar    */
 
 /*    Intro    */

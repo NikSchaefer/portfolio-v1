@@ -3,7 +3,7 @@ import github from '../Images/Github2.svg'
 import mail from '../Images/email.svg'
 
 import upArrow from '../Images/upArrow.svg'
-
+import down from '../Images/chevronDown.svg'
 function scroll(offset, id) {
     const yOffset = offset;
     const element = document.getElementById(id);
@@ -38,11 +38,13 @@ window.onscroll = function () {
     const limit = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);  
     percent = Math.round((window.scrollY) / (limit - window.innerHeight) * 100)
     line.style.background = `linear-gradient(90deg, orange ${percent}%, rgba(255,255,255,1) ${percent}%, rgba(255,255,255,1) 100%)`
+    if (window.scrollY > 50) {
+        const scrollElement = document.getElementById('scrollAnimation')
+        scrollElement.style.animation = 'scrollDownAnimation 2s forwards'
+    }
 }
 
 const NavBar = () => {
-
-
     return (
         <div>
             <header>
@@ -59,9 +61,13 @@ const NavBar = () => {
                     <p className='nav-link' onClick={toAbout}>About</p>
                 </div>
                 <a href='mailto:nikkschaefer@gmail.com' className='nav-logo-link'><img src={mail} alt='' className='nav-logo' /></a>
-                <div style={{flexBasis:'100%'}} />
+                <div style={{flexBasis:'100%'}} /> 
                 <div id='loadline' />
             </header>
+            <div onClick={toExp} className='scroll-down-div' id='scrollAnimation'>
+                <p className='scroll-down-text'>Scroll Down</p>
+                <img src={down} alt='' className='scroll-down-img' />
+            </div>
             <div className='toTop-div' onClick={toTop}>
                 <img src={upArrow} alt='' className='toTop-img' />
             </div>
