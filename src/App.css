@@ -4,11 +4,11 @@
   --color-primary: #292929;
   --color-secondary: #fbfbfd;
   --color-accent: orange;
-  --font-color: #000000;
+  --font-color: #ffffff;
   --font-color-o: #ffffff;
   --card-color: rgb(255, 255, 255);
   color: var(--font-color);
-  background-color: transparent;
+  background-color: var(--color-primary);
   font-family: Calibre, sans-serif;
 }
 
@@ -31,8 +31,8 @@ body {
 }
 
 a[type=text-link] {
-  color: #2364e8;
   text-decoration: none;
+  color: rgb(100, 134, 228)
 }
 
 a[type=text-link]:hover {
@@ -84,6 +84,7 @@ header {
   top: 0;
   padding: 30px 0;
   flex-wrap: wrap;
+  border-bottom:solid 1px orange;
 }
 
 .nav-logo {
@@ -142,7 +143,7 @@ header {
 }
 
 #loadline {
-  width:60%;
+  width:700px;
   margin: auto;
   margin-top: 5px;
   height: 5px;
@@ -150,7 +151,11 @@ header {
   z-index: 100;
   border-radius: 10px;
 }
-
+@media screen and (max-width:800px) {
+  #loadline {
+    width:90%;
+  }
+}
 /*    /NavBar    */
 
 /*    Intro    */
@@ -350,7 +355,11 @@ li {
     width: 100%;
   }
   .exp-options-list {
-    width: fit-content
+    width: 100%;
+    
+    border: solid 1px orange;
+    
+    border-radius: 10px;
   }
   .exp-content-div {
     width: 100%;
@@ -442,6 +451,7 @@ li {
 
 .about-link {
   text-decoration: none;
+  color:rgb(100, 134, 228);
 }
 
 .about-link:hover {
@@ -490,6 +500,7 @@ li {
   background-color: var(--color-primary);
   margin: 0 5%;
   border-radius: 10px;
+  background-color: #1f1f1f;
 }
 
 .project-info:hover {
@@ -558,17 +569,12 @@ footer {
   color: var(--font-color-o);
   background-color: #292929;
   padding: 40px 0;
+  border-top:orange solid 1px;
 }
 
 .footer-main-text {
   font-size: 65px;
   padding: 40px 0;
-}
-
-.footer-quick-link {
-  text-decoration: none;
-  color: var(--font-color-o);
-  transition: all ease-in-out 0.3;
 }
 
 .footer-quick-link:hover {
