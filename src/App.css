@@ -61,7 +61,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: orange;
+  background-color: var(--color-accent);
   border-radius: 60px;
 }
 
@@ -84,7 +84,7 @@ header {
   top: 0;
   padding: 30px 0;
   flex-wrap: wrap;
-  border-bottom:solid 1px orange;
+  border-bottom:solid 1px var(--color-accent);
 }
 
 .nav-logo {
@@ -186,10 +186,6 @@ header {
   transition: all ease-in-out 0.3s;
   align-items: center;
   animation: bounce 3s infinite;
-}
-.scroll-down-div:hover {
-  bottom:9vh;
-  animation: scrollDownAnimation 2s forwards;
 }
 .scroll-down-img {
   width:60px;
@@ -398,7 +394,7 @@ li {
   .exp-options-list {
     width: 100%;
     
-    border: solid 1px orange;
+    border: solid 1px var(--color-accent);
     
     border-radius: 10px;
   }
@@ -610,7 +606,7 @@ footer {
   color: var(--font-color-o);
   background-color: #292929;
   padding: 40px 0;
-  border-top:orange solid 1px;
+  border-top:var(--color-accent) solid 1px;
 }
 
 .footer-main-text {
