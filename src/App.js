@@ -9,17 +9,23 @@ import Experience from './Pages/Sections/Experience'
 import Skills from './Pages/Sections/Skills'
 import Projects from './Pages/Sections/Projects'
 
+import { loadExp } from './Pages/Sections/Experience'
+
+window.onload = function () {
+  loadExp()
+}
+
 function App() {
   return (
-      <div className="theme-light">
-        <NavBar />
-        <Intro />
-        <Experience />
-        <Skills />
-        <Projects />
-        <About />
-        <Footer />
-      </div>
+    <div className="theme-light">
+      <NavBar />
+      <Intro />
+      <Experience />
+      <Skills />
+      <Projects />
+      <About />
+      <Footer />
+    </div>
   );
 }
 export default App;

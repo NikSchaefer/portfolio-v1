@@ -37,7 +37,7 @@ window.onscroll = function () {
     const line = document.getElementById('loadline')
     const limit = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);  
     percent = Math.round((window.scrollY) / (limit - window.innerHeight) * 100)
-    line.style.background = `linear-gradient(90deg, orange ${percent}%, rgba(255,255,255,1) ${percent}%, rgba(255,255,255,1) 100%)`
+    line.style.background = `linear-gradient(90deg, var(--color-accent) ${percent}%, transparent ${percent}%, transparent 100%)`
     if (window.scrollY > 50) {
         const scrollElement = document.getElementById('scrollAnimation')
         scrollElement.style.animation = 'scrollDownAnimation 2s forwards'
@@ -48,7 +48,6 @@ const NavBar = () => {
     return (
         <div>
             <header>
-                <a className='nav-logo-link' href='https://github.com/NikSchaefer'><img src={github} alt='' className='nav-logo' /></a>
                 <div className="nav-links-div">
                     <p className='nav-link' onClick={toTop}>Intro</p>
                     <hr />
@@ -60,13 +59,15 @@ const NavBar = () => {
                     <hr />
                     <p className='nav-link' onClick={toAbout}>About</p>
                 </div>
-                <a href='mailto:nikkschaefer@gmail.com' className='nav-logo-link'><img src={mail} alt='' className='nav-logo' /></a>
                 <div style={{flexBasis:'100%'}} /> 
                 <div id='loadline' />
             </header>
-            <div onClick={toExp} className='scroll-down-div' id='scrollAnimation'>
-                <p className='scroll-down-text'>Scroll Down</p>
+            <div className='scroll-down-div' id='scrollAnimation'>
                 <img src={down} alt='' className='scroll-down-img' />
+            </div>
+            <div className='fixed-link-div'>
+                <a className='nav-logo-link' href='https://github.com/NikSchaefer'><img src={github} alt='' className='nav-logo' /></a>
+                <a href='mailto:nikkschaefer@gmail.com' className='nav-logo-link'><img src={mail} alt='' className='nav-logo' /></a>
             </div>
             <div className='toTop-div' onClick={toTop}>
                 <img src={upArrow} alt='' className='toTop-img' />

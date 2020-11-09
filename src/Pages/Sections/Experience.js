@@ -3,9 +3,13 @@ import React from 'react'
 import Content from '../Components/Exp'
 import Options from '../Components/ExpOptions'
 
+export function loadExp() { // set original active state
+    const selector = document.getElementsByClassName('exp-option')
+    selector[0].style.backgroundColor = 'var(--color-accent)'
+    const content = document.getElementsByClassName('exp-content-div')
+    content[0].style.display = 'block'
+}
 const Experience = () => {
-    
-    
     return (
         <div id='experience'>
             <p className="section-title">Experience <hr style={{ marginLeft: '5px', width: '60%', color: 'black', verticalAlign: 'middle' }} /></p>

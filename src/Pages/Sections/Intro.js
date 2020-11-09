@@ -9,8 +9,7 @@ const Intro = () => {
                 <p className='intro-text'>
                     <p className="intro-tiny-text">👋 there!</p>
                     
-
-                    I am <span style={{ color:'var(--color-accent)'}}>Nik Schaefer.</span><br />
+                    I am <span className='intro-name'>Nik Schaefer.</span><br />
                     I'm a student with a passion for <br />
                     Programming and learning<br />
                     </p>

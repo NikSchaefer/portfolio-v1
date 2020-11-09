@@ -41,9 +41,6 @@ const Projects = () => {
                 link='https://box-shadow.vercel.app/'
                 skills={['React', 'HTML', 'CSS', "Javascript"]} 
             />
-
-            <p>Looking for <p className='project-bottom-link' onClick={toExp}>Experience</p>?</p>
-
         </div>
     )
 }
