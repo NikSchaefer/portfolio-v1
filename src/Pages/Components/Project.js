@@ -5,7 +5,7 @@ import GoTo from '../Images/GoTo.svg'
 function Links(props) {
     let out = []
     for (let i = 0; i < props.skills.length; i++) {
-        out.push(<p className='project-tag'>#{props.skills[i]}</p>)
+        out.push(<p className='project-tag' key={`project-tag-${i}`}>#{props.skills[i]}</p>)
     }
     return out
 }

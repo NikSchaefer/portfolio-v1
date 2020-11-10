@@ -4,7 +4,7 @@ import GoTo from '../Images/GoTo.svg'
 const SkillsExp = (props) => {
     let out = []
     for (let i = 0; i < props.skills.length; i++) {
-        out.push(<p className='exp-skill'>#{props.skills[i]}</p>)
+        out.push(<p className='exp-skill' key={i}>#{props.skills[i]}</p>)
     }
     return out;
 }

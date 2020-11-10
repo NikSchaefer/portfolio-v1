@@ -2,6 +2,7 @@ import React from 'react'
 
 import Content from '../Components/Exp'
 import Options from '../Components/ExpOptions'
+import Title from '../Components/SectionTitle'
 
 export function loadExp() { // set original active state
     const selector = document.getElementsByClassName('exp-option')
@@ -12,7 +13,7 @@ export function loadExp() { // set original active state
 const Experience = () => {
     return (
         <div id='experience'>
-            <p className="section-title">Experience <hr style={{ marginLeft: '5px', width: '60%', color: 'black', verticalAlign: 'middle' }} /></p>
+            <Title title='Experience ' />
             <div className='exp-container'>
                 <Content
                     theID='Spiral'
@@ -79,7 +80,7 @@ const Experience = () => {
                         <Options theID='TEC' title="The Esport Company" />
                         <Options theID='K5' title="K5 Gaming" />
                         <Options theID='Nebula' title="Nebula Esports" />
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div>

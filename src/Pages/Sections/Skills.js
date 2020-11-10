@@ -1,12 +1,11 @@
 import React from 'react'
+import Title from '../Components/SectionTitle'
 const languages = [
     ['Javascript', 75, 'blue'],
     ['Python', 70, 'green'],
     ['CSharp', 40, 'yellow'],
     ['HTML5', 80, 'white'],
     ['CSS', 80, 'purple']]
-
-
 
 const frameworks = [
     ['ReactJS', 75, 'yellow'],
@@ -18,49 +17,46 @@ const frameworks = [
 
 
 const Skill = (props) => {
-    let ourArray = [];
-
+    let outArray = [];
     function getCircumference(radius) {
         return radius * 2 * Math.PI;
     }
     function getOffset(circumference, percent) {
         return circumference - percent / 100 * circumference
     }
-
-    const circle = {
+    const circleSettings = {
         radius: '52',
         fillColor: '#292929',
         strokeWidth: '8',
         strokeColor: 'white',
     }
-    circle.circumference = getCircumference(circle.radius)
-
+    circleSettings.circumference = getCircumference(circleSettings.radius)
 
     for (let i = 0; i < props.skills.length; i++) {
 
-        circle.offset = getOffset(circle.circumference, props.skills[i][1]);
-        circle.strokeColor = props.skills[i][2];
+        circleSettings.offset = getOffset(circleSettings.circumference, props.skills[i][1]);
+        circleSettings.strokeColor = props.skills[i][2];
 
 
-        ourArray.push(
-            <div className='skill-content-div'>
+        outArray.push(
+            <div className='skill-content-div' key={`skill-content-div-${i}`}>
                 <div className='svg-div'>
                     <svg
-                        class="progress-ring"
+                        className="progress-ring"
                         width="120"
                         height="120">
                         <circle id='circle'
-                            class="circles"
-                            stroke={circle.strokeColor}
-                            stroke-width={circle.strokeWidth}
-                            fill={circle.fillColor}
-                            r={circle.radius}
+                            className="circles"
+                            stroke={circleSettings.strokeColor}
+                            stroke-width={circleSettings.strokeWidth}
+                            fill={circleSettings.fillColor}
+                            r={circleSettings.radius}
                             cx="60"
                             stroke-linecap="round"
                             cy="60"
                             style={{
-                                strokeDasharray: `${circle.circumference} ${circle.circumference}`,
-                                strokeDashoffset: `${circle.offset}`
+                                strokeDasharray: `${circleSettings.circumference} ${circleSettings.circumference}`,
+                                strokeDashoffset: `${circleSettings.offset}`
                             }} />
                     </svg>
                     <p className='skill-content-percent'>{props.skills[i][1]}%</p>
@@ -68,14 +64,14 @@ const Skill = (props) => {
                 <p className='skills-label'>{props.skills[i][0]}</p>
             </div>)
     }
-    return ourArray
+    return outArray
 }
 
 
 const SkillDiv = (props) => {
     return (
         <div className='skills-div'>
-            <p className='skill-section-title'>{ props.title }</p>
+            <p className='skill-section-title'>{props.title}</p>
             <Skill skills={props.skills} />
         </div>
 
@@ -85,7 +81,7 @@ const SkillDiv = (props) => {
 const Skills = () => {
     return (
         <div id='skills'>
-            <p className='section-title'>Skillset <hr style={{ marginLeft: '5px', width: '60%', color: 'black', verticalAlign: 'middle' }} /></p>
+            <Title title='Skills ' />
             <SkillDiv skills={languages} title='Languages' />
             <SkillDiv skills={frameworks} title='Frameworks' />
         </div>

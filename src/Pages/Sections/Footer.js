@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
             <footer id='footer'>
                     <p className='footer-main-text'>
-                        LETS W🚀RK <br />TOGETHER
+                    LETS W<span role='img' aria-label='rocket'>🚀</span>RK <br />TOGETHER
                         </p>
                     <p style={{ fontSize: '14px' }}>Collaberations, Connections, Projects <br /></p>
                     Contact me at <a href="mailto:nikkschaefer@gmail.com" type="text-link">nikkschaefer@gmail.com</a><br />

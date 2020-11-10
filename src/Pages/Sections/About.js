@@ -1,14 +1,16 @@
 import React from 'react';
+import Title from '../Components/SectionTitle'
+
 const About = () => {
     return (
         <div id='about'>
-            <p className='section-title'>About <hr style={{ marginLeft: '5px', width: '60%', color: 'black', verticalAlign: 'middle' }} /></p>
+            <Title title='About ' />
 
 
             <div className='about-div'>
                 <p className='about-tag'> {'<p>'} </p>
                 <p className='about-text'>
-                    👋! Im Nik,<br /><br />
+                    <span role='img' aria-label='wave'>👋</span>! Im Nik,<br /><br />
                     I'm self-taught full-stack developer and a high school student
                     <br />
                     based in Minnesota, US <br /><br />
@@ -20,9 +22,9 @@ const About = () => {
 
                 </p>
                 <p className='about-tag'>{'</p>'}</p>
-                 
+
             </div>
-           
+
 
 
         </div>
