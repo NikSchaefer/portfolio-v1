@@ -48,11 +48,11 @@ const Skill = (props) => {
                         <circle id='circle'
                             className="circles"
                             stroke={circleSettings.strokeColor}
-                            stroke-width={circleSettings.strokeWidth}
+                            strokeWidth={circleSettings.strokeWidth}
                             fill={circleSettings.fillColor}
                             r={circleSettings.radius}
                             cx="60"
-                            stroke-linecap="round"
+                            strokeLinecap="round"
                             cy="60"
                             style={{
                                 strokeDasharray: `${circleSettings.circumference} ${circleSettings.circumference}`,

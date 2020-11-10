@@ -18,7 +18,7 @@ const Experience = () => {
                 <Content
                     theID='Spiral'
                     title='Spiral Esports'
-                    typeOfWork='Development'
+                    typeOfWork='Freelance'
                     begin='Sep 2020'
                     end='Nov 2020'
                     description1='Spiral Esports is an Orginization providing competitive experiences for its players and community'
@@ -30,7 +30,7 @@ const Experience = () => {
                 <Content
                     theID='Sparks'
                     title='Sparks Volleyball Club'
-                    typeOfWork='Development'
+                    typeOfWork='Freelance'
                     begin='Oct 2020'
                     end='Present'
                     description1='Sparks Volleyball Club is a Volleyball Club based in Las Vegas, NV'
@@ -53,7 +53,7 @@ const Experience = () => {
                 <Content
                     theID='K5'
                     title='K5 Gaming'
-                    typeOfWork='Development'
+                    typeOfWork='Freelance'
                     begin='Sep 2020'
                     end='Nov 2020'
                     description1='K5 Gaming is an Orginization providing competitive experiences for all its memebers'
@@ -64,7 +64,7 @@ const Experience = () => {
                 <Content
                     theID='Nebula'
                     title='Nebula Esports'
-                    typeOfWork='Development'
+                    typeOfWork='Freelance'
                     begin='Sep 2020'
                     end='Nov 2020'
                     description1='Nebula Esports is an Orginization sponsoring teams and managing a league'

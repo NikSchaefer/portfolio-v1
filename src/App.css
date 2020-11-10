@@ -311,15 +311,16 @@ header {
 
 .section-title-div {
     display: flex;
+    width:80%;
+    margin:auto;
 }
 
 .section-title {
     text-align: left;
     margin: 0;
     width: fit-content;
-    padding-left: 10%;
     font-family: "Comfortaa", Helvetica, sans-serif;
-    font-size: 26px;
+    font-size: 30px;
     color: var(--font-color);
 }
 
