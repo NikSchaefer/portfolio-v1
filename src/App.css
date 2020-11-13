@@ -589,6 +589,7 @@ circle {
 
 .about-div {
     width: 70%;
+    max-width: 700px;
     margin: auto;
     margin-bottom: 200px;
 }
@@ -632,7 +633,7 @@ circle {
 .project-div {
     display: flex;
     flex-direction: row;
-    width: 800px;
+    width: 900px;
     color: var(--font-color);
     border-radius: 10px;
     margin: 100px auto;
@@ -669,26 +670,33 @@ circle {
 }
 
 .project-link-img {
-    width: 30px;
+    width: 40px;
     border-radius: 50px;
     transition: all ease-in-out 0.3s;
 }
 
 .project-link-img:hover {
     background-color: var(--accent);
+    cursor: pointer;
+}
+
+.project-link {
+    display:inline;
 }
 
 .project-tag-div {
     display: flex;
     flex-wrap: wrap;
     font-family: "Comfortaa", sans-serif;
+    justify-content: center;
 }
 
 .project-tag {
     padding: 4px 6px;
     color: var(--font-color);
     transition: all ease-in-out 0.3s;
-    margin: auto;
+    margin: 8px 10px;
+    border: solid var(--accent) 1px;
 }
 
 .project-tag:hover {
@@ -724,7 +732,7 @@ circle {
 footer {
     color: white;
     padding: 40px 0;
-    border-top: var(--color-primary) solid 1px;
+    border-top: var(--accent) solid 1px;
 }
 
 .footer-main-text {

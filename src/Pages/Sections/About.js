@@ -10,7 +10,7 @@ const About = () => {
             <div className='about-div'>
                 <p className='about-tag'> {'<p>'} </p>
                 <p className='about-text'>
-                    <span role='img' aria-label='wave'>👋</span>! Im Nik,<br /><br />
+                    <span role='img' aria-label='wave'>👋</span>! Im <span style={{ color:'var(--accent)'}}>Nik</span>,<br /><br />
                     I'm self-taught full-stack developer and a high school student
                     <br />
                     based in Minnesota, US <br /><br />

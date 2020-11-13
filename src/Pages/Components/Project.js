@@ -20,8 +20,8 @@ const Project = (props) => {
                     <Links skills={props.skills} />
                 </div>
                 <div className='project-link-div'>
-                    <a href={props.github} className='project-link'><img alt='' className='project-link-img' src={github} /></a>
-                    <a href={props.link} className='project-link'><img alt='' className='project-link-img' src={GoTo} /></a>
+                    <p onClick={function () { window.open(props.github) }} className='project-link'><img alt='' className='project-link-img' src={github} /></p>
+                    <p onClick={function () { window.open(props.link) }} className='project-link'><img alt='' className='project-link-img' src={GoTo} /></p>
                 </div>
             </div>
         </div>
