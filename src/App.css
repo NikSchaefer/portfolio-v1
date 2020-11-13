@@ -3,12 +3,13 @@
 .theme-light {
     --color-primary: #ffffff;
     --color-secondary: #fbfbfd;
-    --color-accent: #2eb87d;
+    --color-accent: #162029;
     --font-color: #ffffff;
     --font-color-o: #0c0c0c;
     --card-color: #232323;
+    --accent: #e84c3d;
     color: var(--font-color);
-    background-color: #2eb87d;
+    background-color: #162029;
     font-family: Calibre, sans-serif;
 }
 
@@ -20,11 +21,40 @@ span {
     margin: 0;
 }
 
-
 /*    /Variables     */
 
-
 /*    Misc    */
+
+#experience {
+    position: relative;
+    visibility: hidden;
+}
+
+#skills {
+    position: relative;
+    visibility: hidden;
+}
+
+#projects {
+    position: relative;
+    visibility: hidden;
+}
+
+#about {
+    position: relative;
+    visibility: hidden;
+}
+
+@keyframes onScrollFade {
+    from {
+        top: 300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
 
 .copy {
     width: 30px;
@@ -46,14 +76,12 @@ a[type="text-link"]:hover {
 }
 
 ::selection {
-    background: var(--color-accent);
-    /* WebKit/Blink Browsers */
+    background: var(--accent);
     color: white;
 }
 
 ::-moz-selection {
-    background: var(--color-accent);
-    /* Gecko Browsers */
+    background: var(--accent);
     color: white;
 }
 
@@ -71,9 +99,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 60px;
 }
 
-
 /*    /Misc    */
-
 
 /*    NavBar    */
 
@@ -84,7 +110,6 @@ hr {
 
 header {
     position: fixed;
-    background-color: #232323;
     display: flex;
     justify-content: center;
     z-index: 3;
@@ -94,6 +119,7 @@ header {
     flex-wrap: wrap;
     border-bottom: solid 1px var(--color-accent);
     color: white;
+    background-color: var(--color-accent);
 }
 
 .nav-logo {
@@ -125,12 +151,8 @@ header {
     transition: all ease-in-out 0.2s;
 }
 
-.intro-name {
-    font-family: "Comfortaa", sans-serif;
-}
-
 .nav-link:hover {
-    color: var(--color-accent);
+    color: var(--accent);
     cursor: pointer;
 }
 
@@ -144,9 +166,11 @@ header {
     position: fixed;
     right: 10px;
     bottom: 10px;
-    background-color: rgba(56, 56, 56, 0.822);
+    background-color: var(--accent);
     border-radius: 5px;
     color: white;
+    z-index: 5;
+    transition: all ease-in-out 0.2s;
 }
 
 .toTop-img {
@@ -155,7 +179,7 @@ header {
 
 .toTop-div:hover {
     cursor: pointer;
-    background-color: rgb(56, 56, 56);
+    background-color: #ff5242;
 }
 
 #loadline {
@@ -209,10 +233,6 @@ header {
     width: 60px;
 }
 
-.scroll-down-text {
-    color: var(--color-accent);
-}
-
 .fixed-link-div {
     position: fixed;
     left: 0;
@@ -220,11 +240,39 @@ header {
     bottom: 0;
 }
 
-
 /*    /NavBar    */
 
-
 /*    Intro    */
+
+@keyframes slideFromRight {
+    from {
+        position: relative;
+        top: 0;
+        left: 500px;
+    }
+    to {
+        position: relative;
+        top: 0;
+        left: 0px;
+    }
+}
+
+@keyframes slideFromTop {
+    from {
+        position: relative;
+        top: -500px;
+    }
+    to {
+        position: relative;
+        top: 0px;
+    }
+}
+
+.intro-name {
+    font-family: "Comfortaa", sans-serif;
+    animation: slideFromRight 2s!important;
+    color: var(--accent);
+}
 
 .intro-div {
     text-align: left;
@@ -233,6 +281,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: slideFromTop 2s;
 }
 
 .intro-button {
@@ -244,29 +293,30 @@ header {
     border: solid 1px white;
     display: inline-block;
     text-decoration: none;
-    background: linear-gradient(to left, transparent 50%, white 50%) right;
+    background: linear-gradient(to left, transparent 50%, var(--accent) 50%) right;
     background-size: 200%;
     transition: 0.5s ease-out;
 }
 
 .intro-button:hover {
-    background-color: var(--color-accent);
-    color: var(--color-accent);
     cursor: pointer;
+    border: solid 1px var(--accent);
     background-position: left;
 }
 
 #intro-button-full {
-    color: var(--color-accent);
+    color: var(--font-color);
     margin-right: 20%;
-    background: linear-gradient(to left, white 50%, transparent 50%) right;
+    background: linear-gradient(to left, var(--accent) 50%, transparent 50%) right;
     background-size: 200%;
     transition: 0.5s ease-out;
+    animation: slideFromTop 2s;
+    border: solid 1px var(--accent);
 }
 
 #intro-button-full:hover {
-    color: white;
     background-position: left;
+    border: solid 1px white;
 }
 
 .intro-text {
@@ -306,19 +356,18 @@ header {
     }
 }
 
-
 /*   End Of Intro     */
 
 .section-title-div {
     display: flex;
-    width:80%;
-    margin:auto;
+    width: 70%;
+    margin: auto;
+    max-width: 1000px;
 }
 
 .section-title {
-    text-align: left;
+    text-align: center;
     margin: 0;
-    width: fit-content;
     font-family: "Comfortaa", Helvetica, sans-serif;
     font-size: 30px;
     color: var(--font-color);
@@ -326,12 +375,11 @@ header {
 
 .section-hr {
     margin-left: 20px;
-    width: 40%;
+    width: 100%;
     height: fit-content;
-    color: white;
+    border-color: var(--accent);
     vertical-align: middle;
 }
-
 
 /*       exp          */
 
@@ -343,12 +391,12 @@ header {
 .exp-container {
     display: flex;
     width: 800px;
-    background-color: var(--card-color);
     color: white;
     height: 400px;
     border-radius: 10px;
     margin: 50px auto;
     flex-direction: row-reverse;
+    border: white solid 1px
 }
 
 .exp-options-div {
@@ -370,13 +418,24 @@ header {
     width: 80%;
     border-radius: 5px;
     transition: all ease-in-out 0.3s !important;
-    background: linear-gradient(to left, transparent 50%, var(--color-accent) 50%) right;
+    background: linear-gradient(to left, transparent 50%, var(--accent) 50%) right;
     background-size: 200%;
 }
 
 .exp-option:hover {
     cursor: pointer;
     background-position: left;
+}
+
+.exp-link-img {
+    width: 30px;
+    background-color: transparent;
+    border-radius: 50px;
+    transition: all ease-in-out 0.3s;
+}
+
+.exp-link-img:hover {
+    background-color: var(--color-accent);
 }
 
 .exp-content-div {
@@ -415,7 +474,7 @@ li {
 .exp-skill {
     display: inline-block;
     margin: 0 5%;
-    color: var(--color-accent);
+    color: var(--font-color);
 }
 
 .exp-skill:hover {
@@ -444,9 +503,7 @@ li {
     }
 }
 
-
 /*    /Home    */
-
 
 /*   Skills     */
 
@@ -526,9 +583,7 @@ circle {
     font-family: "Comfortaa", sans-serif;
 }
 
-
 /*  /Skills     */
-
 
 /*   About    */
 
@@ -559,7 +614,6 @@ circle {
 .about-link:hover {
     text-decoration: underline;
 }
-
 
 /*    Projects    */
 
@@ -595,13 +649,12 @@ circle {
 
 .project-title {
     font-size: 30px;
-    color: var(--color-accent);
+    color: var(--font-color);
     font-family: "Comfortaa", sans-serif;
 }
 
 .project-info {
     padding: 3% 5%;
-    background-color: #232323;
     margin: 0 5%;
     border-radius: 10px;
 }
@@ -617,13 +670,12 @@ circle {
 
 .project-link-img {
     width: 30px;
-    background-color: transparent;
     border-radius: 50px;
     transition: all ease-in-out 0.3s;
 }
 
 .project-link-img:hover {
-    background-color: var(--color-accent);
+    background-color: var(--accent);
 }
 
 .project-tag-div {
@@ -634,7 +686,7 @@ circle {
 
 .project-tag {
     padding: 4px 6px;
-    color: var(--color-accent);
+    color: var(--font-color);
     transition: all ease-in-out 0.3s;
     margin: auto;
 }
@@ -667,14 +719,12 @@ circle {
     }
 }
 
-
 /*    Footer    */
 
 footer {
     color: white;
-    background-color: #292929;
     padding: 40px 0;
-    border-top: var(--color-accent) solid 1px;
+    border-top: var(--color-primary) solid 1px;
 }
 
 .footer-main-text {
@@ -700,6 +750,5 @@ footer {
         font-size: 45px;
     }
 }
-
 
 /*    /Footer    */

@@ -6,7 +6,7 @@ import Title from '../Components/SectionTitle'
 
 export function loadExp() { // set original active state
     const selector = document.getElementsByClassName('exp-option')
-    selector[0].style.backgroundColor = 'var(--color-accent)'
+    selector[0].style.backgroundColor = 'var(--accent)'
     const content = document.getElementsByClassName('exp-content-div')
     content[0].style.display = 'block'
 }

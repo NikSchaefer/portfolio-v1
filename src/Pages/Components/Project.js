@@ -12,6 +12,7 @@ function Links(props) {
 const Project = (props) => {
     return (
         <div className='project-div'>
+            <img src={props.image} alt='' className='project-img' />
             <div className='project-info'>
                 <p className='project-title'>{props.title}</p>
                 <p className='project-text'>{props.description}</p>
@@ -23,7 +24,6 @@ const Project = (props) => {
                     <a href={props.link} className='project-link'><img alt='' className='project-link-img' src={GoTo} /></a>
                 </div>
             </div>
-            <img src={props.image} alt='' className='project-img' />
         </div>
     )
 }

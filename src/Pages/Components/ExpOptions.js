@@ -6,7 +6,7 @@ function handle(id) { // sets all elements inactive and then selects the clicked
         allOptionElements[i].style.backgroundColor = 'transparent'
     }
     const elementToChange = document.getElementById(id + '-selector');
-    elementToChange.style.backgroundColor = 'var(--color-accent)';
+    elementToChange.style.backgroundColor = 'var(--accent)';
 
     const allContentElements = document.getElementsByClassName('exp-content-div')
     for (var j = 0; j < allContentElements.length; j++) {

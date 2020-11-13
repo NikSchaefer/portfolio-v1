@@ -32,17 +32,17 @@ export function toBottom() {
 }
 
 let percent = 0;
-
-window.onscroll = function () {
+export function checkScrollDown() { 
     const line = document.getElementById('loadline')
-    const limit = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);  
+    const limit = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
     percent = Math.round((window.scrollY) / (limit - window.innerHeight) * 100)
-    line.style.background = `linear-gradient(90deg, var(--color-accent) ${percent}%, transparent ${percent}%, transparent 100%)`
+    line.style.background = `linear-gradient(90deg, var(--accent) ${percent}%, transparent ${percent}%, transparent 100%)`
     if (window.scrollY > 50) {
         const scrollElement = document.getElementById('scrollAnimation')
         scrollElement.style.animation = 'scrollDownAnimation 2s forwards'
     }
 }
+
 
 const NavBar = () => {
     return (

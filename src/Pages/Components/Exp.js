@@ -12,7 +12,7 @@ const Content = (props) => {
     return (
         <div className='exp-content-div' id={props.theID}>
             <div className='exp-content'>
-                <p className='exp-content-title'>@{props.title} <a href={props.link} style={{ visibility: `${props.linkVisibility}` }} className='exp-link'><img alt='' className='project-link-img' src={GoTo} /></a></p>
+                <p className='exp-content-title'>@{props.title} <a href={props.link} style={{ visibility: `${props.linkVisibility}` }} className='exp-link'><img alt='' className='exp-link-img' src={GoTo} /></a></p>
 
                 <p className='exp-content-sub-title'>{props.typeOfWork} | {props.begin} - {props.end}</p>
                 <ul>

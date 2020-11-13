@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import NavBar from './Pages/Sections/NavBar'
+import NavBar, { checkScrollDown } from './Pages/Sections/NavBar'
 import Footer from './Pages/Sections/Footer'
 import About from './Pages/Sections/About'
 
@@ -11,11 +11,48 @@ import Projects from './Pages/Sections/Projects'
 
 import { loadExp } from './Pages/Sections/Experience'
 
-window.onload = function () {
-  loadExp()
+const elementsToCheck = [
+  ['experience', 'onScrollFade 2s'],
+  ['skills', 'onScrollFade 2s'],
+  ['projects', 'onScrollFade 2s'],
+  ['about', 'onScrollFade 2s']]
+
+function checkElement(array, iteration) {
+  const ele = document.getElementById(array[iteration][0])
+  function getOffset(el) {
+    let _y = 0;
+    while (el && !isNaN(el.offsetTop)) {
+      _y += el.offsetTop - el.scrollTop;
+      el = el.offsetParent;
+    }
+    return _y;
+  }
+  let y = getOffset(ele)
+  let offset = window.innerHeight + -200;
+  if (window.scrollY + offset > y) {
+    ele.style.visibility = 'visible'
+    ele.style.animation = array[iteration][1]
+    return array.splice(iteration, 1)
+  }
+}
+function checkFadeElements(array) {
+  if (array.length !== 0) {
+    for (let i = 0; i < array.length; i++) {
+      checkElement(array, i)
+    }
+  }
 }
 
 function App() {
+
+  window.onload = function () {
+    loadExp()
+  }
+
+  window.onscroll = function () {
+    checkFadeElements(elementsToCheck)
+    checkScrollDown()
+  }
   return (
     <div className="theme-light">
       <NavBar />
