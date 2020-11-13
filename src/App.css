@@ -782,7 +782,7 @@ footer {
     border: none;
     resize: vertical;
     outline-width: 0;
-    color:var(--color-primary);
+    color: var(--color-primary);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -807,6 +807,12 @@ button:hover {
     cursor: pointer;
     border-color: var(--accent);
     box-sizing: border-box;
+}
+
+@media screen and (max-width:600px) {
+    .footer-form {
+        width:90%;
+    }
 }
 
 @media screen and (max-width: 500px) {
