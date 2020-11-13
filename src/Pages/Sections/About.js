@@ -5,12 +5,10 @@ const About = () => {
     return (
         <div id='about'>
             <Title title='About ' />
-
-
             <div className='about-div'>
                 <p className='about-tag'> {'<p>'} </p>
                 <p className='about-text'>
-                    <span role='img' aria-label='wave'>👋</span>! Im <span style={{ color:'var(--accent)'}}>Nik</span>,<br /><br />
+                    <span role='img' aria-label='wave'>👋</span>Im <span style={{ color:'var(--accent)'}}>Nik</span>,<br /><br />
                     I'm self-taught full-stack developer and a high school student
                     <br />
                     based in Minnesota, US <br /><br />

@@ -87,16 +87,16 @@ a[type="text-link"]:hover {
 
 body::-webkit-scrollbar {
     width: 0.7em;
+    background-color: #162029;
 }
 
 body::-webkit-scrollbar-track {
-    background-color: #292929;
-    border-radius: 0px;
+    background-color: #e84c3d;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--color-accent);
     border-radius: 60px;
+    background-color: #1e2c38;
 }
 
 /*    /Misc    */
@@ -681,7 +681,7 @@ circle {
 }
 
 .project-link {
-    display:inline;
+    display: inline;
 }
 
 .project-tag-div {
