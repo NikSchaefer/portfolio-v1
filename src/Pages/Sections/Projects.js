@@ -1,6 +1,6 @@
 import React from 'react'
 import umbrella from '../Images/Umbrella.JPG'
-import portfolio from '../Images/Portfolio.JPG'
+import portfolio from '../Images/Portfolio.PNG'
 import Box from '../Images/Box.PNG'
 import Project from '../Components/Project'
 import Title from '../Components/SectionTitle'

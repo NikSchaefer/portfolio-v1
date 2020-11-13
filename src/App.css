@@ -21,6 +21,20 @@ span {
     margin: 0;
 }
 
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--color-secondary);
+    opacity: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--color-secondary);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /*    /Variables     */
 
 /*    Misc    */
@@ -124,6 +138,7 @@ header {
 
 .nav-logo {
     width: 40px;
+    margin-right: 20px;
     transition: all ease-in-out 0.3s;
     border-radius: 50px;
 }
@@ -293,7 +308,6 @@ header {
     border: solid 1px white;
     display: inline-block;
     text-decoration: none;
-    background: linear-gradient(to left, transparent 50%, var(--accent) 50%) right;
     background-size: 200%;
     transition: 0.5s ease-out;
 }
@@ -751,6 +765,48 @@ footer {
 
 .footer-code-link:hover {
     text-decoration: none;
+}
+
+.footer-form {
+    width: 500px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-input {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #1e2c38;
+    border: none;
+    resize: vertical;
+    outline-width: 0;
+    color:var(--color-primary);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    height: 60px;
+}
+
+button {
+    width: fit-content;
+    font-size: 20px;
+    background: linear-gradient(to left, transparent 50%, var(--accent) 50%) right;
+    padding: 8px 12px;
+    background-size: 200%;
+    margin: auto;
+    color: var(--font-color);
+    border: solid var(--color-primary) 1px;
+    transition: all ease-in-out 0.3s;
+}
+
+button:hover {
+    background-position: left;
+    cursor: pointer;
+    border-color: var(--accent);
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 500px) {
