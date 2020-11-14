@@ -300,7 +300,7 @@ header {
 }
 
 .intro-button {
-    background-color: transparent;
+    background: linear-gradient(to left, transparent 50%, var(--accent) 50%) right;
     width: fit-content;
     font-size: 20px;
     color: var(--color-primary);
@@ -811,7 +811,7 @@ button:hover {
 
 @media screen and (max-width:600px) {
     .footer-form {
-        width:90%;
+        width: 90%;
     }
 }
 
