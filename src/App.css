@@ -778,6 +778,7 @@ button {
     color: var(--font-color);
     border: solid var(--color-primary) 1px;
     transition: all ease-in-out 0.3s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button:hover {
