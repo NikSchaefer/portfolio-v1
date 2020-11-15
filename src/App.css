@@ -772,7 +772,7 @@ button {
     width: fit-content;
     font-size: 20px;
     background: linear-gradient(to left, transparent 50%, var(--accent) 50%) right;
-    padding: 8px 12px;
+    padding: 8px 32px;
     background-size: 200%;
     margin: auto;
     color: var(--font-color);
