@@ -1,5 +1,5 @@
 import React from 'react'
-import umbrella from '../Images/Umbrella.JPG'
+import umbrella from '../Images/Umbrella.PNG'
 import portfolio from '../Images/Portfolio.PNG'
 import Box from '../Images/Box.PNG'
 import Project from '../Components/Project'
@@ -10,7 +10,7 @@ const Projects = () => {
         <div id='projects'>
             <Title title='Projects' />
             <Project
-                title='@Umbrella'
+                title='Umbrella'
                 description='Umbrella is a Mobile Weather App that makes calls to an API.
                     Website + Mobile Development'
                 image={umbrella}
@@ -20,7 +20,7 @@ const Projects = () => {
             />
 
             <Project
-                title='@Portfolio'
+                title='Portfolio'
                 description='This Very Portfolio Before you'
                 image={portfolio}
                 github='https://github.com/NikSchaefer/portfolio'
@@ -29,7 +29,7 @@ const Projects = () => {
             />
 
             <Project
-                title='@Box Shadow Creator'
+                title='Box Shadow Creator'
                 description='A Simple Website to Quickly and Easily Develop CSS Box Shadows'
                 image={Box}
                 github='https://github.com/NikSchaefer/box-shadow-maker'

@@ -26,8 +26,8 @@ const Skill = (props) => {
     }
     const circleSettings = {
         radius: '52',
-        fillColor: '#292929',
-        strokeWidth: '8',
+        fillColor: '#0e1b25',
+        strokeWidth: '6',
         strokeColor: 'white',
     }
     circleSettings.circumference = getCircumference(circleSettings.radius)

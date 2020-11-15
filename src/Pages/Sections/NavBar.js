@@ -1,5 +1,5 @@
 import React from 'react';
-import github from '../Images/Github2.svg'
+import github from '../Images/github.svg'
 import mail from '../Images/email.svg'
 
 import upArrow from '../Images/upArrow.svg'

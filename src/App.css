@@ -137,8 +137,8 @@ header {
 }
 
 .nav-logo {
-    width: 40px;
-    margin-right: 20px;
+    width: 35px;
+    margin-right: 10px;
     transition: all ease-in-out 0.3s;
     border-radius: 50px;
 }
@@ -149,6 +149,14 @@ header {
 
 .nav-logo:hover {
     transform: scale(1.1);
+}
+
+.fixed-link-div {
+    position: fixed;
+    display: flex;
+    left: 0;
+    padding: 3px 5px;
+    bottom: 0;
 }
 
 .nav-links-div {
@@ -171,7 +179,7 @@ header {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
     .nav-links-div {
         display: none;
     }
@@ -225,9 +233,9 @@ header {
 }
 
 @keyframes scrollDownAnimation {
-    from {}
     to {
         bottom: 110vh;
+        display: none;
     }
 }
 
@@ -248,44 +256,12 @@ header {
     width: 60px;
 }
 
-.fixed-link-div {
-    position: fixed;
-    left: 0;
-    padding: 10px;
-    bottom: 0;
-}
-
 /*    /NavBar    */
 
 /*    Intro    */
 
-@keyframes slideFromRight {
-    from {
-        position: relative;
-        top: 0;
-        left: 500px;
-    }
-    to {
-        position: relative;
-        top: 0;
-        left: 0px;
-    }
-}
-
-@keyframes slideFromTop {
-    from {
-        position: relative;
-        top: -500px;
-    }
-    to {
-        position: relative;
-        top: 0px;
-    }
-}
-
 .intro-name {
     font-family: "Comfortaa", sans-serif;
-    animation: slideFromRight 2s!important;
     color: var(--accent);
 }
 
@@ -299,17 +275,23 @@ header {
     animation: slideFromTop 2s;
 }
 
+.intro-button-div {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: 10px auto;
+}
+
 .intro-button {
     background: linear-gradient(to left, transparent 50%, var(--accent) 50%) right;
     width: fit-content;
     font-size: 20px;
     color: var(--color-primary);
-    padding: 10px;
+    padding: 12px 35px;
     border: solid 1px white;
-    display: inline-block;
-    text-decoration: none;
     background-size: 200%;
-    transition: 0.5s ease-out;
+    transition: 0.4s ease-out;
+    margin: 10px 0;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .intro-button:hover {
@@ -323,8 +305,6 @@ header {
     margin-right: 20%;
     background: linear-gradient(to left, var(--accent) 50%, transparent 50%) right;
     background-size: 200%;
-    transition: 0.5s ease-out;
-    animation: slideFromTop 2s;
     border: solid 1px var(--accent);
 }
 
@@ -449,7 +429,7 @@ header {
 }
 
 .exp-link-img:hover {
-    background-color: var(--color-accent);
+    background-color: var(--accent);
 }
 
 .exp-content-div {
@@ -550,16 +530,14 @@ li {
 .skill-content-div {
     width: 170px;
     height: 230px;
-    background: linear-gradient(90deg, #232323 50%, #1c1c1c 50%);
-    border-radius: 60px;
-    margin: 20px 15px;
+    margin: 20px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     transform: scale(0.9);
     transition: all ease-in-out 0.3s;
-    color: #777;
+    color: rgb(175, 175, 175);
 }
 
 .skill-content-div:hover {
@@ -595,6 +573,12 @@ circle {
     font-size: 50px;
     flex-basis: 100%;
     font-family: "Comfortaa", sans-serif;
+}
+
+@media screen and (max-width:500px) {
+    .skill-content-div {
+        margin: initial
+    }
 }
 
 /*  /Skills     */
@@ -647,6 +631,7 @@ circle {
 .project-div {
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 900px;
     color: var(--font-color);
     border-radius: 10px;
@@ -654,8 +639,9 @@ circle {
 }
 
 .project-img {
+    object-fit: scale-down;
     width: 400px;
-    border-radius: 10px;
+    height: 300px;
 }
 
 .project-img:hover {
@@ -672,6 +658,8 @@ circle {
     padding: 3% 5%;
     margin: 0 5%;
     border-radius: 10px;
+    text-align: left;
+    line-height: 25px;
 }
 
 .project-info:hover {
@@ -680,11 +668,11 @@ circle {
 
 .project-link-div {
     width: fit-content;
-    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-link-img {
-    width: 40px;
+    width: 30px;
     border-radius: 50px;
     transition: all ease-in-out 0.3s;
 }
@@ -696,38 +684,28 @@ circle {
 
 .project-link {
     display: inline;
+    margin: 10px;
 }
 
 .project-tag-div {
     display: flex;
     flex-wrap: wrap;
     font-family: "Comfortaa", sans-serif;
-    justify-content: center;
+    justify-content: left;
+    margin: 10px 0;
 }
 
 .project-tag {
-    padding: 4px 6px;
-    color: var(--font-color);
+    font-size: 12px;
+    color: var(--accent);
     transition: all ease-in-out 0.3s;
     margin: 8px 10px;
-    border: solid var(--accent) 1px;
 }
 
 .project-tag:hover {
     color: white;
     cursor: default;
     animation: squishTurn 0.7s infinite;
-}
-
-.project-bottom-link {
-    display: inline-block;
-    color: var(--color-accent);
-    text-decoration: underline;
-}
-
-.project-bottom-link:hover {
-    text-decoration: none;
-    cursor: pointer;
 }
 
 @media screen and (max-width: 960px) {
