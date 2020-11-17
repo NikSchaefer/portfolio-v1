@@ -57,10 +57,10 @@ function App() {
     <div className="theme-light">
       <NavBar />
       <Intro />
+      <About />
       <Experience />
       <Skills />
       <Projects />
-      <About />
       <Footer />
     </div>
   );

@@ -141,10 +141,12 @@ header {
     margin-right: 10px;
     transition: all ease-in-out 0.3s;
     border-radius: 50px;
+    z-index: 15;
 }
 
 .nav-logo-link {
     margin: auto;
+    z-index: 15;
 }
 
 .nav-logo:hover {
@@ -157,6 +159,7 @@ header {
     left: 0;
     padding: 3px 5px;
     bottom: 0;
+    z-index: 15;
 }
 
 .nav-links-div {
@@ -263,6 +266,7 @@ header {
 .intro-name {
     font-family: "Comfortaa", sans-serif;
     color: var(--accent);
+    font-weight: 800;
 }
 
 .intro-div {
@@ -411,14 +415,14 @@ header {
     padding: 15px 10px;
     width: 80%;
     border-radius: 5px;
-    transition: all ease-in-out 0.3s !important;
-    background: linear-gradient(to left, transparent 50%, var(--accent) 50%) right;
-    background-size: 200%;
+    transition: all ease-in-out 0.1s !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
 }
 
 .exp-option:hover {
     cursor: pointer;
-    background-position: left;
+    background-color: var(--accent)!important;
 }
 
 .exp-link-img {

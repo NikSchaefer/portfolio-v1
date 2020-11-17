@@ -1,8 +1,8 @@
 import React from 'react'
 import Title from '../Components/SectionTitle'
 const languages = [
-    ['Javascript', 75, 'blue'],
-    ['Python', 70, 'green'],
+    ['Javascript', 70, 'blue'],
+    ['Python', 75, 'green'],
     ['CSharp', 40, 'yellow'],
     ['HTML5', 80, 'white'],
     ['CSS', 80, 'purple']]
@@ -14,7 +14,6 @@ const frameworks = [
     ['React Native', 50, 'purple'],
     ['Unity', 45, 'green'],
 ]
-
 
 const Skill = (props) => {
     let outArray = [];
