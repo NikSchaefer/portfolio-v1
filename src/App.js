@@ -17,6 +17,8 @@ const elementsToCheck = [
   ['projects', 'onScrollFade 2s'],
   ['about', 'onScrollFade 2s']]
 
+const offset = window.innerHeight + -200;
+
 function checkElement(array, iteration) {
   const ele = document.getElementById(array[iteration][0])
   function getOffset(el) {
@@ -28,7 +30,6 @@ function checkElement(array, iteration) {
     return _y;
   }
   let y = getOffset(ele)
-  let offset = window.innerHeight + -200;
   if (window.scrollY + offset > y) {
     ele.style.visibility = 'visible'
     ele.style.animation = array[iteration][1]
@@ -43,10 +44,17 @@ function checkFadeElements(array) {
   }
 }
 
+
+
+function setElement(array) {
+
+}
+
 function App() {
 
   window.onload = function () {
     loadExp()
+    setElement()
   }
 
   window.onscroll = function () {
