@@ -1,12 +1,11 @@
 import React from 'react';
 import down from '../Images/chevronDown.svg'
-function scroll(offset, id) {
+const scroll = function (offset, id) {
     const yOffset = offset;
     const element = document.getElementById(id);
     const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
     window.scrollTo({ top: y, behavior: 'smooth' });
 }
-
 export function toAbout() {
     scroll(-200, 'about')
 }
@@ -38,7 +37,6 @@ export function checkScrollDown() {
         scrollElement.style.animation = 'scrollDownAnimation 2s forwards'
     }
 }
-
 const NavBar = () => {
     return (
         <div>

@@ -1,4 +1,5 @@
-.theme-light {
+html {
+    scroll-behavior: smooth;
     --color-primary: #ffffff;
     --color-secondary: #fbfbfd;
     --color-accent: #162029;
@@ -9,10 +10,7 @@
     color: var(--font-color);
     background-color: #162029;
     font-family: Calibre, sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
+    text-align: center;
 }
 
 ::placeholder {
@@ -54,10 +52,6 @@ html {
         top: 0;
         opacity: 1;
     }
-}
-
-body {
-    text-align: center;
 }
 
 ::selection {
@@ -160,8 +154,6 @@ header {
     width: 60px;
 }
 
-/*    /NavBar    */
-
 /*    Intro    */
 
 .intro-name {
@@ -230,7 +222,7 @@ header {
     }
 }
 
-/*   End Of Intro     */
+/*   section     */
 
 .section-title {
     font-size: 50px;
@@ -361,8 +353,6 @@ ul {
     }
 }
 
-/*    /Home    */
-
 /*   Skills     */
 
 @keyframes squishText {
@@ -425,11 +415,9 @@ circle {
     font-weight: 700;
     font-size: 35px;
     position: relative;
-    top: -120px;
+    top: -123px;
     margin-bottom: -100px;
 }
-
-/*  /Skills     */
 
 /*   About    */
 
