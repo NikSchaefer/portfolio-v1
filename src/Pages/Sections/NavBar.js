@@ -1,8 +1,4 @@
 import React from 'react';
-import github from '../Images/github.svg'
-import mail from '../Images/email.svg'
-
-import upArrow from '../Images/upArrow.svg'
 import down from '../Images/chevronDown.svg'
 function scroll(offset, id) {
     const yOffset = offset;
@@ -43,34 +39,23 @@ export function checkScrollDown() {
     }
 }
 
-
 const NavBar = () => {
     return (
         <div>
             <header>
                 <div className="nav-links-div">
-                    <p className='nav-link' onClick={toTop}>Intro</p>
-                    <hr />
-                    <p className='nav-link' onClick={toExp}>Experience</p>
-                    <hr />
-                    <p className='nav-link' onClick={toSkills}>Skills</p>
-                    <hr />
-                    <p className='nav-link' onClick={toProjects}>Projects</p>
-                    <hr />
                     <p className='nav-link' onClick={toAbout}>About</p>
+                    <p className='nav-link' onClick={toExp}>Experience</p>
+                    <p className='nav-link' onClick={toSkills}>Skills</p>
+                    <p className='nav-link' onClick={toProjects}>Projects</p>
+                    <p className='nav-link' onClick={toBottom}>Contact</p>
+
                 </div>
                 <div style={{flexBasis:'100%'}} /> 
                 <div id='loadline' />
             </header>
             <div className='scroll-down-div' id='scrollAnimation'>
                 <img src={down} alt='' className='scroll-down-img' />
-            </div>
-            <div className='fixed-link-div'>
-                <a className='nav-logo-link' href='https://github.com/NikSchaefer'><img src={github} alt='' className='nav-logo' /></a>
-                <a href='mailto:nikkschaefer@gmail.com' className='nav-logo-link'><img src={mail} alt='' className='nav-logo' /></a>
-            </div>
-            <div className='toTop-div' onClick={toTop}>
-                <img src={upArrow} alt='' className='toTop-img' />
             </div>
         </div>
     )

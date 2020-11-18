@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
+import calc from '../Images/github.svg'
+import mail from '../Images/email.svg'
+import Title from '../Components/SectionTitle'
+
 import { init } from 'emailjs-com';
 const config = {
     KEY: 'user_dkvZZk4wFtUR8WzHQlJGa',
@@ -14,6 +18,26 @@ const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^
 
 function validateEmail(email) {
     return re.test(email)
+}
+
+export function ArrowSvg(props) { 
+    return (
+        <svg preserveAspectRatio="none" id={props.id}
+            style={{marginBottom:props.margin}}
+            viewBox="0 0 100 102" height={props.height}
+            width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" classNam="arrow-svg">
+            <path d="M0 0 L50 100 L100 0 Z" fill={props.color} stroke={props.color}></path>
+        </svg>
+    )
+}
+
+
+function SocialBlock(props) { 
+    return (
+        <a href={props.link} className='footer-social-div'>
+            <img src={props.image} className='footer-social-img' alt='' />
+        </a>
+    )
 }
 
 const Footer = () => {
@@ -46,36 +70,30 @@ const Footer = () => {
             inValid()
         }
     }
+
     return (
-        <div>
+            
             <footer id='footer'>
-                <p className='footer-main-text'>
-                    LETS W<span role='img' aria-label='rocket'>🚀</span>RK <br />TOGETHER
-                    </p>
-                <p style={{ fontSize: '14px' }}>Collaberations, Connections, Projects <br /></p>
-                    Contact me at <a href="mailto:nikkschaefer@gmail.com" type="text-link">nikkschaefer@gmail.com</a><br />
+                <ArrowSvg height='90' color='white' />
+                <Title title='contact' />
+                <p style={{margin:'0', fontSize: '14px', color:'var(--accent)' }}>Collaberations, Connections, Projects <br /></p>
 
                 <form onSubmit={handleSubmit} className='footer-form'>
                     <input onChange={function (e) { setName(e.target.value) }} value={name} placeholder='Name' className='footer-input' />
-
                     <input onChange={function (e) { setEmail(e.target.value) }} value={email} placeholder='Email' className='footer-input' />
-
                     <textarea onChange={function (e) { setMessage(e.target.value) }} value={message} placeholder='Message' className='footer-input' />
-
-
                     <button type='submit'>Submit</button>
-                </form>
+            </form>
+            <div className='footer-bottom'>
+                <div className='footer-socials-div'>
+                    <SocialBlock link='https://github.com/NikSchaefer' image={calc} />
+                    <SocialBlock link='mailto:nikkschaefer@gmail.com' image={mail} />
+                </div>
+                <p className='footer-copyright'>© 2020 Design + <a href='https://github.com/NikSchaefer/portfolio' className='footer-code-link'>Code</a> by Nik Schaefer</p>
 
-
-
-
-                <p>
-
-                    <br />
-                      © 2020 Design + <a href='https://github.com/NikSchaefer/portfolio' className='footer-code-link'>Code</a> by Nik Schaefer
-                    </p>
+            </div>
+                
             </footer>
-        </div>
     )
 }
 

@@ -1,13 +1,15 @@
 import React from 'react'
-import umbrella from '../Images/Umbrella.PNG'
-import portfolio from '../Images/Portfolio.PNG'
-import Box from '../Images/Box.PNG'
+import umbrella from '../Images/Projects/Umbrella.PNG'
+import portfolio from '../Images/Projects/Portfolio.PNG'
+import Box from '../Images/Projects/Box.PNG'
 import Project from '../Components/Project'
 import Title from '../Components/SectionTitle'
+import { ArrowSvg } from './Footer'
 
 const Projects = () => {
     return (
-        <div id='projects'>
+        <div id='projects' className='project-primary-div'>
+            <ArrowSvg id='project-arrow' height='90' color='var(--color-accent)' />
             <Title title='Projects' />
             <Project
                 title='Umbrella'
@@ -18,7 +20,6 @@ const Projects = () => {
                 link='https://theumbrella.vercel.app/'
                 skills={['React', 'HTML', 'CSS', 'React Native', "Javascript"]}
             />
-
             <Project
                 title='Portfolio'
                 description='This Very Portfolio Before you'
@@ -27,7 +28,6 @@ const Projects = () => {
                 link="https://nikschaefer.vercel.app/"
                 skills={['React', 'HTML', 'CSS', "Javascript"]}
             />
-
             <Project
                 title='Box Shadow Creator'
                 description='A Simple Website to Quickly and Easily Develop CSS Box Shadows'
