@@ -221,9 +221,9 @@ header {
 }
 
 .intro-button {
-    background: linear-gradient(to left, transparent 50%, var(--accent) 50%) right;
     width: fit-content;
     font-size: 20px;
+    background-color: transparent;
     color: var(--color-primary);
     padding: 12px 35px;
     border: solid 1px white;
@@ -235,21 +235,20 @@ header {
 
 .intro-button:hover {
     cursor: pointer;
-    border: solid 1px var(--accent);
-    background-position: left;
+    border-color: var(--accent);
+    background-color: var(--accent);
 }
 
 #intro-button-full {
     color: var(--font-color);
     margin-right: 20%;
-    background: linear-gradient(to left, var(--accent) 50%, transparent 50%) right;
-    background-size: 200%;
+    background-color: var(--accent);
     border: solid 1px var(--accent);
 }
 
 #intro-button-full:hover {
-    background-position: left;
-    border: solid 1px white;
+    border-color: white;
+    background-color: transparent;
 }
 
 .intro-text {
