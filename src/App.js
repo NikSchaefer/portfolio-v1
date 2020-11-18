@@ -3,7 +3,6 @@ import './App.css';
 import NavBar, { checkScrollDown } from './Pages/Sections/NavBar'
 import Footer from './Pages/Sections/Footer'
 import About from './Pages/Sections/About'
-
 import Intro from './Pages/Sections/Intro'
 import Experience from './Pages/Sections/Experience'
 import Skills from './Pages/Sections/Skills'
@@ -11,50 +10,53 @@ import Projects from './Pages/Sections/Projects'
 
 import { loadExp } from './Pages/Sections/Experience'
 
-const elementsToCheck = [
+const elementsToCheck = [ // should be in order
+  ['about', 'onScrollFade 2s'],
   ['experience', 'onScrollFade 2s'],
   ['skills', 'onScrollFade 2s'],
-  ['projects', 'onScrollFade 2s'],
-  ['about', 'onScrollFade 2s']]
+  ['projects', 'onScrollFade 2s']
+]
 
-const offset = window.innerHeight + -200;
+const offset = window.innerHeight + -200; // px away from bottom of screen to trigger animation
 
-function checkElement(array, iteration) {
-  const ele = document.getElementById(array[iteration][0])
-  function getOffset(el) {
-    let _y = 0;
-    while (el && !isNaN(el.offsetTop)) {
-      _y += el.offsetTop - el.scrollTop;
-      el = el.offsetParent;
-    }
-    return _y;
+const getOffset = function (el) {
+  let _y = 0;
+  while (el && !isNaN(el.offsetTop)) {
+    _y += el.offsetTop - el.scrollTop;
+    el = el.offsetParent;
   }
-  let y = getOffset(ele)
-  if (window.scrollY + offset > y) {
+  return _y;
+}
+const checkElement = function (array, iteration) {
+  if (window.scrollY + offset > array[iteration][2]) {
+    const ele = document.getElementById(array[iteration][0])
     ele.style.visibility = 'visible'
     ele.style.animation = array[iteration][1]
     return array.splice(iteration, 1)
   }
 }
-function checkFadeElements(array) {
+
+const checkFadeElements = function (array) {
   if (array.length !== 0) {
-    for (let i = 0; i < array.length; i++) {
-      checkElement(array, i)
-    }
+    checkElement(array, 0)
   }
 }
 
-
-
-function setElement(array) {
-
+const generateOffsets = function (array) {
+  for (let j = 0; j < array.length; j++) {
+    const ele = document.getElementById(array[j][0])
+    ele.style.visibility = 'hidden'
+    ele.style.position = 'relative'
+    const y = getOffset(ele)
+    array[j].push(y)
+  }
 }
 
 function App() {
 
   window.onload = function () {
     loadExp()
-    setElement()
+    generateOffsets(elementsToCheck)
   }
 
   window.onscroll = function () {
