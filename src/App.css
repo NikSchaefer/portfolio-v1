@@ -121,20 +121,15 @@ hr {
 
 header {
     position: fixed;
-    display: flex;
     z-index: 3;
-    width: 100%;
+    width: 100vw;
     top: 0;
-    padding: 30px 0;
-    flex-wrap: wrap;
-    border-bottom: solid 1px var(--color-accent);
-    color: white;
+    padding-top: 30px;
     background-color: var(--color-accent);
 }
 
 .nav-links-div {
     display: flex;
-    flex-direction: row;
     width: 700px;
 }
 
@@ -520,7 +515,7 @@ circle {
 .about-primary {
     background-color: white;
     color: var(--font-color-o);
-    padding: 100px 0;
+    padding: 100px;
 }
 
 .about-div {
@@ -531,7 +526,7 @@ circle {
 }
 
 .about-text {
-    color:rgb(68, 68, 68);
+    color: rgb(68, 68, 68);
     font-size: 22px;
     word-spacing: 3px;
     line-height: 25px;
@@ -683,7 +678,7 @@ footer {
 }
 
 .footer-copyright {
-    color: gray;
+    color: rgb(172, 172, 172);
     font-size: 14px;
 }
 

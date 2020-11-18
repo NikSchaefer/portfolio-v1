@@ -5,8 +5,8 @@ const languages = [
     ['Python', 75, 'green'],
     ['CSharp', 40, 'yellow'],
     ['HTML5', 80, 'white'],
-    ['CSS', 80, 'purple']]
-
+    ['CSS', 80, 'purple'],
+]
 const frameworks = [
     ['ReactJS', 75, 'yellow'],
     ['Django', 50, 'red'],
@@ -14,29 +14,26 @@ const frameworks = [
     ['React Native', 50, 'purple'],
     ['Unity', 45, 'green'],
 ]
+const circleSettings = {
+    radius: '52',
+    fillColor: '#0e1b25',
+    strokeWidth: '6',
+    strokeColor: 'white',
+}
+const getCircumference = function (radius) {
+    return radius * 2 * Math.PI;
+}
+const getOffset = function (circumference, percent) {
+    return circumference - percent / 100 * circumference
+}
+
+circleSettings.circumference = getCircumference(circleSettings.radius)
 
 const Skill = (props) => {
     let outArray = [];
-    function getCircumference(radius) {
-        return radius * 2 * Math.PI;
-    }
-    function getOffset(circumference, percent) {
-        return circumference - percent / 100 * circumference
-    }
-    const circleSettings = {
-        radius: '52',
-        fillColor: '#0e1b25',
-        strokeWidth: '6',
-        strokeColor: 'white',
-    }
-    circleSettings.circumference = getCircumference(circleSettings.radius)
-
     for (let i = 0; i < props.skills.length; i++) {
-
         circleSettings.offset = getOffset(circleSettings.circumference, props.skills[i][1]);
         circleSettings.strokeColor = props.skills[i][2];
-
-
         outArray.push(
             <div className='skill-content-div' key={`skill-content-div-${i}`}>
                 <div className='svg-div'>
@@ -65,17 +62,13 @@ const Skill = (props) => {
     }
     return outArray
 }
-
-
 const SkillDiv = (props) => {
     return (
         <div className='skills-div'>
             <Skill skills={props.skills} />
         </div>
-
     )
 }
-
 const Skills = () => {
     return (
         <div id='skills'>

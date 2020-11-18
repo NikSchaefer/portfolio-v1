@@ -23,12 +23,12 @@ export function toExp() {
 export function toProjects() {
     scroll(-200, 'projects')
 }
-export function toBottom() { 
+export function toBottom() {
     scroll(0, 'footer')
 }
 
 let percent = 0;
-export function checkScrollDown() { 
+export function checkScrollDown() {
     const line = document.getElementById('loadline')
     const limit = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
     percent = Math.round((window.scrollY) / (limit - window.innerHeight) * 100)
@@ -49,9 +49,8 @@ const NavBar = () => {
                     <p className='nav-link' onClick={toSkills}>Skills</p>
                     <p className='nav-link' onClick={toProjects}>Projects</p>
                     <p className='nav-link' onClick={toBottom}>Contact</p>
-
                 </div>
-                <div style={{flexBasis:'100%'}} /> 
+                <div style={{ flexBasis: '100%' }} />
                 <div id='loadline' />
             </header>
             <div className='scroll-down-div' id='scrollAnimation'>
