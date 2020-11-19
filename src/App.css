@@ -14,12 +14,12 @@ html {
 }
 
 ::placeholder {
-    color: var(--color-secondary);
+    color: #919191;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 :-ms-input-placeholder {
-    color: var(--color-secondary);
+    color: #919191;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -585,8 +585,8 @@ circle {
 
 .footer-input {
     outline-width: 0;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 13px;
+    margin-bottom: 5px;
     background-color: #1e2c38;
     border: none;
     resize: vertical;
@@ -599,9 +599,13 @@ textarea {
 }
 
 button {
-    margin: auto!important;
+    margin: 5px auto!important;
     color: var(--font-color);
     background-color: transparent;
+}
+
+.footer-to-top-div {
+    background: linear-gradient(0deg, #1c242f 50%, var(--color-accent) 50%);
 }
 
 .footer-bottom {
@@ -612,12 +616,13 @@ button {
 .footer-socials-div {
     display: flex;
     justify-content: space-evenly;
-    width: 60%;
+    width: 300px;
     margin: auto;
-    padding: 15px;
+    padding: 15px 0;
 }
 
 .footer-social-div {
+    cursor: pointer;
     background-color: #262f38;
     padding: 10px;
     transition: all ease-in-out 0.3s;
@@ -625,7 +630,7 @@ button {
 
 .footer-social-div:hover {
     background-color: var(--accent);
-    transform: scale(0.95);
+    transform: scale(0.92);
 }
 
 .footer-social-img {

@@ -1,16 +1,16 @@
 import React from 'react'
 import Title from '../Components/SectionTitle'
 const languages = [
-    ['Javascript', 70, 'blue'],
+    ['Javascript', 70, '#05c2c8'],
     ['Python', 75, 'green'],
     ['CSharp', 40, 'yellow'],
-    ['HTML5', 80, 'white'],
+    ['HTML', 80, 'white'],
     ['CSS', 80, 'purple'],
 ]
 const frameworks = [
     ['ReactJS', 75, 'yellow'],
     ['Django', 50, 'red'],
-    ['Firebase', 30, 'white'],
+    ['Firebase', 30, '#05c2c8'],
     ['React Native', 50, 'purple'],
     ['Unity', 45, 'green'],
 ]

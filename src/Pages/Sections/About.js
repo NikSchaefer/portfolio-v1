@@ -6,7 +6,7 @@ const About = () => {
             <Title titleId='title-about' hr='hr-about' title='About ' />
             <div className='about-div' id='about'>
                 <p className='about-text'>
-                    <span role='img' aria-label='wave'>👋</span>Im <span style={{ color: 'var(--accent)' }}>Nik</span>,<br /><br />
+                    <span role='img' aria-label='wave'>👋</span><br /><br />
                     I'm self-taught full-stack developer and a high school student
                     <br />
                     based in Minnesota, US <br /><br />

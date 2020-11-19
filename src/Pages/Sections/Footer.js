@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import chevron from '../Images/chevronUp.svg'
 
 import github from '../Images/github.svg'
 import mail from '../Images/email.svg'
 import Title from '../Components/SectionTitle'
 
 import { init } from 'emailjs-com';
+import { toTop } from './NavBar';
 const config = {
     KEY: 'user_dkvZZk4wFtUR8WzHQlJGa',
     SERVICE: "service_gvyfwv8",
@@ -63,6 +65,11 @@ const Footer = () => {
                 <textarea onChange={function (e) { setMessage(e.target.value) }} value={message} placeholder='Message' className='footer-input' />
                 <button className='intro-button' type='submit'>Submit</button>
             </form>
+            <div className='footer-to-top-div'>
+                <div onClick={toTop} className='footer-socials-div' >
+                    <img src={chevron} style={{ backgroundColor: 'var(--accent)' }} className='footer-social-div' alt='toTop' />
+                </div>
+            </div>
             <div className='footer-bottom'>
                 <div className='footer-socials-div'>
                     <SocialBlock link='https://github.com/NikSchaefer' image={github} />

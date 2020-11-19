@@ -35,14 +35,7 @@ const elementsToCheck = [ // should be in order
   ['hr-footer', 'hr 2s'],
 
 ]
-
-
-
-
-
-
 const offset = window.innerHeight + -200; // px away from bottom of screen to trigger animation
-
 const getOffset = function (el) {
   let _y = 0;
   while (el && !isNaN(el.offsetTop)) {
@@ -81,6 +74,7 @@ function App() {
   window.onload = function () {
     loadExp()
     generateOffsets(elementsToCheck)
+    checkFadeElements(elementsToCheck)
   }
 
   window.onscroll = function () {
