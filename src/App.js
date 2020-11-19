@@ -11,11 +11,35 @@ import Projects from './Pages/Sections/Projects'
 import { loadExp } from './Pages/Sections/Experience'
 
 const elementsToCheck = [ // should be in order
+  ['title-about', 'title 2s'],
+  ['hr-about', 'hr 2s'],
+
   ['about', 'onScrollFade 2s'],
+
+  ['title-exp', 'title 2s'],
+  ['hr-exp', 'hr 2s'],
+
   ['experience', 'onScrollFade 2s'],
+
+  ['title-skill', 'title 2s'],
+  ['hr-skill', 'hr 2s'],
+
   ['skills', 'onScrollFade 2s'],
-  ['projects', 'onScrollFade 2s']
+
+  ['title-project', 'title 2s'],
+  ['hr-project', 'hr 2s'],
+
+  ['projects', 'onScrollFade 2s'],
+
+  ['title-footer', 'title 2s'],
+  ['hr-footer', 'hr 2s'],
+
 ]
+
+
+
+
+
 
 const offset = window.innerHeight + -200; // px away from bottom of screen to trigger animation
 

@@ -205,6 +205,24 @@ header {
 
 /*   section     */
 
+@keyframes title {
+    from {
+        left: -200px
+    }
+    to {
+        left: 0
+    }
+}
+
+@keyframes hr {
+    from {
+        left: 200px
+    }
+    to {
+        left: 0
+    }
+}
+
 .section-title {
     font-size: 50px;
     font-weight: 500;

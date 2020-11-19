@@ -55,7 +55,7 @@ const Footer = () => {
     return (
         <footer id='footer'>
             <ArrowSvg height='90' color='white' />
-            <Title title='contact' />
+            <Title titleId='title-footer' hr='hr-footer' title='contact' />
             <p style={{ margin: '0', fontSize: '14px', color: 'var(--accent)' }}>Collaberations, Connections, Questions <br /></p>
             <form onSubmit={handleSubmit} className='footer-form'>
                 <input onChange={function (e) { setName(e.target.value) }} value={name} placeholder='Name' className='footer-input' />

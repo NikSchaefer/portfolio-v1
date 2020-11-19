@@ -3,8 +3,8 @@ import React from 'react'
 const Title = (props) => {
     return (
         <div>
-            <p className='section-title'>{props.title}</p>
-            <hr className='section-hr' />
+            <p id={props.titleId} className='section-title'>{props.title}</p>
+            <hr id={props.hr} className='section-hr' />
         </div>
     )
 }

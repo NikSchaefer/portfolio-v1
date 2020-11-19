@@ -71,10 +71,12 @@ const SkillDiv = (props) => {
 }
 const Skills = () => {
     return (
-        <div id='skills'>
-            <Title title='Skills ' />
-            <SkillDiv skills={languages} />
-            <SkillDiv skills={frameworks} />
+        <div >
+            <Title titleId='title-skill' hr='hr-skill' title='Skills ' />
+            <div id='skills'>
+                <SkillDiv skills={languages} />
+                <SkillDiv skills={frameworks} />
+            </div>
         </div>
     )
 }

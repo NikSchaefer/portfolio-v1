@@ -11,9 +11,9 @@ export function loadExp() { // set original active state
 }
 const Experience = () => {
     return (
-        <div id='experience'>
-            <Title title='Experience ' />
-            <div className='exp-container'>
+        <div>
+            <Title titleId='title-exp' hr='hr-exp' title='Experience ' />
+            <div className='exp-container' id='experience'>
                 <Content
                     theID='Spiral'
                     title='Spiral Esports'
