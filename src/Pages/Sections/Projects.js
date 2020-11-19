@@ -14,7 +14,8 @@ const Projects = () => {
             <div id='projects'>
                 <Project
                     title='Stock Prediction'
-                    description='Upcoming Project: Stock Prediction Machine Learning Model Built with Tensorflow and + Python'
+                    description='Upcoming Project: Stock Prediction Machine 
+                    Learning Model Built with Tensorflow and + Python using Alphavantage Stock API'
                     image={Stock}
                     github='https://github.com/NikSchaefer/'
                     link=''
