@@ -1,26 +1,27 @@
 import React from 'react';
 import down from '../Images/chevronDown.svg'
 const scroll = function (offset, id) {
-    const yOffset = offset;
     const element = document.getElementById(id);
-    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    const y = element.getBoundingClientRect().top + window.pageYOffset + offset;
     window.scrollTo({ top: y, behavior: 'smooth' });
 }
+
+const offset = -500;
 export function toAbout() {
-    scroll(-200, 'about')
+    scroll(offset, 'about')
 }
 export function toTop() {
     window.scrollTo(0, 0)
 }
 export function toSkills() {
-    scroll(-200, 'skills')
+    scroll(offset, 'skills')
 }
 export function toExp() {
-    scroll(-200, 'experience')
+    scroll(offset, 'experience')
 }
 
 export function toProjects() {
-    scroll(-200, 'projects')
+    scroll(offset, 'projects')
 }
 export function toBottom() {
     scroll(0, 'footer')
