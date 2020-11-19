@@ -10,7 +10,7 @@ import Projects from './Pages/Sections/Projects'
 
 import { loadExp } from './Pages/Sections/Experience'
 
-const elementsToCheck = [ // should be in order
+const elementsToCheck = [ // should be in render order
   ['title-about', 'title 2s'],
   ['hr-about', 'hr 2s'],
 
@@ -75,6 +75,7 @@ function App() {
     loadExp()
     generateOffsets(elementsToCheck)
     checkFadeElements(elementsToCheck)
+    checkScrollDown()
   }
 
   window.onscroll = function () {

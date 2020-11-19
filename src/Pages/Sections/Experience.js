@@ -1,6 +1,6 @@
 import React from 'react'
 import Content from '../Components/Exp'
-import Options from '../Components/ExpOptions'
+import Option from '../Components/ExpOptions'
 import Title from '../Components/SectionTitle'
 
 export function loadExp() { // set original active state
@@ -50,24 +50,11 @@ const Experience = () => {
                     skills={['React', 'HTML', 'CSS', 'Javascript', 'Vercel']}
                     link='https://k5gaming.vercel.app/'
                 />
-                <Content
-                    theID='Nebula'
-                    title='Nebula Esports'
-                    info='Freelance | Sep 2020 - Nov 2020'
-                    description1='Nebula Esports is an Orginization sponsoring teams and managing a league'
-                    description2='I designed and developed a website for Nebula Esports from scratch'
-                    skills={['React', 'HTML', 'CSS', 'Javascript', 'Vercel']}
-                    link='https://nebulaesports.vercel.app/'
-                />
-
                 <div className='exp-options-div'>
-                    <div className='exp-options-list'>
-                        <Options theID='Spiral' title="Spiral Esports" />
-                        <Options theID='Sparks' title="Sparks VB Club" />
-                        <Options theID='TEC' title="The Esport Company" />
-                        <Options theID='K5' title="K5 Gaming" />
-                        <Options theID='Nebula' title="Nebula Esports" />
-                    </div>
+                        <Option theID='Spiral' title="Spiral Esports" />
+                        <Option theID='Sparks' title="Sparks VB Club" />
+                        <Option theID='TEC' title="The Esport Company" />
+                        <Option theID='K5' title="K5 Gaming" />
                 </div>
             </div>
         </div>
