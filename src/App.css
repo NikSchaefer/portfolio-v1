@@ -275,7 +275,7 @@ header {
 .exp-link-img {
     width: 30px;
     border-radius: 10px;
-    transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.15s;
 }
 
 .exp-link-img:hover {

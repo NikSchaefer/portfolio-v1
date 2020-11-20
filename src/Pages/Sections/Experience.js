@@ -21,7 +21,7 @@ const Experience = () => {
                     description1='Spiral Esports is an Orginization providing competitive experiences for its players and community'
                     description2='I designed and developed a website for Spiral Esports from scratch'
                     skills={['React', 'HTML', 'CSS', 'Javascript', 'Vercel']}
-                    linkVisibility='hidden'
+                    link='https://spiralesports.vercel.app/'
                 />
                 <Content
                     theID='Sparks'
@@ -30,7 +30,7 @@ const Experience = () => {
                     description1='Sparks Volleyball Club is a Volleyball Club based in Las Vegas, NV'
                     description2='I designed and developed a site from scratch working directly with a team member and client'
                     skills={['React', 'HTML', 'CSS', 'Javascript', 'Vercel']}
-                    linkVisibility='hidden'
+                    link='https://sparksvbclub.vercel.app/'
                 />
                 <Content
                     theID='TEC'
