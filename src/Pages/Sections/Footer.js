@@ -27,7 +27,7 @@ export const ArrowSvg = function (props) {
 }
 const SocialBlock = function (props) {
     return (
-        <a href={props.link} className='footer-social-div'>
+        <a href={props.link} onClick={function (e) { e.preventDefault(); window.open(props.link)}} className='footer-social-div'>
             <img src={props.image} className='footer-social-img' alt='' />
         </a>
     )
