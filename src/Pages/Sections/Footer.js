@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import React, { useState } from 'react'
+import emailjs from 'emailjs-com'
 import chevron from '../Images/chevronUp.svg'
 
 import github from '../Images/github.svg'
 import mail from '../Images/email.svg'
+import linkedin from '../Images/linkedin.svg'
 import Title from '../Components/SectionTitle'
 
-import { init } from 'emailjs-com';
-import { toTop } from './NavBar';
+import { init } from 'emailjs-com'
+import { toTop } from './NavBar'
 const config = {
     KEY: 'user_dkvZZk4wFtUR8WzHQlJGa',
     SERVICE: "service_gvyfwv8",
@@ -73,7 +74,8 @@ const Footer = () => {
             <div className='footer-bottom'>
                 <div className='footer-socials-div'>
                     <SocialBlock link='https://github.com/NikSchaefer' image={github} />
-                    <SocialBlock link='mailto:nikkschaefer@gmail.com' image={mail} />
+                    <SocialBlock link='mailto:nikkschaefer@gmail.com' image={linkedin} />
+                    <SocialBlock link='https://www.linkedin.com/in/nik-schaefer/' image={mail} />
                 </div>
                 <p className='footer-copyright'>© 2020 Design + <a href='https://github.com/NikSchaefer/portfolio' className='footer-code-link'>Code</a> by Nik Schaefer</p>
             </div>
