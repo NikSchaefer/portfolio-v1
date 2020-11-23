@@ -96,10 +96,8 @@ header {
 }
 
 #loadline {
-    width: 100%;
     margin-top: 5px;
     height: 5px;
-    z-index: 100;
 }
 
 @keyframes bounce {
@@ -114,19 +112,11 @@ header {
     }
 }
 
-@keyframes scrollDownAnimation {
-    to {
-        bottom: 110vh;
-        display: none;
-    }
-}
-
 .scroll-down-div {
     position: fixed;
     bottom: 8vh;
     width: 100vw;
     transition: all ease-in-out 0.3s;
-    align-items: center;
     animation: bounce 3s infinite;
 }
 
@@ -137,22 +127,15 @@ header {
 /*    Intro    */
 
 .intro-name {
-    font-family: "Comfortaa", sans-serif;
     color: var(--accent);
 }
 
 .intro-div {
-    text-align: left;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.intro-button-div {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .intro-button {
@@ -169,25 +152,8 @@ header {
     background-color: var(--accent);
 }
 
-#intro-button-full {
-    margin-right: 20%;
-    background-color: var(--accent);
-    border-color: var(--accent);
-}
-
-#intro-button-full:hover {
-    border-color: var(--color-primary);
-    background-color: transparent;
-}
-
 .intro-text {
-    font-size: 60px;
-    line-height: 100%;
-    margin: 0;
-}
-
-.intro-tiny-text {
-    font-size: 25px;
+    font-size: 55px;
     margin: 0;
 }
 
@@ -197,7 +163,7 @@ header {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .intro-text {
         font-size: 28px;
     }
@@ -253,7 +219,6 @@ header {
 
 .exp-options-div {
     width: 40%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -284,7 +249,7 @@ header {
 
 .exp-content-div {
     width: 55%;
-    margin:auto;
+    margin: auto;
     display: none;
 }
 
@@ -294,7 +259,6 @@ header {
 }
 
 .exp-content-sub-title {
-    text-align: left;
     font-weight: 600;
 }
 
@@ -321,11 +285,6 @@ ul {
     }
     .exp-options-div {
         width: 100%;
-    }
-    .exp-options-list {
-        width: 100%;
-        border: solid 1px var(--color-accent);
-        border-radius: 10px;
     }
     .exp-content-div {
         width: 100%;
@@ -542,16 +501,12 @@ circle {
 /*    Footer    */
 
 .footer-copyright {
-    color: rgb(204, 204, 204);
+    color: rgba(204, 204, 204, 0.411);
     font-size: 14px;
 }
 
 .footer-code-link {
     color: var(--accent);
-    text-decoration: underline;
-}
-
-.footer-code-link:hover {
     text-decoration: none;
 }
 
@@ -574,11 +529,11 @@ circle {
 }
 
 textarea {
-    height: 60px;
+    min-height: 60px;
 }
 
 button {
-    margin: 5px auto!important;
+    margin: 5px auto;
     color: var(--font-color);
     background-color: transparent;
 }
@@ -619,12 +574,6 @@ button {
 @media screen and (max-width:600px) {
     .footer-form {
         width: 90%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .footer-main-text {
-        font-size: 45px;
     }
 }
 

@@ -10,21 +10,20 @@ const offset = -500;
 export function toAbout() {
     scroll(offset, 'about')
 }
-export function toTop() {
-    window.scrollTo(0, 0)
-}
 export function toSkills() {
     scroll(offset, 'skills')
 }
 export function toExp() {
     scroll(offset, 'experience')
 }
-
 export function toProjects() {
     scroll(offset, 'projects')
 }
 export function toBottom() {
     scroll(0, 'footer')
+}
+export function toTop() {
+    window.scrollTo(0, 0)
 }
 
 let percent = 0;
@@ -35,27 +34,24 @@ export function checkScrollDown() {
     line.style.background = `linear-gradient(90deg, var(--accent) ${percent}%, transparent ${percent}%, transparent 100%)`
     if (window.scrollY > 50) {
         const scrollElement = document.getElementById('scrollAnimation')
-        scrollElement.style.animation = 'scrollDownAnimation 2s forwards'
+        scrollElement.style.display = 'none'
     }
 }
 const NavBar = () => {
     return (
-        <div>
-            <header>
-                <div className="nav-links-div">
-                    <p className='nav-link' onClick={toAbout}>About</p>
-                    <p className='nav-link' onClick={toExp}>Experience</p>
-                    <p className='nav-link' onClick={toSkills}>Skills</p>
-                    <p className='nav-link' onClick={toProjects}>Projects</p>
-                    <p className='nav-link' onClick={toBottom}>Contact</p>
-                </div>
-                <div style={{ flexBasis: '100%' }} />
-                <div id='loadline' />
-            </header>
+        <header>
+            <div className="nav-links-div">
+                <p className='nav-link' onClick={toAbout}>About</p>
+                <p className='nav-link' onClick={toExp}>Experience</p>
+                <p className='nav-link' onClick={toSkills}>Skills</p>
+                <p className='nav-link' onClick={toProjects}>Projects</p>
+                <p className='nav-link' onClick={toBottom}>Contact</p>
+            </div>
+            <div id='loadline' />
             <div className='scroll-down-div' id='scrollAnimation'>
                 <img src={down} alt='' className='scroll-down-img' />
             </div>
-        </div>
+        </header>
     )
 }
 export default NavBar;
