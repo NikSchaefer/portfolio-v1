@@ -152,6 +152,18 @@ header {
     background-color: var(--accent);
 }
 
+.intro-arrow {
+    display: inline;
+    width: 20px;
+    margin-left: 10px;
+    transition: all ease-in-out 0.2s;
+    transform: rotate(90deg);
+}
+
+.intro-button:hover .intro-arrow {
+    transform: rotate(180deg);
+}
+
 .intro-text {
     font-size: 55px;
     margin: 0;
