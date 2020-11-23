@@ -74,8 +74,8 @@ const Footer = () => {
             <div className='footer-bottom'>
                 <div className='footer-socials-div'>
                     <SocialBlock link='https://github.com/NikSchaefer' image={github} />
-                    <SocialBlock link='mailto:nikkschaefer@gmail.com' image={linkedin} />
-                    <SocialBlock link='https://www.linkedin.com/in/nik-schaefer/' image={mail} />
+                    <SocialBlock link='https://www.linkedin.com/in/nik-schaefer/' image={linkedin} />
+                    <SocialBlock link='mailto: nikkschaefer@gmail.com' image={mail} />
                 </div>
                 <p className='footer-copyright'>© 2020 Design + <a href='https://github.com/NikSchaefer/portfolio' className='footer-code-link'>Code</a> by Nik Schaefer</p>
             </div>
