@@ -3,6 +3,7 @@ import umbrella from '../Images/Projects/Umbrella.PNG'
 import portfolio from '../Images/Projects/Portfolio.PNG'
 import Stock from '../Images/Projects/Stock.png'
 import Project from '../Components/Project'
+import devtools from '../Images/Projects/DevTools.PNG'
 import Title from '../Components/SectionTitle'
 import { ArrowSvg } from './Footer'
 
@@ -20,6 +21,14 @@ const Projects = () => {
                     github='https://github.com/NikSchaefer/'
                     link=''
                     skills={['Tensorflow', 'Python']}
+                />
+                <Project
+                    title='Dev Tools'
+                    description='Open Source Website used to easily compare services and frameworks. Designed to be able to easily contribute data. '
+                    image={devtools}
+                    github='https://github.com/NikSchaefer/Web-Tools'
+                    link='https://development-tools.vercel.app/'
+                    skills={['React', 'HTML', 'CSS', "Javascript"]}
                 />
                 <Project
                     title='Umbrella'
