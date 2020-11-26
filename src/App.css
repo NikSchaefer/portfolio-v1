@@ -167,6 +167,8 @@ header {
 .intro-text {
     font-size: 55px;
     margin: 0;
+    line-height: 60px;
+    text-align: left;
 }
 
 @media screen and (max-width: 900px) {
