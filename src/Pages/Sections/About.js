@@ -14,7 +14,7 @@ const About = () => {
                     In my free time I like to contribute to open source projects, build my own projects, and further my education.
                     <br /><br />
                     Feel free to send me a message for possible collaborations,
-                    new connections, or projects contact me at  <a href="mailto:nikkschaefer@gmail.com" className="about-link">nikkschaefer@gmail.com</a>.
+                    new connections, or projects contact me at  <a href="mailto:nikkschaefer@gmail.com">nikkschaefer@gmail.com</a>.
                 </p>
             </div>
         </div>

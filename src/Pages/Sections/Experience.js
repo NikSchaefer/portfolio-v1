@@ -1,6 +1,6 @@
 import React from 'react'
 import Content from '../Components/Exp'
-import Option from '../Components/ExpOptions'
+import { Options } from '../Components/Exp'
 import Title from '../Components/SectionTitle'
 
 export function loadExp() { // set original active state
@@ -51,10 +51,10 @@ const Experience = () => {
                     link='https://k5gaming.vercel.app/'
                 />
                 <div className='exp-options-div'>
-                        <Option theID='Spiral' title="Spiral Esports" />
-                        <Option theID='Sparks' title="Sparks VB Club" />
-                        <Option theID='TEC' title="The Esport Company" />
-                        <Option theID='K5' title="K5 Gaming" />
+                    <Options theID='Spiral' title="Spiral Esports" />
+                    <Options theID='Sparks' title="Sparks VB Club" />
+                    <Options theID='TEC' title="The Esport Company" />
+                    <Options theID='K5' title="K5 Gaming" />
                 </div>
             </div>
         </div>

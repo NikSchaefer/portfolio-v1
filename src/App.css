@@ -1,3 +1,14 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
 html {
     scroll-behavior: smooth;
     --color-primary: #ffffff;
@@ -169,7 +180,7 @@ header {
     margin: 0;
     line-height: 120%;
     text-align: left;
-    max-width:800px
+    max-width: 800px
 }
 
 @media screen and (max-width: 900px) {
@@ -393,7 +404,7 @@ circle {
     line-height: 25px;
 }
 
-.about-link {
+a {
     text-decoration: none;
     color: #05c2c8;
 }
@@ -443,7 +454,7 @@ circle {
 .project-img {
     object-fit: scale-down;
     width: 400px;
-    height: 300px;
+    height: 100%;
 }
 
 .project-img:hover {
@@ -591,5 +602,3 @@ button {
         width: 90%;
     }
 }
-
-/*    /Footer    */
