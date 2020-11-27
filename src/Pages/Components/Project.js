@@ -9,7 +9,7 @@ function Links(props) {
     }
     return out
 }
-const Project = (props) => {
+export default function Project(props)  {
     return (
         <div className='project-div'>
             <img src={props.image} alt='' className='project-img' />
@@ -27,4 +27,3 @@ const Project = (props) => {
         </div>
     )
 }
-export default Project;
