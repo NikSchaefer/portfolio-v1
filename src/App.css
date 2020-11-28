@@ -127,7 +127,6 @@ header {
     position: fixed;
     bottom: 8vh;
     width: 100vw;
-    transition: all ease-in-out 0.3s;
     animation: bounce 3s infinite;
 }
 
@@ -455,10 +454,6 @@ a {
     object-fit: scale-down;
     width: 400px;
     height: 100%;
-}
-
-.project-img:hover {
-    animation: squirm 0.3s;
 }
 
 .project-title {
