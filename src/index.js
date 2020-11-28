@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './App.css';
-import NavBar, { checkScrollDown } from './Pages/Sections/NavBar'
-import Footer from './Pages/Sections/Footer'
-import About from './Pages/Sections/About'
-import Intro from './Pages/Sections/Intro'
-import Experience from './Pages/Sections/Experience'
-import Skills from './Pages/Sections/Skills'
-import Projects from './Pages/Sections/Projects'
+import NavBar, { checkScrollDown } from './Sections/NavBar'
+import Footer from './Sections/Footer'
+import About from './Sections/About'
+import Intro from './Sections/Intro'
+import Experience from './Sections/Experience'
+import Skills from './Sections/Skills'
+import Projects from './Sections/Projects'
 
-import { loadExp } from './Pages/Sections/Experience'
+import { loadExp } from './Sections/Experience'
 
 const elementsToCheck = [ // should be in render order
   ['title-about', 'title 2s'],
