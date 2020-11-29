@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import './App.css';
+
 import NavBar, { checkScrollDown } from './Sections/NavBar'
 import Footer from './Sections/Footer'
 import About from './Sections/About'
@@ -54,13 +54,11 @@ const checkElement = function (array, iteration) {
     return array.splice(iteration, 1)
   }
 }
-
 const checkFadeElements = function (array) {
   if (array.length !== 0) {
     checkElement(array, 0)
   }
 }
-
 const generateOffsets = function (array) {
   for (let j = 0; j < array.length; j++) {
     const ele = document.getElementById(array[j][0])
@@ -70,15 +68,12 @@ const generateOffsets = function (array) {
     array[j].push(y)
   }
 }
-
 function App() {
-
   window.onload = function () {
     loadExp()
     generateOffsets(elementsToCheck)
     checkScrollDown()
   }
-
   window.onscroll = function () {
     checkFadeElements(elementsToCheck)
     checkScrollDown()
@@ -95,8 +90,6 @@ function App() {
     </div>
   );
 }
-
-
 ReactDOM.render(
   <React.StrictMode>
     <App />
