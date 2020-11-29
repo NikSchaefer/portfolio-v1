@@ -35,7 +35,7 @@ const Experience = () => {
                 <Content
                     theID='TEC'
                     title='The Esport Company'
-                    info='Internship | Sep 2020 - Present'
+                    info='Internship | Sep 2020 - Dec 2020'
                     description1='The Esport Company provides High Schools, Universities ,and Amatuers the tools and resources to build their programs from the beginning!'
                     description2='I designed and developed a new website with a team to fit a growing buisness'
                     skills={['Wordpress', 'Elementor', 'CSS']}
