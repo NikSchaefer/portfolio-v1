@@ -1,6 +1,5 @@
 import React from 'react'
 import { Socials } from './Footer'
-
 const Intro = () => {
     return (
         <div className="intro-div">
