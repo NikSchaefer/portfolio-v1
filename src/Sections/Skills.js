@@ -72,7 +72,7 @@ const SkillDiv = (props) => {
 }
 const Skills = () => {
     return (
-        <div >
+        <div>
             <Title titleId='title-skill' hr='hr-skill' title='Skills ' />
             <div id='skills'>
                 <SkillDiv skills={languages} />

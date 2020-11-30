@@ -232,87 +232,45 @@ header {
 
 /*       exp          */
 
-.exp-container {
+.exp-div {
     display: flex;
-    width: 700px;
-    height: 360px;
-    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 900px;
+    height: 100px;
     margin: 50px auto;
-    flex-direction: row-reverse;
-    border: white solid 1px
 }
 
-.exp-options-div {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.exp-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
 }
 
-.exp-option {
-    margin: 4% auto;
-    padding: 15px 10px;
-    width: 80%;
-    border-radius: 5px;
-    transition: all ease-in-out 0.1s !important;
-}
-
-.exp-option:hover {
-    cursor: pointer;
-    background-color: var(--accent)!important;
-}
-
-.exp-link-img {
-    width: 30px;
-    border-radius: 10px;
-    transition: all ease-in-out 0.15s;
-}
-
-.exp-link-img:hover {
-    background-color: var(--accent);
-}
-
-.exp-content-div {
-    width: 55%;
-    margin: auto;
-    display: none;
-}
-
-.exp-content-title {
+.exp-info-div {
+    width: 30%;
     text-align: left;
-    font-size: 20px;
 }
 
-.exp-content-sub-title {
-    font-weight: 600;
+.exp-info-title {
+    font-size: 30px;
+    margin: 0;
 }
 
-ul {
-    padding: 5%;
+.exp-timeline {
+    width: 35%;
+    padding: 20px 5px;
+    border-left: solid white 1px;
 }
 
-.exp-skill {
-    display: inline-block;
-    margin: 0 5%;
-}
-
-.exp-skill:hover {
-    cursor: default;
-    animation: squishText 0.7s infinite;
-}
-
-@media screen and (max-width: 870px) {
-    .exp-container {
-        flex-direction: column-reverse;
-        height: fit-content;
-        width: 300px;
-        padding: 10px;
+@media screen and (max-width:600px) {
+    .exp-img {
+        width:70px;
+        height: 70px;
     }
-    .exp-options-div {
-        width: 100%;
-    }
-    .exp-content-div {
-        width: 100%;
+    .exp-info-title {
+        font-size: 20px;
     }
 }
 
