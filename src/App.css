@@ -405,7 +405,6 @@ a {
 .project-title {
     font-size: 30px;
     color: var(--font-color);
-    font-family: "Comfortaa", sans-serif;
 }
 
 .project-info {
@@ -439,12 +438,11 @@ a {
 .project-tag-div {
     display: flex;
     flex-wrap: wrap;
-    font-family: "Comfortaa", sans-serif;
     margin: 10px 0;
 }
 
 .project-tag {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--accent);
     transition: all ease-in-out 0.3s;
     margin: 8px 10px;

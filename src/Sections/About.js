@@ -1,5 +1,5 @@
 import React from 'react';
-import Title from '../Components/SectionTitle'
+import Title from './SectionTitle'
 const About = () => {
     return (
         <div className='about-primary' >

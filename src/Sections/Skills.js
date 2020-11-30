@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from '../Components/SectionTitle'
+import Title from './SectionTitle'
 const languages = [
     ['Javascript', 70, 'purple'],
     ['Python', 75, 'green'],
@@ -27,9 +27,7 @@ const getCircumference = function (radius) {
 const getOffset = function (circumference, percent) {
     return circumference - percent / 100 * circumference
 }
-
 circleSettings.circumference = getCircumference(circleSettings.radius)
-
 const Skill = (props) => {
     let outArray = [];
     for (let i = 0; i < props.skills.length; i++) {

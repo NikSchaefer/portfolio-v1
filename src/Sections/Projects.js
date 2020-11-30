@@ -3,7 +3,7 @@ import umbrella from '../Images/Projects/Umbrella.PNG'
 import portfolio from '../Images/Projects/Portfolio.PNG'
 import Stock from '../Images/Projects/Stock.png'
 import devtools from '../Images/Projects/DevTools.PNG'
-import Title from '../Components/SectionTitle'
+import Title from './SectionTitle'
 import { ArrowSvg, socialSvg } from '../Images/svg'
 
 import GoTo from '../Images/GoTo.svg'
