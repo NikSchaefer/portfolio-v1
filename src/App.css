@@ -421,6 +421,7 @@ a {
 
 .project-link-img {
     width: 30px;
+    height: 30px;
     border-radius: 10px;
     transition: all ease-in-out 0.15s;
 }

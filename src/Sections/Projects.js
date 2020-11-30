@@ -26,8 +26,8 @@ function Project(props) {
                     <Links skills={props.skills} />
                 </div>
                 <div className='project-link-div'>
-                    <p onClick={function (e) { e.preventDefault(); window.open(props.github) }} className='project-link'><img alt='' className='project-link-img' src={socialSvg.github} /></p>
-                    <p onClick={function (e) { e.preventDefault(); window.open(props.link) }} className='project-link'><img alt='' className='project-link-img' src={GoTo} /></p>
+                    <p onClick={function (e) { e.preventDefault(); window.open(props.github) }} className='project-link'>{socialSvg.github({ class:'project-link-img'}) }</p>
+                    <p onClick={function (e) { e.preventDefault(); window.open(props.link) }} className='project-link'>{<img alt='' className='project-link-img' src={GoTo} />}</p>
                 </div>
             </div>
         </div>
