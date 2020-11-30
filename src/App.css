@@ -162,18 +162,6 @@ header {
     background-color: var(--accent);
 }
 
-.intro-arrow {
-    display: inline;
-    width: 20px;
-    margin-left: 10px;
-    transition: all ease-in-out 0.2s;
-    transform: rotate(90deg);
-}
-
-.intro-button:hover .intro-arrow {
-    transform: rotate(180deg);
-}
-
 .intro-text {
     font-size: 55px;
     margin: 0;
@@ -266,7 +254,7 @@ header {
 
 @media screen and (max-width:600px) {
     .exp-img {
-        width:70px;
+        width: 70px;
         height: 70px;
     }
     .exp-info-title {
@@ -548,6 +536,7 @@ button {
 
 .footer-social-img {
     width: 30px;
+    height: 30px;
 }
 
 @media screen and (max-width:600px) {

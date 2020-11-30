@@ -1,29 +1,36 @@
 import React from 'react';
-import down from '../Images/chevronDown.svg'
+import { Chevron } from '../Images/svg'
 const scroll = function (offset, id) {
     const element = document.getElementById(id);
     const y = element.getBoundingClientRect().top + window.pageYOffset + offset;
     window.scrollTo({ top: y, behavior: 'smooth' });
 }
-
 const offset = -500;
-export function toAbout() {
+function toAbout() {
     scroll(offset, 'about')
 }
-export function toSkills() {
+function toSkills() {
     scroll(offset, 'skills')
 }
-export function toExp() {
-    scroll(offset, 'experience')
+function toExp() {
+    scroll(offset, 'exp-div')
 }
-export function toProjects() {
+function toProjects() {
     scroll(offset, 'projects')
 }
-export function toBottom() {
+function toBottom() {
     scroll(0, 'footer')
 }
-export function toTop() {
+function toTop() {
     window.scrollTo(0, 0)
+}
+export const scrollTo = {
+    top: toTop,
+    skills: toSkills,
+    about: toAbout,
+    experience: toExp,
+    footer: toBottom,
+    projects: toProjects,
 }
 
 let percent = 0;
@@ -37,21 +44,20 @@ export function checkScrollDown() {
         scrollElement.style.display = 'none'
     }
 }
-const NavBar = () => {
+export default function NavBar() {
     return (
         <header>
             <div className="nav-links-div">
-                <p className='nav-link' onClick={toAbout}>About</p>
-                <p className='nav-link' onClick={toExp}>Experience</p>
-                <p className='nav-link' onClick={toSkills}>Skills</p>
-                <p className='nav-link' onClick={toProjects}>Projects</p>
-                <p className='nav-link' onClick={toBottom}>Contact</p>
+                <p className='nav-link' onClick={scrollTo.about}>About</p>
+                <p className='nav-link' onClick={scrollTo.experience}>Experience</p>
+                <p className='nav-link' onClick={scrollTo.skills}>Skills</p>
+                <p className='nav-link' onClick={scrollTo.projects}>Projects</p>
+                <p className='nav-link' onClick={scrollTo.footer}>Contact</p>
             </div>
             <div id='loadline' />
             <div className='scroll-down-div' id='scrollAnimation'>
-                <img src={down} alt='' className='scroll-down-img' />
+                <Chevron color='var(--accent)' class='scroll-down-img' />
             </div>
         </header>
     )
 }
-export default NavBar;

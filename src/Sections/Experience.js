@@ -28,10 +28,12 @@ export default function Experience() {
     return (
         <div>
             <Title titleId='title-exp' hr='hr-exp' title='Experience' />
-            <Section color='#9e2e2d' link='https://sparksvbclub.vercel.app/' image={sparks} position="Freelance" company="Sparks VB Club" timeline="Oct 2020 - Present" />
-            <Section color='white' link='https://spiralesports.vercel.app/' image={spiral} position="Freelance" company="Spiral Esports" timeline="Sep 2020 - Present" />
-            <Section color='white' link='https://www.theesportcompany.com/' image={tec} position="Intern" company="The Esport Company" timeline="Sep 2020 - Dec 2020" />
-            <Section color='#0f0f0f' link='https://k5gaming.vercel.app/' image={k5} position="Freelance" company="K5 Gaming" timeline="Sep 2020 - Nov 2020" />
+            <div id='exp-div'>
+                <Section color='#9e2e2d' link='https://sparksvbclub.vercel.app/' image={sparks} position="Freelance" company="Sparks VB Club" timeline="Oct 2020 - Present" />
+                <Section color='white' link='https://spiralesports.vercel.app/' image={spiral} position="Freelance" company="Spiral Esports" timeline="Sep 2020 - Present" />
+                <Section color='white' link='https://www.theesportcompany.com/' image={tec} position="Intern" company="The Esport Company" timeline="Sep 2020 - Dec 2020" />
+                <Section color='#0f0f0f' link='https://k5gaming.vercel.app/' image={k5} position="Freelance" company="K5 Gaming" timeline="Sep 2020 - Nov 2020" />
+            </div>
         </div>
     )
 }

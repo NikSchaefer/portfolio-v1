@@ -2,12 +2,38 @@ import React from 'react'
 import umbrella from '../Images/Projects/Umbrella.PNG'
 import portfolio from '../Images/Projects/Portfolio.PNG'
 import Stock from '../Images/Projects/Stock.png'
-import Project from '../Components/Project'
 import devtools from '../Images/Projects/DevTools.PNG'
 import Title from '../Components/SectionTitle'
-import { ArrowSvg } from './Footer'
+import { ArrowSvg, socialSvg } from '../Images/svg'
 
-const Projects = () => {
+import GoTo from '../Images/GoTo.svg'
+
+function Project(props) {
+    function Links(props) {
+        let out = []
+        for (let i = 0; i < props.skills.length; i++) {
+            out.push(<p className='project-tag' key={`project-tag-${i}`}>#{props.skills[i]}</p>)
+        }
+        return out
+    }
+    return (
+        <div className='project-div'>
+            <img src={props.image} alt='' className='project-img' />
+            <div className='project-info'>
+                <p className='project-title'>{props.title}</p>
+                <p className='project-text'>{props.description}</p>
+                <div className='project-tag-div'>
+                    <Links skills={props.skills} />
+                </div>
+                <div className='project-link-div'>
+                    <p onClick={function (e) { e.preventDefault(); window.open(props.github) }} className='project-link'><img alt='' className='project-link-img' src={socialSvg.github} /></p>
+                    <p onClick={function (e) { e.preventDefault(); window.open(props.link) }} className='project-link'><img alt='' className='project-link-img' src={GoTo} /></p>
+                </div>
+            </div>
+        </div>
+    )
+}
+export default function Projects () {
     return (
         <div className='project-primary-div'>
             <ArrowSvg id='project-arrow' height='90' color='var(--color-accent)' />
@@ -37,7 +63,7 @@ const Projects = () => {
                     image={umbrella}
                     github='https://github.com/NikSchaefer/umbrella_website'
                     link='https://theumbrella.vercel.app/'
-                    skills={['React', 'HTML', 'CSS', 'React Native', "Javascript"]}
+                    skills={['React', 'React Native', "Javascript"]}
                 />
                 <Project
                     title='Portfolio'
@@ -51,5 +77,3 @@ const Projects = () => {
         </div>
     )
 }
-
-export default Projects;

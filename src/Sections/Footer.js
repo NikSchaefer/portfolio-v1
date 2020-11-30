@@ -1,44 +1,37 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
-import chevron from '../Images/chevronUp.svg'
 
-import github from '../Images/github.svg'
-import mail from '../Images/email.svg'
-import linkedin from '../Images/linkedin.svg'
 import Title from '../Components/SectionTitle'
 
+import { ArrowSvg, Chevron, socialSvg } from '../Images/svg'
 import { init } from 'emailjs-com'
-import { toTop } from './NavBar'
+import { scrollTo } from './NavBar'
 const config = {
     KEY: 'user_dkvZZk4wFtUR8WzHQlJGa',
     SERVICE: "service_gvyfwv8",
     TEMPLATE: 'template_0ywu6hn'
 }
 init(config.KEY);
-
-export const ArrowSvg = function (props) {
-    return (
-        <svg preserveAspectRatio="none" id={props.id}
-            style={{ marginBottom: props.margin }}
-            viewBox="0 0 100 102" height={props.height}
-            width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0 L50 100 L100 0 Z" fill={props.color} stroke={props.color}></path>
-        </svg>
-    )
-}
 const SocialBlock = function (props) {
     return (
-        <a href={props.link} onClick={function (e) { e.preventDefault(); window.open(props.link)}} className='footer-social-div'>
-            <img src={props.image} className='footer-social-img' alt='' />
+        <a href={props.link} onClick={function (e) { e.preventDefault(); window.open(props.link) }} className='footer-social-div'>
+            {props.image({ class: 'footer-social-img' })}
         </a>
     )
 }
+export function Socials(props) {
+    return (
+        <div className='footer-socials-div' style={{ margin: props.margin }}>
+            <SocialBlock link='https://github.com/NikSchaefer' image={socialSvg.github} />
+            <SocialBlock link='https://www.linkedin.com/in/nik-schaefer/' image={socialSvg.linkedin} />
+            <SocialBlock link='mailto: nikkschaefer@gmail.com' image={socialSvg.email} />
+        </div>
+    )
+}
 const Footer = () => {
-
     const [email, setEmail] = useState('')
     const [name, setName] = useState('')
     const [message, setMessage] = useState('')
-
     const handleSubmit = (e) => {
         e.preventDefault()
         if (name !== '' && email !== '' && message !== '') {
@@ -67,16 +60,12 @@ const Footer = () => {
                 <button className='intro-button' type='submit'>Submit</button>
             </form>
             <div className='footer-to-top-div'>
-                <div onClick={toTop} className='footer-socials-div' >
-                    <img src={chevron} style={{ backgroundColor: 'var(--accent)' }} className='footer-social-div' alt='toTop' />
+                <div onClick={scrollTo.top} className='footer-socials-div' >
+                    <Chevron style={{ backgroundColor: 'var(--accent)', transform: 'rotate(180deg)' }} color='white' height='40' class='footer-social-div' />
                 </div>
             </div>
             <div className='footer-bottom'>
-                <div className='footer-socials-div'>
-                    <SocialBlock link='https://github.com/NikSchaefer' image={github} />
-                    <SocialBlock link='https://www.linkedin.com/in/nik-schaefer/' image={linkedin} />
-                    <SocialBlock link='mailto: nikkschaefer@gmail.com' image={mail} />
-                </div>
+                <Socials />
                 <p className='footer-copyright'>© 2020 Design + <a href='https://github.com/NikSchaefer/portfolio' className='footer-code-link'>Code</a> by Nik Schaefer</p>
             </div>
         </footer>

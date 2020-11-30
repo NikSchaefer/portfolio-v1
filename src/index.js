@@ -10,18 +10,16 @@ import Experience from './Sections/Experience'
 import Skills from './Sections/Skills'
 import Projects from './Sections/Projects'
 
-// import { loadExp } from './Sections/Experience'
-
 const elementsToCheck = [ // should be in render order
   ['title-about', 'title 2s'],
   ['hr-about', 'hr 2s'],
 
   ['about', 'onScrollFade 2s'],
 
-  // ['title-exp', 'title 2s'],
-  // ['hr-exp', 'hr 2s'],
+  ['title-exp', 'title 2s'],
+  ['hr-exp', 'hr 2s'],
 
-  // ['experience', 'onScrollFade 2s'],
+  ['exp-div', 'onScrollFade 2s'],
 
   ['title-skill', 'title 2s'],
   ['hr-skill', 'hr 2s'],
@@ -70,7 +68,6 @@ const generateOffsets = function (array) {
 }
 function App() {
   window.onload = function () {
-    // loadExp()
     generateOffsets(elementsToCheck)
     checkScrollDown()
   }
