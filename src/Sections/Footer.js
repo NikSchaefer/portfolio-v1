@@ -61,7 +61,7 @@ const Footer = () => {
             </form>
             <div className='footer-to-top-div'>
                 <div onClick={scrollTo.top} className='footer-socials-div' >
-                    <Chevron style={{ backgroundColor: 'var(--accent)', transform: 'rotate(180deg)' }} color='white' height='40' class='footer-social-div' />
+                    <Chevron id='toTop' color='white' height='40' class='footer-social-div' />
                 </div>
             </div>
             <div className='footer-bottom'>

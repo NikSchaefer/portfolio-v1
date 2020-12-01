@@ -533,6 +533,15 @@ button {
     transform: scale(0.92);
 }
 
+#toTop {
+    transform: rotate(180deg);
+    background-color: var(--accent)
+}
+
+#toTop:hover {
+    transform: scale(0.92) rotate(180deg);
+}
+
 .footer-social-img {
     width: 30px;
     height: 30px;
