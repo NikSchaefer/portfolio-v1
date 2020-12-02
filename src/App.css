@@ -205,7 +205,7 @@ header {
 .section-title {
     font-size: 50px;
     font-weight: 500;
-    margin: 85px 0 0 0;
+    margin-top: 85px;
     color: inherit;
     text-transform: uppercase;
 }
@@ -386,7 +386,7 @@ a {
     color: var(--font-color);
     border-radius: 3px;
     margin: 50px auto;
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.466);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.466);
     position: relative;
     top: 0;
     transition: all ease-in-out 0.2s;
