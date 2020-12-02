@@ -12,14 +12,14 @@ const config = {
     TEMPLATE: 'template_0ywu6hn'
 }
 init(config.KEY);
-const SocialBlock = function (props) {
+const SocialBlock = function (props: { link: string, image: any }) {
     return (
         <a href={props.link} onClick={function (e) { e.preventDefault(); window.open(props.link) }} className='footer-social-div'>
             {props.image({ class: 'footer-social-img' })}
         </a>
     )
 }
-export function Socials(props) {
+export function Socials(props: { margin: string }) {
     return (
         <div className='footer-socials-div' style={{ margin: props.margin }}>
             <SocialBlock link='https://github.com/NikSchaefer' image={socialSvg.github} />
@@ -32,7 +32,7 @@ const Footer = () => {
     const [email, setEmail] = useState('')
     const [name, setName] = useState('')
     const [message, setMessage] = useState('')
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: any) => {
         e.preventDefault()
         if (name !== '' && email !== '' && message !== '') {
             emailjs.send(config.SERVICE, config.TEMPLATE, {
@@ -65,7 +65,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='footer-bottom'>
-                <Socials />
+                <Socials margin='inital' />
                 <p className='footer-copyright'>© 2020 Design + <a href='https://github.com/NikSchaefer/portfolio' className='footer-code-link'>Code</a> by Nik Schaefer</p>
             </div>
         </footer>

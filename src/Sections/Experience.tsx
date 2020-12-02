@@ -7,7 +7,7 @@ import sparks from '../Images/Exp/script.svg'
 import spiral from '../Images/Exp/api.svg'
 import tec from '../Images/Exp/database.svg'
 
-function Section(props) {
+function Section(props:{image:any, position:string, timeline:string, company:string, link:string}) {
     return (
         <div className='exp-div'>
             <img src={props.image} style={{ backgroundColor: 'white' }} className='exp-img' alt="" />

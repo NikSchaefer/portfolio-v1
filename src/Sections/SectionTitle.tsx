@@ -1,5 +1,5 @@
 import React from 'react'
-const Title = (props) => {
+const Title = (props: { titleId: string, hr: string, title: string }) => {
     return (
         <div>
             <p id={props.titleId} className='section-title'>{props.title}</p>
