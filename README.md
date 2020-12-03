@@ -1,3 +1,4 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/nikschaefer/portfolio/badge)](https://www.codefactor.io/repository/github/nikschaefer/portfolio)
 # Portfolio
 My Developer Portfolio, Check it out!
 
