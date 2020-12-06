@@ -22,7 +22,7 @@ const languages: skillArray = [
 ]
 const frameworks: skillArray = [
     ['ReactJS', 75, 'yellow'],
-    ['Django', 50, 'red'],
+    ['Django', 70, 'red'],
     ['Firebase', 30, '#05c2c8'],
     ['React Native', 50, 'purple'],
     ['Unity', 45, 'green'],
