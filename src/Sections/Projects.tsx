@@ -1,5 +1,4 @@
 import React from 'react'
-import umbrella from '../Images/Projects/Umbrella.png'
 import portfolio from '../Images/Projects/Portfolio.png'
 import Stock from '../Images/Projects/Stock.png'
 import devtools from '../Images/Projects/DevTools.png'
@@ -54,15 +53,6 @@ export default function Projects() {
                     github='https://github.com/NikSchaefer/Web-Tools'
                     link='https://development-tools.vercel.app/'
                     skills={['React', 'HTML', 'CSS', "Javascript"]}
-                />
-                <Project
-                    title='Umbrella'
-                    description='Umbrella is a Mobile Weather App that makes calls to the Open Weather API.
-                    Website + Mobile Development'
-                    image={umbrella}
-                    github='https://github.com/NikSchaefer/umbrella_website'
-                    link='https://theumbrella.vercel.app/'
-                    skills={['React', 'React Native', "Javascript"]}
                 />
                 <Project
                     title='Portfolio'
