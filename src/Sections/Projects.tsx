@@ -1,7 +1,7 @@
 import React from 'react'
-import portfolio from '../Images/Projects/Portfolio.png'
-import Stock from '../Images/Projects/Stock.png'
-import devtools from '../Images/Projects/DevTools.png'
+import portfolio from '../Images/Projects/Portfolio.jpg'
+import Stock from '../Images/Projects/Stock.jpg'
+import devtools from '../Images/Projects/DevTools.jpg'
 import Title from './SectionTitle'
 import { ArrowSvg, socialSvg } from '../Images/svg'
 
