@@ -15,7 +15,7 @@ interface circleSetting {
 const languages: skillArray = [
     ['Javascript', 70, 'purple'],
     ['Python', 75, 'green'],
-    ['Typescript', 50, '#05c2c8'],
+    ['Typescript', 75, '#05c2c8'],
     ['CSharp', 40, 'yellow'],
     ['HTML', 80, 'white'],
     ['CSS', 80, 'purple'],
