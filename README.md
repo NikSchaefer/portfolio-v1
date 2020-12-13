@@ -7,6 +7,7 @@ https://nikschaefer.tech/
 
 ## Stack
 To build my Portfolio I used React, Javascript, HTML, and CSS
+Deployed With Vercel and a .tech Domain from The Github Student Developer Pack
 
 
 ## License
