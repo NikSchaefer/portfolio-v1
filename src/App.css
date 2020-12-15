@@ -11,15 +11,14 @@ code {
 
 html {
   scroll-behavior: smooth;
-  --color-primary: #ffffff;
-  --color-secondary: #fbfbfd;
-  --color-accent: #162029;
-  --font-color: #ffffff;
-  --font-color-o: #0c0c0c;
+  --primary: #ffffff;
+  --secondary: #162029;
+  --font2: #ffffff;
+  --font1: #0c0c0c;
   --card-color: #232323;
   --accent: #e84c3d;
-  color: var(--font-color);
-  background-color: #162029;
+  color: var(--font2);
+  background-color: var(--secondary);
   font-family: Calibre, sans-serif;
   text-align: center;
 }
@@ -36,7 +35,7 @@ html {
 
 @keyframes onScrollFade {
   from {
-    top: 300px;
+    top: 200px;
     opacity: 0;
   }
   to {
@@ -80,7 +79,7 @@ header {
   width: 100vw;
   top: 0;
   padding-top: 30px;
-  background-color: var(--color-accent);
+  background-color: var(--secondary);
 }
 
 .nav-links-div {
@@ -151,7 +150,7 @@ header {
 .intro-button {
   font-size: 20px;
   padding: 10px 25px;
-  border: solid 1px var(--color-primary);
+  border: solid 1px var(--primary);
   transition: 0.4s ease-out;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -167,7 +166,7 @@ header {
   margin: 0;
   line-height: 120%;
   text-align: left;
-  max-width: 800px
+  max-width: 800px;
 }
 
 @media screen and (max-width: 900px) {
@@ -186,7 +185,7 @@ header {
 
 @keyframes title {
   from {
-    left: -200px
+    left: -150px
   }
   to {
     left: 0
@@ -195,7 +194,7 @@ header {
 
 @keyframes hr {
   from {
-    left: 200px
+    left: 150px
   }
   to {
     left: 0
@@ -303,7 +302,7 @@ header {
 
 .skill-content-div:hover {
   transform: scale(0.92);
-  color: var(--font-color);
+  color: var(--font2);
 }
 
 .skills-label {
@@ -330,8 +329,8 @@ circle {
 /*   About    */
 
 .about-primary {
-  background-color: var(--color-primary);
-  color: var(--font-color-o);
+  background-color: var(--primary);
+  color: var(--font1);
   padding: 100px 0;
 }
 
@@ -373,17 +372,17 @@ a {
 }
 
 .project-primary-div {
-  background-color: var(--color-primary);
+  background-color: var(--primary);
   padding-bottom: 1px;
-  color: var(--font-color-o);
+  color: var(--font1);
 }
 
 .project-div {
-  background-color: var(--color-accent);
+  background-color: var(--secondary);
   display: flex;
   align-items: center;
   width: 900px;
-  color: var(--font-color);
+  color: var(--font2);
   border-radius: 3px;
   margin: 50px auto;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.466);
@@ -404,7 +403,7 @@ a {
 
 .project-title {
   font-size: 30px;
-  color: var(--font-color);
+  color: var(--font2);
 }
 
 .project-info {
@@ -449,7 +448,7 @@ a {
 }
 
 .project-tag:hover {
-  color: var(--font-color);
+  color: var(--font2);
   cursor: default;
   animation: squishText 0.7s infinite;
 }
@@ -490,7 +489,7 @@ a {
   background-color: #1e2c38;
   border: none;
   resize: vertical;
-  color: var(--color-primary);
+  color: var(--primary);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -500,12 +499,12 @@ textarea {
 
 button {
   margin: 5px auto;
-  color: var(--font-color);
+  color: var(--font2);
   background-color: transparent;
 }
 
 .footer-to-top-div {
-  background: linear-gradient(0deg, #1c242f 50%, var(--color-accent) 50%);
+  background: linear-gradient(0deg, #1c242f 50%, var(--secondary) 50%);
 }
 
 .footer-bottom {

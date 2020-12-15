@@ -19,72 +19,72 @@ interface element {
 const elementsToCheck: element[] = [
   {
     id: 'title-about',
-    animation: 'title 2s',
+    animation: 'title 1s',
     offset: 0
   },
   {
     id: 'hr-about',
-    animation: 'hr 2s',
+    animation: 'hr 1.2s',
     offset: 0
   },
   {
     id: 'about',
-    animation: 'onScrollFade 2s',
+    animation: 'onScrollFade 1.5s',
     offset: 0
   },
   {
     id: 'title-exp',
-    animation: 'title 2s',
+    animation: 'title 1s',
     offset: 0
   },
   {
     id: 'hr-exp',
-    animation: 'hr 2s',
+    animation: 'hr 1.2s',
     offset: 0
   },
   {
     id: 'exp-div',
-    animation: 'onScrollFade 2s',
+    animation: 'onScrollFade 1.5s',
     offset: 0
   },
   {
     id: 'title-skill',
-    animation: 'title 2s',
+    animation: 'title 1s',
     offset: 0
   },
   {
     id: 'hr-skill',
-    animation: 'hr 2s',
+    animation: 'hr 1.2s',
     offset: 0
   },
   {
     id: 'skills',
-    animation: 'onScrollFade 2s',
+    animation: 'onScrollFade 1.5s',
     offset: 0
   },
   {
     id: 'title-project',
-    animation: 'title 2s',
+    animation: 'title 1s',
     offset: 0
   },
   {
     id: 'hr-project',
-    animation: 'hr 2s',
+    animation: 'hr 1.2s',
     offset: 0
   },
   {
     id: 'projects',
-    animation: 'onScrollFade 2s',
+    animation: 'onScrollFade 1.5s',
     offset: 0
   },
   {
     id: 'title-footer',
-    animation: 'title 2s',
+    animation: 'title 1s',
     offset: 0
   },
   {
     id: 'hr-footer',
-    animation: 'hr 2s',
+    animation: 'hr 1.2s',
     offset: 0
   },
 ]
