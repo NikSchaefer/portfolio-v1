@@ -1,7 +1,7 @@
-import React from 'react'
 import portfolio from '../Images/Projects/Portfolio.jpg'
 import Stock from '../Images/Projects/Stock.jpg'
 import devtools from '../Images/Projects/DevTools.jpg'
+import CS from '../Images/Projects/CSResources.png'
 import Title from './SectionTitle'
 import { ArrowSvg, socialSvg } from '../Images/svg'
 
@@ -38,6 +38,19 @@ export default function Projects() {
             <ArrowSvg id='project-arrow' height='90' color='var(--secondary)' />
             <Title titleId='title-project' hr='hr-project' title='Projects' />
             <div id='projects'>
+                <Project
+                    title='CS Resources'
+                    description=" 
+                    Contains direct comparisions of Frameworks 
+                    and Providers to build your projects, A currated list of over 600 free Apis,
+                    Reccomended Developer Tools, Datasets of computer science topics, flashcards,
+                    Scientific Calculator, Dictionary and more!
+                    "
+                    image={CS}
+                    github='https://github.com/NikSchaefer/csnotes'
+                    link='https://csresources.herokuapp.com/'
+                    skills={['React', 'Typescript', 'Django', "Python", "PostgresSQL", 'FullStack', "Heroku"]}
+                />
                 <Project
                     title='Stock Prediction'
                     description='Upcoming Project: Stock Prediction Machine Learning Model Built with Tensorflow and + Python using Alphavantage Stock API'
