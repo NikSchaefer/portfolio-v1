@@ -1,4 +1,3 @@
-import React from 'react'
 import Title from './SectionTitle'
 import goTo from '../Images/GoTo.svg'
 
@@ -7,7 +6,7 @@ import sparks from '../Images/Exp/script.svg'
 import spiral from '../Images/Exp/api.svg'
 import tec from '../Images/Exp/database.svg'
 
-function Section(props:{image:any, position:string, timeline:string, company:string, link:string}) {
+function Section(props: { image: any, position: string, timeline: string, company: string, link: string }) {
     return (
         <div className='exp-div'>
             <img src={props.image} style={{ backgroundColor: 'white' }} className='exp-img' alt="" />
@@ -19,7 +18,6 @@ function Section(props:{image:any, position:string, timeline:string, company:str
                 <p className='exp-info-text'>{props.company}</p>
             </div>
             <p className='exp-timeline'>{props.timeline}</p>
-
         </div>
     )
 }

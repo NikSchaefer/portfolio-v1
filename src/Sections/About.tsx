@@ -1,6 +1,5 @@
-import React from 'react';
 import Title from './SectionTitle'
-const About = () => {
+export default function About() {
     return (
         <div className='about-primary' >
             <Title titleId='title-about' hr='hr-about' title='About ' />
@@ -20,4 +19,3 @@ const About = () => {
         </div>
     )
 }
-export default About;
