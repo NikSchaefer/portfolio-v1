@@ -1,6 +1,6 @@
 import React from 'react'
-import { Socials } from './Footer'
-export default function Intro ()  {
+import { Socials } from '../Sections/Footer'
+export default function Intro() {
     return (
         <div className="intro-div">
             <div>

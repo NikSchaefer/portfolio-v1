@@ -1,5 +1,5 @@
 import Title from './SectionTitle'
-import goTo from '../Images/GoTo.svg'
+import goTo from '..//Images/GoTo.svg'
 
 import k5 from '../Images/Exp/server.svg'
 import sparks from '../Images/Exp/script.svg'

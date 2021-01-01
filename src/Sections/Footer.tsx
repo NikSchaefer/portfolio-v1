@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
 
-import Title from './SectionTitle'
+import Title from '../Home/SectionTitle'
 
 import { ArrowSvg, Chevron, socialSvg } from '../Images/svg'
 import { init } from 'emailjs-com'

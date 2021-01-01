@@ -1,5 +1,4 @@
 import portfolio from '../Images/Projects/Portfolio.jpg'
-import Stock from '../Images/Projects/Stock.jpg'
 import devtools from '../Images/Projects/DevTools.jpg'
 import CS from '../Images/Projects/CSResources.png'
 import Title from './SectionTitle'
@@ -53,9 +52,8 @@ export default function Projects() {
                             It is designed to be a useful resource myself and other developers can rely on to find what they need.
                             <br />
                             <br />
-                            CS Resources runs on a PostgresSQL database hosted in heroku. I use django to connect to the database and the django rest framework to build a rest api. 
+                            CS Resources runs on a PostgresSQL database hosted in heroku. I use django to connect to the database and the django rest framework to build a rest api.
                             The entire project is Open source on github and open to contributors.
-                             
                             </p>
                         <div className='project-tag-div'>
                             <Links skills={['React', 'Typescript', 'Django', "Python", "PostgresSQL", 'FullStack', "Heroku"]} />
@@ -66,14 +64,6 @@ export default function Projects() {
                         </div>
                     </div>
                 </div>
-                <Project
-                    title='Stock Prediction'
-                    description='Upcoming Project: Stock Prediction Machine Learning Model Built with Tensorflow and + Python using Alphavantage Stock API'
-                    image={Stock}
-                    github='https://github.com/NikSchaefer/'
-                    link=''
-                    skills={['Tensorflow', 'Python']}
-                />
                 <Project
                     title='Dev Tools'
                     description='Open Source Website used to easily compare services and frameworks. Designed to be able to easily contribute data.'
