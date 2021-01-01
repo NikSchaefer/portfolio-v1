@@ -1,16 +1,17 @@
 import React from 'react'
 import { Socials } from './Footer'
-const Intro = () => {
+export default function Intro ()  {
     return (
         <div className="intro-div">
-            <p className='intro-text'>
-                <span role='img' aria-label='wave'>👋</span>I'm <span className='intro-name'>Nik Schaefer.</span><br />
-                        I'm a student with a passion for
-                        Programming and learning
-                    </p>
-
-            <Socials margin='unset' />
+            <div>
+                <h5><span role='img' aria-label='wave'>👋, my name is </span></h5>
+                <h2>Nik Schaefer.</h2>
+                <h2 >Eat. Sleep. Code. Repeat.</h2>
+                <p>
+                    I'm a student with a passion for
+                    Programming and learning</p>
+                <Socials margin='0 10px' />
+            </div>
         </div>
     )
 }
-export default Intro;

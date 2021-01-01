@@ -57,7 +57,7 @@ const Footer = () => {
                 <input onChange={function (e) { setName(e.target.value) }} value={name} placeholder='Name' className='footer-input' />
                 <input onChange={function (e) { setEmail(e.target.value) }} value={email} placeholder='Email' className='footer-input' />
                 <textarea onChange={function (e) { setMessage(e.target.value) }} value={message} placeholder='Message' className='footer-input' />
-                <button className='intro-button' type='submit'>Submit</button>
+                <button className='button' type='submit'>Submit</button>
             </form>
             <div className='footer-to-top-div'>
                 <div onClick={scrollTo.top} className='footer-socials-div' >

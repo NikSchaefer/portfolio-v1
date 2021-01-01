@@ -6,8 +6,7 @@ export default function About() {
             <div className='about-div' id='about'>
                 <p className='about-text'>
                     <span role='img' aria-label='wave'>👋</span><br /><br />
-                    I'm self-taught full-stack developer hobbyist programmer student
-                    <br />
+                    I'm self-taught full-stack developer and hobbyist programmer student
                     based in Minnesota, US <br /><br />
                     I have taken on roles of design, research and development.<br />
                     In my free time I like to contribute to open source projects, build my own projects, and further my education.
