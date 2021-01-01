@@ -35,7 +35,7 @@ export default function Projects() {
     return (
         <div className='project-primary-div'>
             <ArrowSvg id='project-arrow' height='90' color='var(--secondary)' />
-            <Title titleId='title-project' hr='hr-project' title='Projects' />
+            <Title titleId='title-project' hr='hr-project' title='My Projects' />
             <div id='projects'>
                 <div className='project-div'>
                     <img src={CS} alt='' className='project-img' />

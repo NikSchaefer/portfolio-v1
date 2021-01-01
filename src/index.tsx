@@ -8,13 +8,16 @@ import Footer from './Sections/Footer'
 import * as DOM from 'react-router-dom'
 import Main from './Home/Main'
 function App() {
-
   return (
-    <div>
+    <DOM.BrowserRouter>
+
       <NavBar />
-      <Main />
+      <DOM.Switch>
+        <DOM.Route path="" component={Main} />
+      </DOM.Switch>
       <Footer />
-    </div>
+
+    </DOM.BrowserRouter>
   );
 }
 ReactDOM.render(

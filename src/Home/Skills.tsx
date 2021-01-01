@@ -85,7 +85,7 @@ const SkillDiv = (props: { skills: skillArray }) => {
 const Skills = () => {
     return (
         <div>
-            <Title titleId='title-skill' hr='hr-skill' title='Skills ' />
+            <Title titleId='title-skill' hr='hr-skill' title='What I work with ' />
             <div id='skills'>
                 <SkillDiv skills={languages} />
                 <SkillDiv skills={frameworks} />

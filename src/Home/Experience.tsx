@@ -24,7 +24,7 @@ function Section(props: { image: any, position: string, timeline: string, compan
 export default function Experience() {
     return (
         <div>
-            <Title titleId='title-exp' hr='hr-exp' title='Experience' />
+            <Title titleId='title-exp' hr='hr-exp' title='My Experience' />
             <div id='exp-div'>
                 <Section link='#' image={k5} position="Upcoming Freelance" company="NVC" timeline="Dec - Present" />
                 <Section link='https://sparksvolleyballclub.com/' image={tec} position="Freelance" company="Sparks VB Club" timeline="Oct 2020 - Dec 2020" />
