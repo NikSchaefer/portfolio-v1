@@ -33,25 +33,3 @@ LICENSE
 package.json
 package-lock.json
 ```
-
-# Photos
-
-1. Landing Section
-
-<img src="/project/portfolio-v1/landing.png" alt="Landing Page" />
-
-2. About Section
-
-<img src="/project/portfolio-v1/about.png" alt="About Page" />
-
-3. Skill Section
-
-<img src="/project/portfolio-v1/skills.png" alt="Skill Page" />
-
-4. Project Section
-
-<img src="/project/portfolio-v1/projects.png" alt="Projects Page" />
-
-5. Contact Section
-
-<img src="/project/portfolio-v1/contact-page.png" alt="Contact Page" />
